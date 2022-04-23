@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MoreApps">
+
+    <TextView
+        android:id="@+id/textAboutApps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColor="@color/black"
+        android:textSize="25sp"/>
+
+    <ImageView
+        android:id="@+id/imageViewFaarfannaa"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/faarfannaa"
+        android:layout_below="@id/textAboutApps"
+        android:layout_margin="20dp"/>
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:gravity="center_horizontal"
+        android:fontFamily="cursive"
+        android:layout_below="@id/imageViewFaarfannaa"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="20dp"/>
+
+    <ImageView
+        android:id="@+id/imageViewGmaariyaam"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/galatamaariyaam"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@id/imageViewFaarfannaa"
+        android:layout_below="@id/textAboutApps"
+        android:layout_margin="20dp"/>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/galata_maariyaam"
+        android:fontFamily="cursive"
+        android:layout_toEndOf="@id/text1"
+        android:layout_alignParentEnd="true"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/imageViewGmaariyaam"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="5dp"/>
+
+    <ImageView
+        android:id="@+id/imageViewGalatooBarumsaa"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/gbicon"
+        android:layout_below="@id/imageViewFaarfannaa"
+        android:layout_margin="20dp"/>
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:gravity="center_horizontal"
+        android:fontFamily="cursive"
+        android:layout_below="@id/imageViewGalatooBarumsaa"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="5dp"/>
+
+    <ImageView
+        android:id="@+id/imageViewWollega"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/wuotherapp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/imageViewGmaariyaam"
+        android:layout_toEndOf="@id/imageViewGalatooBarumsaa"
+        android:layout_margin="20dp"/>
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/others_apps"
+        android:fontFamily="cursive"
+        android:layout_toEndOf="@id/text1"
+        android:layout_alignParentEnd="true"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/imageViewWollega"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="5dp"/>
+
+</RelativeLayout>

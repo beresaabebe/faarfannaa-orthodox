@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/sharemenu"
+        android:title="@string/share"
+        app:showAsAction="ifRoom|collapseActionView"
+        android:icon="@android:drawable/ic_menu_share"/>
+
+    <item
+        android:id="@+id/galatamenu"
+        app:showAsAction="ifRoom"
+        android:title="@string/galata"/>
+    <item
+        android:id="@+id/aboutusmenu"
+        app:showAsAction="ifRoom|collapseActionView"
+        android:title="@string/about_us"/>
+    <item
+        android:id="@+id/aboutappmenu"
+        app:showAsAction="ifRoom"
+        android:title="@string/waa_ee_app"/>
+    <item
+        android:id="@+id/moreappmenu"
+        android:title="@string/more_apps"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/starmenu"
+        app:showAsAction="ifRoom|collapseActionView"
+        android:icon="@android:drawable/star_off"
+        android:title="@string/give_us_5_star"/>
+
+    <item
+        android:id="@+id/checkUpdateMenu"
+        android:title="@string/check_update"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/exitmenu"
+        android:title="@string/exit"
+        app:showAsAction="ifRoom"/>
+
+</menu>

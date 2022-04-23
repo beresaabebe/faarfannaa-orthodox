@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Faarfannaa Afaan Oromoo</string>
+    <string name="share">Share</string>
+    <string name="banner_ad_unit_id">ca-app-pub-8504401574247581/1320669968</string>
+    <string name="hello_world">Hello World</string>
+    <string name="faarfannaa_haaraadhaan_waaqayyoon_faarfadhaa_far_97_1"><![CDATA[Faarfannaa haaraadhaan waaqayyoon faarfadhaa, --> (Far. 97:1)]]></string>
+    <string name="drawer_close">Close</string>
+    <string name="drawer_open">Open</string>
+    <string name="todo">TODO</string>
+    <string name="check_update">Check update</string>
+    <string name="exit">Exit</string>
+    <string name="give_us_5_star">Give us 5 star</string>
+    <string name="about_us">About us</string>
+    <string name="waa_ee_app">Waa\'ee app</string>
+    <string name="more_apps">More apps</string>
+    <string name="galata">Galata</string>
+    <string name="galata_maariyaam">Galata Maariyaam</string>
+    <string name="others_apps">Others apps</string>
+</resources>
