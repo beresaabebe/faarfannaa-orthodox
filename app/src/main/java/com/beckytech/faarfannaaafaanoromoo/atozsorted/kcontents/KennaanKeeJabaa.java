@@ -53,14 +53,14 @@ public class KennaanKeeJabaa extends OptionsMenuActivity {
             "\n\n" +
             "     == F/taa Ifaa Jituu ==\n";
 
-    String mezmurTitle = "Kennaan kee jabaa";
+    String mezmurTitle = "83. Kennaan kee jabaa";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

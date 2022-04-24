@@ -31,14 +31,14 @@ public class DhufeJechi extends OptionsMenuActivity {
             "መጽአቃልእምደመናዘይብል /2/ \n" +
             "ዝንቱውዕቱወልድየዘአፈቅ /4/\n";
 
-    String mezmurTitle = "Dhufe jechi";
+    String mezmurTitle = "31. Dhufe jechi";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

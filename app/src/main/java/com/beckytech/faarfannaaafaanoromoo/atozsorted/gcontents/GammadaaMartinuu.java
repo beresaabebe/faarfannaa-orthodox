@@ -65,14 +65,14 @@ public class GammadaaMartinuu extends OptionsMenuActivity {
             "Dhukkubsachuu isaan \n" +
             "Bilisa baheera\n";
 
-    String mezmurTitle = "Gammadaa martinuu";
+    String mezmurTitle = "56. Gammadaa martinuu";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

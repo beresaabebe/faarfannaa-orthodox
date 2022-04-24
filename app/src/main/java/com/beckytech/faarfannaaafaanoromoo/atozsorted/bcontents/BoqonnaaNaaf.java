@@ -1,4 +1,4 @@
-package com.beckytech.faarfannaaafaanoromoo.bcontents;
+package com.beckytech.faarfannaaafaanoromoo.atozsorted.bcontents;
 
 import android.content.Context;
 import android.content.Intent;
@@ -52,14 +52,14 @@ public class BoqonnaaNaaf extends OptionsMenuActivity {
             "Naaf guuti waaqa koo isa natti hir'atee (2x)\n" +
             "";
 
-    String mezmurTitle = "Boqonnaa naaf kenni";
+    String mezmurTitle = "24. Boqonnaa naaf kenni";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

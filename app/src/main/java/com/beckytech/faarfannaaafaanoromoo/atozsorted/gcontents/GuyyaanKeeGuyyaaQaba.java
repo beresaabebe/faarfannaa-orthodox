@@ -49,14 +49,14 @@ public class GuyyaanKeeGuyyaaQaba extends OptionsMenuActivity {
             "  \"\"      \"\"       \"\"       Ce'eera galaannichaa\n" +
             "  \"\"      \"\"       \"\"       Kan si qabuu moo'ichaa\n";
 
-    String mezmurTitle = "Guyyaan kee guyyaa qaba";
+    String mezmurTitle = "66. Guyyaan kee guyyaa qaba";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

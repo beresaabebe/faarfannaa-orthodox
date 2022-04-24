@@ -84,14 +84,14 @@ public class Rakkanneerraa extends OptionsMenuActivity {
             "     \"\"        Goorgis raajii hojjetee\n" +
             "   F/taa Dn Bulchaa(Toomaas) Galataa\n";
 
-    String mezmurTitle = "Rakkanneerraa";
+    String mezmurTitle = "125. Rakkanneerraa";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

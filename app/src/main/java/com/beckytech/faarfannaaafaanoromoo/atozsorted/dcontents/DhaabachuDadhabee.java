@@ -46,14 +46,14 @@ public class DhaabachuDadhabee extends OptionsMenuActivity {
             "Har'as naa gargaari naaf ta'i furmaata\n" +
             "Waa’ee jireenya koo Iyyesuus ni beektaa\n";
 
-    String mezmurTitle = "Dhaabachu dadhabee";
+    String mezmurTitle = "30. Dhaabachu dadhabee";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

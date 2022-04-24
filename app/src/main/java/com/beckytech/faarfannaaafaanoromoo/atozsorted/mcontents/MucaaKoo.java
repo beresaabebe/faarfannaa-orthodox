@@ -55,14 +55,14 @@ public class MucaaKoo extends OptionsMenuActivity {
             "Kootu sii gameera gali gara Abbaa kee\n" +
             "Ano siin qulleessa dhiqeetan cubbuu kee\n";
 
-    String mezmurTitle = "Mucaa koo";
+    String mezmurTitle = "104. Mucaa koo";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

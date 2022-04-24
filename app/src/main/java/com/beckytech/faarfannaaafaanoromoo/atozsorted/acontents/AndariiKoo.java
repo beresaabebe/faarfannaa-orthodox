@@ -1,4 +1,4 @@
-package com.beckytech.faarfannaaafaanoromoo.acontents;
+package com.beckytech.faarfannaaafaanoromoo.atozsorted.acontents;
 
 import android.content.Context;
 import android.content.Intent;
@@ -61,14 +61,14 @@ public class AndariiKoo extends OptionsMenuActivity {
             "Haadha nagaa nageenyaa ilmi kee\n" +
             "Ulee Aroon hin badu sanyiin kee\n";
 
-    String mezmurTitle = "Andarii koo";
+    String mezmurTitle = "8. Andarii koo";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

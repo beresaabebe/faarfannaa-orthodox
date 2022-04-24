@@ -43,14 +43,14 @@ public class ErgamooniFaarfaataaniiru extends OptionsMenuActivity {
             "\t\t Du'ee du'aa mo'uun\n" +
             "F/taa D/n Garramuu Baayisaa";
 
-    String mezmurTitle = "Ergamooni faarfaataaniiru";
+    String mezmurTitle = "46. Ergamooni faarfaataaniiru";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

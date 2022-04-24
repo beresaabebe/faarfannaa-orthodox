@@ -37,14 +37,14 @@ public class SinTaee extends OptionsMenuActivity {
             "Samiirratti(2) lafarrattis \n" +
             "Hundumuu sin ta’e\n";
 
-    String mezmurTitle = "Sin ta'ee";
+    String mezmurTitle = "133. Sin ta'ee";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

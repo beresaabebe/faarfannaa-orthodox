@@ -45,14 +45,14 @@ public class MaalNamaGootee extends OptionsMenuActivity {
             "Misraachuu nagaa nuuf labsee malee \n" +
             "Maal nama godhee Gabri’eel x2\n";
 
-    String mezmurTitle = "Maal nama gootee";
+    String mezmurTitle = "92. Maal nama gootee";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

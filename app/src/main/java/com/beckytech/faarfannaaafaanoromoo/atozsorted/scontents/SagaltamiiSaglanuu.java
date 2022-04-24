@@ -36,14 +36,14 @@ public class SagaltamiiSaglanuu extends OptionsMenuActivity {
             "Galaana walakkaa (x4)dhaabbatee\n " +
             "Gooftaan nuuf cuuphamee. eeyyee (x3)\n";
 
-    String mezmurTitle = "Sagaltamii saglanuu";
+    String mezmurTitle = "126. Sagaltamii saglanuu";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

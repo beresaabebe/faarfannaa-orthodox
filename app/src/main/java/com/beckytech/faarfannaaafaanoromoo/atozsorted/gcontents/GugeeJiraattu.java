@@ -63,14 +63,14 @@ public class GugeeJiraattu extends OptionsMenuActivity {
             "Haadha keenya taatee ano nan gammadaa(2)\n" +
             "Ano nan gammada\n";
 
-    String mezmurTitle = "Gugee jiraattu";
+    String mezmurTitle = "64. Gugee jiraattu";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

@@ -1,16 +1,27 @@
 package com.beckytech.faarfannaaafaanoromoo;
 
+import android.annotation.SuppressLint;
+import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class OptionsMenuActivity extends AppCompatActivity {
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater menuInflater = getMenuInflater();
@@ -75,8 +86,39 @@ public class OptionsMenuActivity extends AppCompatActivity {
         if(id == R.id.galatamenu) {
             startActivity(new Intent(this, GalataActivity.class));
         }
-
         return super.onOptionsItemSelected(item);
+    }
+
+    @SuppressLint("UseCompatLoadingForDrawables")
+    public void initUI(String str) {
+        ActionBar mActionBar = getSupportActionBar();
+        mActionBar.setIcon(R.drawable.icon222);
+        mActionBar.setDisplayShowCustomEnabled(true);
+        mActionBar.setTitle(str);
+        ColorDrawable colorDrawable = new ColorDrawable(Color.parseColor("#0563D5"));
+        //mActionBar.setBackgroundDrawable(colorDrawable);
+        mActionBar.setBackgroundDrawable(getResources().getDrawable(R.drawable.rounded_conrner));
+    }
+
+    static class CustomAdapter extends ArrayAdapter<String> {
+        Context context;
+        String[] title;
+
+        CustomAdapter(Context context, String[] title) {
+            super(context, R.layout.listitem, title);
+            this.context = context;
+            this.title = title;
+        }
+
+        @SuppressLint("SetTextI18n")
+        public View getView(int position, View convertView, ViewGroup parent) {
+            LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            @SuppressLint("ViewHolder") View row = inflater.inflate(R.layout.listitem, parent, false);
+            TextView textView = row.findViewById(R.id.textView1);
+            int pos = position +1;
+            textView.setText(pos+". "+title[position]);
+            return row;
+        }
 
     }
 }

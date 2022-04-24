@@ -103,14 +103,14 @@ public class NagaaNaafLabsee extends OptionsMenuActivity {
             "Kan kabajee qulqulotaa ni argata tolotaa×2\n" +
             "Nii Argataa ~~~~ Gatii tolotaa×4\n";
 
-    String mezmurTitle = "Nagaa naaf labsee";
+    String mezmurTitle = "105. Nagaa naaf labsee";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

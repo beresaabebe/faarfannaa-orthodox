@@ -44,14 +44,14 @@ public class GochiGooftaaKeenyaa extends OptionsMenuActivity {
             "    Uffata salphinaa ofirraa mulqinee\n" +
             "    Haa taanu qulqulloota qalbii jijjiirrannee\n";
 
-    String mezmurTitle = "Gochii gooftaa keenyaa";
+    String mezmurTitle = "61. Gochii gooftaa keenyaa";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

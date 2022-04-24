@@ -49,14 +49,14 @@ public class GurguddootaDhiise extends OptionsMenuActivity {
             "Galataaf dhaabannee nutis dhugaa baanaa\n" +
             "Maqaa kiristoosiin nama ifaa taanaa\n";
 
-    String mezmurTitle = "Gurguddoota dhiise";
+    String mezmurTitle = "65. Gurguddoota dhiise";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

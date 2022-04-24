@@ -48,14 +48,14 @@ public class KanFayyuuBarbaadu extends OptionsMenuActivity {
             "Fakkeessuudhaaf malee addunyaan sobadhaa ***** eeyyee dhugaadha \n" +
             "Abbaan qulqullummaa Amaanu’eel qofaa dhaa inni gooftaadha.\n";
 
-    String mezmurTitle = "Kan fayyuu barbaaduu";
+    String mezmurTitle = "81. Kan fayyuu barbaaduu";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

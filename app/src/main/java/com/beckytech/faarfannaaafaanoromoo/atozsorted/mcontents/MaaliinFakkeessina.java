@@ -36,14 +36,14 @@ public class MaaliinFakkeessina extends OptionsMenuActivity {
             "Haadhaa keenya giiftii keenyaa Qulqulleettii\n" +
             "Eyyeen Maariyaamiin maaliin fakkeeffamatii\n";
 
-    String mezmurTitle = "Maaliin fakkeessina";
+    String mezmurTitle = "90. Maaliin fakkeessina";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

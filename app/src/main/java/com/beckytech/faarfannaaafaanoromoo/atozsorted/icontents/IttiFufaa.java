@@ -50,17 +50,16 @@ public class IttiFufaa extends OptionsMenuActivity {
             "Himamee hin dhumu gudhaadha dhiifaman kee\n" +
             "Walaloodhaan katabee  gargaarsa keetini \n" +
             "Yeedaloon koo hin dhaabatuu qooqa yareedin\n" +
-            "\n\n" +
             "F/taa Dn Hiikaa\n";
 
-    String mezmurTitle = "Itti fufaa";
+    String mezmurTitle = "72. Itti fufaa";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

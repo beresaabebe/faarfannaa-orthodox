@@ -46,14 +46,14 @@ public class IyyesuusKiristoos extends OptionsMenuActivity {
             "      Dhugaatu nuuf galeera duubatti hin deebinu\n" +
             "      Dhugaadhaf hojjenna namni hundumtuu haa baruu\n";
 
-    String mezmurTitle = "Iyyesuus Kiristoos";
+    String mezmurTitle = "73. Iyyesuus Kiristoos";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

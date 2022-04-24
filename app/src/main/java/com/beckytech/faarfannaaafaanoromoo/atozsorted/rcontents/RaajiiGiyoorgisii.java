@@ -38,14 +38,14 @@ public class RaajiiGiyoorgisii extends OptionsMenuActivity {
             "Mooyyeetis Tumaani Eyyee\n" +
             "Afuufanii qilleensaf Laatan(2x) Eyyee\n";
 
-    String mezmurTitle = "Raaajii giyoorgisii";
+    String mezmurTitle = "124. Raaajii giyoorgisii";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

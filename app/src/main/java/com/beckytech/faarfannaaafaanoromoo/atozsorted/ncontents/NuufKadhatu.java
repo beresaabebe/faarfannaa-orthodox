@@ -64,14 +64,14 @@ public class NuufKadhatu extends OptionsMenuActivity {
             "       Hangafa Ergamootaa Uraa'eelii\n" +
             "       Nutoo Cubbamoota Nu Gargaari\n";
 
-    String mezmurTitle = "Nuuf Kadhatu";
+    String mezmurTitle = "115. Nuuf Kadhatu";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

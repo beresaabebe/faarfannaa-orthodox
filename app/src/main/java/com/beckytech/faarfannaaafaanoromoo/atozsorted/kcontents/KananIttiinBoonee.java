@@ -51,14 +51,14 @@ public class KananIttiinBoonee extends OptionsMenuActivity {
             "Doorsisni kee karaati hafee eega yaa diina koo\n" +
             "Qabeenya isa na godhate fayyisee lubbuu koo\n";
 
-    String mezmurTitle = "Kanan ittin boonee";
+    String mezmurTitle = "80. Kanan ittin boonee";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

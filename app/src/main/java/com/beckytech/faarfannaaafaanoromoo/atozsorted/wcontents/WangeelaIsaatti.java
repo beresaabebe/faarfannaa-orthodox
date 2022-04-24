@@ -38,14 +38,14 @@ public class WangeelaIsaatti extends OptionsMenuActivity {
             "በወንጌሉ ያመናችሁ /2/\n" +
             "እንኳን ለብርሀነ ጥምቀቱ አደረሳችሁ/2/\n";
 
-    String mezmurTitle = "Wangeela isaatti";
+    String mezmurTitle = "146. Wangeela isaatti";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

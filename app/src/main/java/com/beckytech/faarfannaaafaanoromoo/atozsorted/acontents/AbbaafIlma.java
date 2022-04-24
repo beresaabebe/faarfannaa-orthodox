@@ -1,4 +1,4 @@
-package com.beckytech.faarfannaaafaanoromoo.acontents;
+package com.beckytech.faarfannaaafaanoromoo.atozsorted.acontents;
 
 import android.content.Context;
 import android.content.Intent;
@@ -46,14 +46,14 @@ public class AbbaafIlma extends OptionsMenuActivity {
             "Abbaa samiirraati jedhe haaga ba'ee\n" +
             "Hafurrii qulqulluuun bifa gugeen bu'ee\n";
 
-    String mezmurTitle = "Abbaaf Ilma";
+    String mezmurTitle = "1. Abbaaf Ilma";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

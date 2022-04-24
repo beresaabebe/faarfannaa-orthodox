@@ -71,14 +71,14 @@ public class GalaanaDhaabe extends OptionsMenuActivity {
             "                      “        “    Nu eegi nu tiksii\n" +
             "                      “        “     Bahaaf gala keenya \n";
 
-    String mezmurTitle = "Galaana dhaabe";
+    String mezmurTitle = "49. Galaana dhaabe";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

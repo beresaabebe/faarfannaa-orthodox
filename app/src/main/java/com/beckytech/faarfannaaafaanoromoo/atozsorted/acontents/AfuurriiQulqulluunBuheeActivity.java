@@ -1,4 +1,4 @@
-package com.beckytech.faarfannaaafaanoromoo.acontents;
+package com.beckytech.faarfannaaafaanoromoo.atozsorted.acontents;
 
 import android.content.Context;
 import android.content.Intent;
@@ -31,14 +31,14 @@ public class AfuurriiQulqulluunBuheeActivity extends OptionsMenuActivity {
             "መንፈስ ቅዱስ ወረደ ላዕለ ሐዋርያት /2/\n" +
             "ተመሲሎ/5/ በነደ እሳት /2/\n";
 
-    String mezmurTitle = "Afuurrii qulqulluun bu'ee";
+    String mezmurTitle = "2. Afuurrii qulqulluun bu'ee";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

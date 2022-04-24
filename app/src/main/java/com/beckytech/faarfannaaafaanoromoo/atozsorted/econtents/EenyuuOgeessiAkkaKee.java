@@ -53,14 +53,14 @@ public class EenyuuOgeessiAkkaKee extends OptionsMenuActivity {
             "\n" +
             "F/ttu Warqineesh Asfawu";
 
-    String mezmurTitle = "Eenyuu ogeessi akka kee";
+    String mezmurTitle = "40. Eenyuu ogeessi akka kee";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

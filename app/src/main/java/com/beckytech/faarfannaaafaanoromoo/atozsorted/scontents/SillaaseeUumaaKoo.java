@@ -45,14 +45,14 @@ public class SillaaseeUumaaKoo extends OptionsMenuActivity {
             "Ati naaf kadhadhu(2) \n" +
             "Maaloo yaa haadha koo\n";
 
-    String mezmurTitle = "Sillaasee uumaa koo";
+    String mezmurTitle = "129. Sillaasee uumaa koo";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

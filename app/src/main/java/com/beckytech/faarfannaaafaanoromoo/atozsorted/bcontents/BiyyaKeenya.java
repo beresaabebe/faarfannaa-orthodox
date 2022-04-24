@@ -1,4 +1,4 @@
-package com.beckytech.faarfannaaafaanoromoo.bcontents;
+package com.beckytech.faarfannaaafaanoromoo.atozsorted.bcontents;
 
 import android.content.Context;
 import android.content.Intent;
@@ -45,14 +45,14 @@ public class BiyyaKeenya extends OptionsMenuActivity {
             "Abdiin keenyaa sii gooftaa sitti boonyeera\n" +
             "F/taa D/n Garramu Baayisaa";
 
-    String mezmurTitle = "Biyya Keenya";
+    String mezmurTitle = "21. Biyya Keenya";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

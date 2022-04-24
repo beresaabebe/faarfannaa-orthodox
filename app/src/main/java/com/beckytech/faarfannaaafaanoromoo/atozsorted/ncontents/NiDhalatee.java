@@ -39,14 +39,14 @@ public class NiDhalatee extends OptionsMenuActivity {
             "Durbeen qulqulleetti\n" +
             "Ni Dhalattee sanyiin qulqulleetti\n";
 
-    String mezmurTitle = "Ni dhalatee";
+    String mezmurTitle = "113. Ni dhalatee";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

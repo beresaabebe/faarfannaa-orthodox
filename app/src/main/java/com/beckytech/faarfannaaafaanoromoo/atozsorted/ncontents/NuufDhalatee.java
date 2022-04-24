@@ -71,14 +71,14 @@ public class NuufDhalatee extends OptionsMenuActivity {
             "  \"\"        \"\"      Jireenya nuuf laatee\n" +
             "    F/taa Geetahun Shawaa(Koo'el)               \n";
 
-    String mezmurTitle = "Nuuf dhalatee";
+    String mezmurTitle = "114. Nuuf dhalatee";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

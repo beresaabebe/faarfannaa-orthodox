@@ -54,14 +54,14 @@ public class JireenyaLubbuuKoo extends OptionsMenuActivity {
             "\n\n" +
             "  F/taa Dn Hiikaa\n";
 
-    String mezmurTitle = "Jireenya lubbuu koo";
+    String mezmurTitle = "76. Jireenya lubbuu koo";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

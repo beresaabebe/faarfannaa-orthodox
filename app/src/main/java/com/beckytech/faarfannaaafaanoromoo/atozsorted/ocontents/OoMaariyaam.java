@@ -57,14 +57,14 @@ public class OoMaariyaam extends OptionsMenuActivity {
             "Mucaa ishee haammattee \t\t\"\t\"\n" +
             "Ulee Aaroniidha \t\t\"\t\"\n";
 
-    String mezmurTitle = "Oo Maariyaam nu si jaalannaa";
+    String mezmurTitle = "120. Oo Maariyaam nu si jaalannaa";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

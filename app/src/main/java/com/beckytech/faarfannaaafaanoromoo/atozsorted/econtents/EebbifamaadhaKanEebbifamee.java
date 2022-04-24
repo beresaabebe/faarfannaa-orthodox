@@ -52,14 +52,14 @@ public class EebbifamaadhaKanEebbifamee extends OptionsMenuActivity {
             "\n\n" +
             "F/taa D/n Soorii Guddatoo";
 
-    String mezmurTitle = "Eebifamaadha kan eebbifamee";
+    String mezmurTitle = "36. Eebifamaadha kan eebbifamee";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

@@ -29,14 +29,14 @@ public class Koottuu extends OptionsMenuActivity {
     String mezmur = "Koottuu nu Eebisii(4)\n" +
             "Maariyaam (3) ilma kee wajjin.   Eyyee(2)\n";
 
-    String mezmurTitle = "Koottuu";
+    String mezmurTitle = "75. Koottuu";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

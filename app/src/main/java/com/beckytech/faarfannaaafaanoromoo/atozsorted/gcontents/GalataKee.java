@@ -51,14 +51,14 @@ public class GalataKee extends OptionsMenuActivity {
             "                    Maqaan kee haa ulfaatuu\n" +
             "                     Gocha ati naaf gooteef\n";
 
-    String mezmurTitle = "Galata kee";
+    String mezmurTitle = "51. Galata kee";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

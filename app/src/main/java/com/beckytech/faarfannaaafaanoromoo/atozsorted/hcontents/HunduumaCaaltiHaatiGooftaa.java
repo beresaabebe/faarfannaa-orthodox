@@ -106,14 +106,14 @@ public class HunduumaCaaltiHaatiGooftaa extends OptionsMenuActivity {
             "Mariyaamii “ \n" +
             "Abdii qabnaa“\n";
 
-    String mezmurTitle = "Hunduuma caalti haati gooftaa";
+    String mezmurTitle = "71. Hunduuma caalti haati gooftaa";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

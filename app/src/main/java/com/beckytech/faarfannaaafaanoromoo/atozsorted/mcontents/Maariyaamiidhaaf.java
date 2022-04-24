@@ -65,14 +65,14 @@ public class Maariyaamiidhaaf extends OptionsMenuActivity {
             "Ni galateeffatu ………………bara baraanii\n" +
             "Jaalala ishee ibsuuf jechatu hanqate (2×)\n";
 
-    String mezmurTitle = "Maariyaamiidhaaf";
+    String mezmurTitle = "95. Maariyaamiidhaaf";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

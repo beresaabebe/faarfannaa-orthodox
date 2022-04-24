@@ -1,4 +1,4 @@
-package com.beckytech.faarfannaaafaanoromoo.acontents;
+package com.beckytech.faarfannaaafaanoromoo.atozsorted.acontents;
 
 import android.content.Context;
 import android.content.Intent;
@@ -65,14 +65,14 @@ public class AraarsituuMaariyaamii extends OptionsMenuActivity {
             "Eenyu jedheen waama maqaa kee \n" +
             "Maariyaam natti ulfaatee oolmaankee x2\n";
 
-    String mezmurTitle = "Araarsituu Maariyaamii";
+    String mezmurTitle = "10. Araarsituu Maariyaamii";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

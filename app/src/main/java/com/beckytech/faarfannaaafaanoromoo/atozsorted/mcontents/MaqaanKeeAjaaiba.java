@@ -52,14 +52,14 @@ public class MaqaanKeeAjaaiba extends OptionsMenuActivity {
             "Mirga waaqa jirta mirgaaf naa jaalatee\n" +
             "Halkaniifi guyyaa kanaf naa dhaabate ×2\n";
 
-    String mezmurTitle = "Maqaan kee ajaa'iba";
+    String mezmurTitle = "99. Maqaan kee ajaa'iba";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

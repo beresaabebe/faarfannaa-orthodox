@@ -47,14 +47,14 @@ public class Lakkaame extends OptionsMenuActivity {
             "Cubbuu kooti fayyee mirgaa kee ta'a ×2\n\n\n" +
             "   F/ttuu Mitikkee\n";
 
-    String mezmurTitle = "Lakkaa'amee";
+    String mezmurTitle = "87. Lakkaa'amee";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

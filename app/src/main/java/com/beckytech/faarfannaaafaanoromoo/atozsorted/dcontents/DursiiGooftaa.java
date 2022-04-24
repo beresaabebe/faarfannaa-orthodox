@@ -50,17 +50,16 @@ public class DursiiGooftaa extends OptionsMenuActivity {
             "Mooti Dirxadisin moo'attee moo'attee\n" +
             "    \tEyyeeee\n" +
             "Kan kee aja'ibumaa qulqullettii arseemaa(×2)\n" +
-            "Hin callisuu qabsuraa keen himaa\n" +
-            "=======√|√=======\n";
+            "Hin callisuu qabsuraa keen himaa\n";
 
-    String mezmurTitle = "Dursii gooftaa duraa koo";
+    String mezmurTitle = "35. Dursii gooftaa duraa koo";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

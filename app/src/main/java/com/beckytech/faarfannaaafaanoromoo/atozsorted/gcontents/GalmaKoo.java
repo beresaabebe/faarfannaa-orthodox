@@ -51,14 +51,14 @@ public class GalmaKoo extends OptionsMenuActivity {
             "Boolla dinni naa qoote isumaaf taasisteeree\n" +
             "Mootummaa kee naaf qoddee situ funcha narra ciree\n";
 
-    String mezmurTitle = "Galma koo";
+    String mezmurTitle = "55. Galma koo";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

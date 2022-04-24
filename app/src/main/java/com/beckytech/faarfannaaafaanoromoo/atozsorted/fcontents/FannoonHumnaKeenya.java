@@ -50,14 +50,14 @@ public class FannoonHumnaKeenya extends OptionsMenuActivity {
             "               “                           warra ittii hin amneef \n" +
             "               “                          garuu gowwummaaadhaa\n";
 
-    String mezmurTitle = "Fannoon Humnna keenya";
+    String mezmurTitle = "47. Fannoon Humnna keenya";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

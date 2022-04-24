@@ -50,14 +50,14 @@ public class DuaaKaeera extends OptionsMenuActivity {
             "Jaalali abbaa koo hundumarraa adda\n" +
             "Ameen fayyinee hunduu gammada\n";
 
-    String mezmurTitle = "Du'aa ka'eera";
+    String mezmurTitle = "33. Du'aa ka'eera";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

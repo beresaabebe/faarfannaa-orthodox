@@ -60,14 +60,14 @@ public class WaaeeKeenHima extends OptionsMenuActivity {
             "Nan hima waa'ee maafan callisaa\n" +
             "Hoosa'ina jedhee maqaa kee fan faarsaa\n";
 
-    String mezmurTitle = "Waa'ee keen hima";
+    String mezmurTitle = "142. Waa'ee keen hima";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

@@ -37,14 +37,14 @@ public class Madanialem extends OptionsMenuActivity {
             "Waaqayyoon nu Fayyisee humnaa isaatini\n" +
             "Waaqayyoon nu fayyisee jecha hin haqamneen\n";
 
-    String mezmurTitle = "Madani'alem";
+    String mezmurTitle = "97. Madani'alem";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

@@ -50,14 +50,14 @@ public class KanAkkaWaaqayyo extends OptionsMenuActivity {
             "Isan yaa jiraanu yaa namaa  \n\n" +
             "F/taa Dn Adaanee(Fayyisaa)\n";
 
-    String mezmurTitle = "Kan akka Waaqayyo";
+    String mezmurTitle = "78. Kan akka Waaqayyo";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

@@ -51,14 +51,14 @@ public class MootichiYihuudaa extends OptionsMenuActivity {
             "Ergamaa Rufaa’eel eegumsaakeetiinii \n" +
             "Ergamaa gabri’eel eegumsaa keetinii      \n";
 
-    String mezmurTitle = "Mootichi yihuudaa";
+    String mezmurTitle = "102. Mootichi yihuudaa";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

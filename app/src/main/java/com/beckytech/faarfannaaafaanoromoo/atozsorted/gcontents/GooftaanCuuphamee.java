@@ -37,14 +37,14 @@ public class GooftaanCuuphamee extends OptionsMenuActivity {
             "አምላክሆይሕዝቦችህዳኑበልደትህ /2/ \n" +
             "አምላክሆይሕዝቦችህዳኑበጥምቀትህ\n";
 
-    String mezmurTitle = "Gooftaan cuuphamee";
+    String mezmurTitle = "62. Gooftaan cuuphamee";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

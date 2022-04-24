@@ -53,14 +53,14 @@ public class UlfinaWaaqayyof extends OptionsMenuActivity {
             "Jaalalasaa arge qaraniyoo irraatti\n" +
             "Boqonnaan argadhe fannoosaa jalatti\n";
 
-    String mezmurTitle = "Ulfina waaqayyof";
+    String mezmurTitle = "140. Ulfina waaqayyof";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

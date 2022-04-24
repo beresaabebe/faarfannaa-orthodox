@@ -63,14 +63,14 @@ public class WaaqayyoAddunyaa extends OptionsMenuActivity {
             "                   Kiristoos Karaakee Dhufee\n" +
             "                   Maariyaam Sin Jal'a Itti Fufee\n";
 
-    String mezmurTitle = "Waaqayyo aadunyaa daawwatee";
+    String mezmurTitle = "144. Waaqayyo aadunyaa daawwatee";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

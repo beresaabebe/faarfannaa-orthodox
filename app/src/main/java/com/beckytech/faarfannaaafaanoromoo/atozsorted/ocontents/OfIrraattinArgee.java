@@ -58,14 +58,14 @@ public class OfIrraattinArgee extends OptionsMenuActivity {
             "\n" +
             "\n";
 
-    String mezmurTitle = "Of irraattin argee";
+    String mezmurTitle = "117. Of irraattin argee";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

@@ -21,7 +21,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MoreApps extends AppCompatActivity {
+public class MoreApps extends OptionsMenuActivity {
 
     ImageView faarfannaa, galataMaariyaam, galatooBarumsaa, wollega;
     TextView textView;
@@ -30,12 +30,14 @@ public class MoreApps extends AppCompatActivity {
             "bakka biroo irraa kan jiran garuu isiin fayyaduu waan ta'eef itti fayyadama.</p><br>" +
             "<b> Download apps by the same developer.</b>";
 
+    String title = " More apps ";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_more_apps);
 
-        initUI();
+        initUI(title);
 
         textView = findViewById(R.id.textAboutApps);
         if (Build.VERSION.SDK_INT == Build.VERSION_CODES.N) {
@@ -88,75 +90,5 @@ public class MoreApps extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-    }
-
-    private void initUI() {
-        ActionBar mActionBar = getSupportActionBar();
-        mActionBar.setDisplayShowHomeEnabled(false);
-        mActionBar.setIcon(R.drawable.ic_launcher_foreground);
-        mActionBar.setDisplayShowCustomEnabled(true);
-        mActionBar.setCustomView(R.layout.custom_actionbar_layout);
-        mActionBar.setTitle("Abbaafi Ilma");
-        ColorDrawable colorDrawable = new ColorDrawable(Color.parseColor("#0A6E73"));
-        mActionBar.setBackgroundDrawable(colorDrawable);
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        new MenuInflater(this).inflate(R.menu.main, menu);
-        return super.onCreateOptionsMenu(menu);
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        int id = item.getItemId();
-
-        if (item.getItemId() == R.id.aboutusmenu) {
-            startActivity(new Intent(this, AboutUs.class));
-        }
-
-        if (item.getItemId() == R.id.sharemenu) {
-            Intent intent = new Intent(Intent.ACTION_SEND);
-            intent.setType("text/plain");
-            intent.putExtra(Intent.EXTRA_SUBJECT, "https://play.google.com/store/apps/details?id=com.beckytech.faarfannaaafaanoromoo");
-            intent.putExtra(Intent.EXTRA_TEXT, "Download this useful app's from Google play \n https://play.google.com/store/apps/details?id=com.beckytech.faarfannaaafaanoromoo");
-            startActivity(Intent.createChooser(intent,"Share app's link via "));
-        }
-
-        if (item.getItemId() == R.id.starmenu) {
-            String url = "https://play.google.com/store/apps/details?id=com.beckytech.faarfannaaafaanoromoo";
-            Intent  intent = new Intent(Intent.ACTION_VIEW);
-            intent.setData(Uri.parse(url));
-            startActivity(intent);
-        }
-
-        if (item.getItemId() == R.id.checkUpdateMenu) {
-            String url = "https://play.google.com/store/apps/details?id=com.beckytech.faarfannaaafaanoromoo";
-            Intent  intent = new Intent(Intent.ACTION_VIEW);
-            intent.setData(Uri.parse(url));
-            startActivity(intent);
-        }
-
-        if (id == R.id.exitmenu) {
-            AlertDialog.Builder builder = new AlertDialog.Builder(this);
-            builder.setMessage("Cufu barbaade?")
-                    .setCancelable(false)
-                    .setPositiveButton("Eeyyeen", (dialogInterface, i) -> finish())
-                    .setNegativeButton("Lakki", (dialogInterface, i) -> dialogInterface.cancel()).create().show();
-        }
-
-        if (id == R.id.moreappmenu) {
-            startActivity(new Intent(this, MoreApps.class));
-        }
-
-        if (id == R.id.aboutappmenu) {
-            startActivity(new Intent(this, WaaeeApp.class));
-        }
-
-        if(id == R.id.galatamenu) {
-            startActivity(new Intent(this, GalataActivity.class));
-        }
-
-        return super.onOptionsItemSelected(item);
     }
 }

@@ -74,14 +74,14 @@ public class OlNaaQabdeta extends OptionsMenuActivity {
             "Haadha koo kaadhufi araaraafi dhiifamaa\n" +
             "\n";
 
-    String mezmurTitle = "Ol naa qabdeta";
+    String mezmurTitle = "119. Ol naa qabdeta";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

@@ -32,14 +32,14 @@ public class GannaSodomatti extends OptionsMenuActivity {
             "ሰላሳክረምትበዮርዳኖስተጠምቄ\n" +
             "በዮርዳኖስ /2/ ዮርዳኖስ /2 ተጠምቄበዮሃንስ\n";
 
-    String mezmurTitle = "Ganna sodomatti";
+    String mezmurTitle = "59. Ganna sodomatti";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

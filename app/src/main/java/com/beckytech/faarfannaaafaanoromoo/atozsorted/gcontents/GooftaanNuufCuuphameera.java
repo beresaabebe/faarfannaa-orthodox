@@ -72,14 +72,14 @@ public class GooftaanNuufCuuphameera extends OptionsMenuActivity {
             "Nu warra amannuuf cuuphaan isaa gaachana\n" +
             "Hafuura Qulqulluun humnadiinaa moona\n";
 
-    String mezmurTitle = "Gooftaan nuuf cuuphameera";
+    String mezmurTitle = "63. Gooftaan nuuf cuuphameera";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

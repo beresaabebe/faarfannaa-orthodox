@@ -59,14 +59,14 @@ public class SinbooKoo extends OptionsMenuActivity {
             "     \"\"       \"\"  nuso Abiddaan dhumnaa\n" +
             " F/taa Dn Gammachis Yiggazzuu\n";
 
-    String mezmurTitle = "Sinboo Koo";
+    String mezmurTitle = "131. Sinboo Koo";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

@@ -67,14 +67,14 @@ public class YaaMikaaeelii extends OptionsMenuActivity {
             "Jaalaala nuuf kennii nageenyaa \n" +
             "Yaa mikaa`eel abbaa keenyaa\n";
 
-    String mezmurTitle = "Yaa Mikaa'eelii (O-Mikaa'el)";
+    String mezmurTitle = "149. Yaa Mikaa'eelii";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

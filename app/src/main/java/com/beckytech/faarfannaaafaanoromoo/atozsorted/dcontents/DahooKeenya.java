@@ -56,14 +56,14 @@ public class DahooKeenya extends OptionsMenuActivity {
             "Haasa'a ormootadha tasa hin dhageefadhu\n" +
             "Haadharraa addan bahee akkamin jiraadhu   \n";
 
-    String mezmurTitle = "Dahoo keenya isheen";
+    String mezmurTitle = "28. Dahoo keenya isheen";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

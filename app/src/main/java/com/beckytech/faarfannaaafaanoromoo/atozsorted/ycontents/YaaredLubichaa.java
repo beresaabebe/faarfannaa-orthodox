@@ -36,14 +36,14 @@ public class YaaredLubichaa extends OptionsMenuActivity {
     String mezmur = "Bu’uura yeedaloo eegalee (2×)Yaareed lubichaa \n" +
             "Yaareedii(3×) yaareed lubichaa }x2 qooqni isaa bareedaa\n";
 
-    String mezmurTitle = "Yaared lubichaa";
+    String mezmurTitle = "150. Yaared lubichaa";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

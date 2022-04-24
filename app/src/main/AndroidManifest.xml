@@ -9,10 +9,12 @@
         android:roundIcon="@mipmap/ic_icon2_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FaarfannaaAfaanOromoo">
+
+        <!--  A-Z sorted mezmur activity goes down here      -->
         <activity
             android:name=".MoreApps"
-            android:parentActivityName=".MainActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".AboutUs"
             android:exported="false"
@@ -26,630 +28,636 @@
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".wcontents.WaaeeKeenHima"
+            android:name=".atozsorted.wcontents.WaaeeKeenHima"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".ycontents.Yoordaanositti"
+            android:name=".atozsorted.ycontents.Yoordaanositti"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".ycontents.Yoordaanoosii"
+            android:name=".atozsorted.ycontents.Yoordaanoosii"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".ycontents.YoordaanoosDhaloonniKooo"
+            android:name=".atozsorted.ycontents.YoordaanoosDhaloonniKooo"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".ycontents.Yoordaanoos"
+            android:name=".atozsorted.ycontents.Yoordaanoos"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".ycontents.YaaredLubichaa"
+            android:name=".atozsorted.ycontents.YaaredLubichaa"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".ycontents.YaaWaaqayyoo"
+            android:name=".atozsorted.ycontents.YaaWaaqayyoo"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".ycontents.YaaMikaaeelii"
+            android:name=".atozsorted.ycontents.YaaMikaaeelii"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".ycontents.YaaHaadhaWaaqayyo"
+            android:name=".atozsorted.ycontents.YaaHaadhaWaaqayyo"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".ycontents.YaaMaariyaam"
+            android:name=".atozsorted.ycontents.YaaMaariyaam"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".wcontents.WangeelaIsaatti"
+            android:name=".atozsorted.wcontents.WangeelaIsaatti"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".wcontents.WaaqayyoRafeeHin"
+            android:name=".atozsorted.wcontents.WaaqayyoRafeeHin"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".wcontents.WaaqayyoAddunyaa"
+            android:name=".atozsorted.wcontents.WaaqayyoAddunyaa"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".wcontents.WaaqattiHaaAmannuu"
+            android:name=".atozsorted.wcontents.WaaqattiHaaAmannuu"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".ucontents.UraaelKoottu"
+            android:name=".atozsorted.ucontents.UraaelKoottu"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".ucontents.UlfinaWaaqayyof"
+            android:name=".atozsorted.ucontents.UlfinaWaaqayyof"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".ucontents.UlfinaToloota"
+            android:name=".atozsorted.ucontents.UlfinaToloota"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".tcontents.TokkummaaNuufKenni"
+            android:name=".atozsorted.tcontents.TokkummaaNuufKenni"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".tcontents.TikseeGaariinQabaa"
+            android:name=".atozsorted.tcontents.TikseeGaariinQabaa"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".tcontents.TikseeGaariidha"
+            android:name=".atozsorted.tcontents.TikseeGaariidha"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".tcontents.TabootaMusee"
+            android:name=".atozsorted.tcontents.TabootaMusee"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".scontents.SittiWaamameera"
+            android:name=".atozsorted.scontents.SittiWaamameera"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".scontents.SinbooKoo"
+            android:name=".atozsorted.scontents.SinbooKoo"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".scontents.SinTaee"
+            android:name=".atozsorted.scontents.SinTaee"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".scontents.SillaaseeUumaaKoo"
+            android:name=".atozsorted.scontents.SillaaseeUumaaKoo"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".scontents.Sillaasee"
+            android:name=".atozsorted.scontents.Sillaasee"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".scontents.SinFaarfadhaa"
+            android:name=".atozsorted.scontents.SinFaarfadhaa"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".scontents.SiMalee"
+            android:name=".atozsorted.scontents.SiMalee"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".scontents.SiGalateeffanna"
+            android:name=".atozsorted.scontents.SiGalateeffanna"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".scontents.SagaltamiiSaglanuu"
+            android:name=".atozsorted.scontents.SagaltamiiSaglanuu"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".rcontents.Rakkanneerraa"
+            android:name=".atozsorted.rcontents.Rakkanneerraa"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".rcontents.RaajiiGiyoorgisii"
+            android:name=".atozsorted.rcontents.RaajiiGiyoorgisii"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".rcontents.Raagueel"
+            android:name=".atozsorted.rcontents.Raagueel"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".qcontents.QorichaFoonKeenya"
+            android:name=".atozsorted.qcontents.QorichaFoonKeenya"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".qcontents.QabsurriKee"
+            android:name=".atozsorted.qcontents.QabsurriKee"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".ocontents.OfIrraattinArgee"
+            android:name=".atozsorted.ocontents.OfIrraattinArgee"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".ocontents.OlNaaQabdeta"
+            android:name=".atozsorted.ocontents.OlNaaQabdeta"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".ocontents.ObsiNidarba"
+            android:name=".atozsorted.ocontents.ObsiNidarba"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".ocontents.OoMaariyaam"
+            android:name=".atozsorted.ocontents.OoMaariyaam"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".ocontents.OfummaMiti"
+            android:name=".atozsorted.ocontents.OfummaMiti"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".ncontents.NuufKadhatu"
+            android:name=".atozsorted.ncontents.NuufKadhatu"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".ncontents.NuufDhalatee"
+            android:name=".atozsorted.ncontents.NuufDhalatee"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".ncontents.NiDhalatee"
+            android:name=".atozsorted.ncontents.NiDhalatee"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".ncontents.NiBueIlmi"
+            android:name=".atozsorted.ncontents.NiBueIlmi"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".ncontents.NaMiladhu"
+            android:name=".atozsorted.ncontents.NaMiladhu"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".ncontents.NattiYaahafu"
+            android:name=".atozsorted.ncontents.NattiYaahafu"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".ncontents.NamatuHinBeknee"
+            android:name=".atozsorted.ncontents.NamatuHinBeknee"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".ncontents.NageenyaKeenya"
+            android:name=".atozsorted.ncontents.NageenyaKeenya"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".ncontents.NagaaNaafLabsee"
+            android:name=".atozsorted.ncontents.NagaaNaafLabsee"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".ncontents.NanYaadadha"
+            android:name=".atozsorted.ncontents.NanYaadadha"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".econtents.EenyumtuuHinJiru"
+            android:name=".atozsorted.econtents.EenyumtuuHinJiru"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".ccontents.CubbuunKoo"
+            android:name=".atozsorted.ccontents.CubbuunKoo"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".kcontents.KanAkkaWaaqayyoEessaatti"
+            android:name=".atozsorted.kcontents.KanAkkaWaaqayyoEessaatti"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".mcontents.MucaaKoo"
+            android:name=".atozsorted.mcontents.MucaaKoo"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".mcontents.MucaaKee"
+            android:name=".atozsorted.mcontents.MucaaKee"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".mcontents.MootichiYihuudaa"
+            android:name=".atozsorted.mcontents.MootichiYihuudaa"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".mcontents.MikaaeelNaafDhufee"
+            android:name=".atozsorted.mcontents.MikaaeelNaafDhufee"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".mcontents.MikaaeelNidhaabbataa"
+            android:name=".atozsorted.mcontents.MikaaeelNidhaabbataa"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".mcontents.MaqaanKeeAjaaiba"
+            android:name=".atozsorted.mcontents.MaqaanKeeAjaaiba"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".mcontents.MallattooNagaa"
+            android:name=".atozsorted.mcontents.MallattooNagaa"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".mcontents.Madanialem"
+            android:name=".atozsorted.mcontents.Madanialem"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".mcontents.Maariyaamiidhaaf"
+            android:name=".atozsorted.mcontents.Maariyaamiidhaaf"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".mcontents.MaariyaamNiCaalti"
+            android:name=".atozsorted.mcontents.MaariyaamNiCaalti"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".mcontents.Maariyaam"
+            android:name=".atozsorted.mcontents.Maariyaam"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".mcontents.Maaramiin"
+            android:name=".atozsorted.mcontents.Maaramiin"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".mcontents.MaaliinFakkeessina"
+            android:name=".atozsorted.mcontents.MaaliinFakkeessina"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".mcontents.MaalNamaGootee"
+            android:name=".atozsorted.mcontents.MaalNamaGootee"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".mcontents.MaalJedheenDubbaadha"
+            android:name=".atozsorted.mcontents.MaalJedheenDubbaadha"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".lcontents.LatiinJirmaQabaa"
+            android:name=".atozsorted.lcontents.LatiinJirmaQabaa"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".lcontents.LapheenKoo"
+            android:name=".atozsorted.lcontents.LapheenKoo"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".lcontents.Lakkaame"
+            android:name=".atozsorted.lcontents.Lakkaame"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".kcontents.KoottuuHaadhaKoo"
+            android:name=".atozsorted.kcontents.KoottuuHaadhaKoo"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".kcontents.Koottuu"
+            android:name=".atozsorted.kcontents.Koottuu"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".kcontents.KidaaneMihiraat"
+            android:name=".atozsorted.kcontents.KidaaneMihiraat"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".kcontents.KennaanKeeJabaa"
+            android:name=".atozsorted.kcontents.KennaanKeeJabaa"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".kcontents.KennaaGuyyaaJimaata"
+            android:name=".atozsorted.kcontents.KennaaGuyyaaJimaata"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".kcontents.KananIttiinBoonee"
+            android:name=".atozsorted.kcontents.KananIttiinBoonee"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".kcontents.KanFayyuuBarbaadu"
+            android:name=".atozsorted.kcontents.KanFayyuuBarbaadu"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".kcontents.KanAkkaWaaqayyo"
+            android:name=".atozsorted.kcontents.KanAkkaWaaqayyo"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".kcontents.KaakuAraara"
+            android:name=".atozsorted.kcontents.KaakuAraara"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".jcontents.JireenyaLubbuuKoo"
+            android:name=".atozsorted.jcontents.JireenyaLubbuuKoo"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".jcontents.JaalalliKeeAddaa"
+            android:name=".atozsorted.jcontents.JaalalliKeeAddaa"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".icontents.IyyesuusCuuphame"
+            android:name=".atozsorted.icontents.IyyesuusCuuphame"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".icontents.IyyesuusKiristoos"
+            android:name=".atozsorted.icontents.IyyesuusKiristoos"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".icontents.IttiFufaa"
+            android:name=".atozsorted.icontents.IttiFufaa"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".hcontents.HunduumaCaaltiHaatiGooftaa"
+            android:name=".atozsorted.hcontents.HunduumaCaaltiHaatiGooftaa"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".hcontents.HoolichaDhugaa"
+            android:name=".atozsorted.hcontents.HoolichaDhugaa"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".hcontents.HarkaYohaannisiinCuuphame"
+            android:name=".atozsorted.hcontents.HarkaYohaannisiinCuuphame"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".hcontents.HalleeLuyyaa"
+            android:name=".atozsorted.hcontents.HalleeLuyyaa"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".hcontents.HaadhaWaaqaKanMadaanalamii"
+            android:name=".atozsorted.hcontents.HaadhaWaaqaKanMadaanalamii"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".gcontents.GuyyaanKeeGuyyaaQaba"
+            android:name=".atozsorted.gcontents.GuyyaanKeeGuyyaaQaba"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".gcontents.GurguddootaDhiise"
+            android:name=".atozsorted.gcontents.GurguddootaDhiise"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".gcontents.GugeeJiraattu"
+            android:name=".atozsorted.gcontents.GugeeJiraattu"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".gcontents.GooftaanNuufCuuphameera"
+            android:name=".atozsorted.gcontents.GooftaanNuufCuuphameera"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".gcontents.GooftaanCuuphamee"
+            android:name=".atozsorted.gcontents.GooftaanCuuphamee"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".gcontents.GochiGooftaaKeenyaa"
+            android:name=".atozsorted.gcontents.GochiGooftaaKeenyaa"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".gcontents.GarraKoofJedhee"
+            android:name=".atozsorted.gcontents.GarraKoofJedhee"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".gcontents.GannaSodomatti"
+            android:name=".atozsorted.gcontents.GannaSodomatti"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".gcontents.Gammanneerra"
+            android:name=".atozsorted.gcontents.Gammanneerra"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".gcontents.GammadiiKaa"
+            android:name=".atozsorted.gcontents.GammadiiKaa"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".gcontents.GammadaaMartinuu"
+            android:name=".atozsorted.gcontents.GammadaaMartinuu"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".gcontents.GalmaKoo"
+            android:name=".atozsorted.gcontents.GalmaKoo"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".gcontents.Galateeffamaadhaa"
+            android:name=".atozsorted.gcontents.Galateeffamaadhaa"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".gcontents.GalatanGalchaaf"
+            android:name=".atozsorted.gcontents.GalatanGalchaaf"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".gcontents.GalataWaaqayyo"
+            android:name=".atozsorted.gcontents.GalataWaaqayyo"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".gcontents.GalataKee"
+            android:name=".atozsorted.gcontents.GalataKee"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".gcontents.GalataJedhee"
+            android:name=".atozsorted.gcontents.GalataJedhee"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".gcontents.GalaanaDhaabe"
+            android:name=".atozsorted.gcontents.GalaanaDhaabe"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".fcontents.FuulaNamatti"
+            android:name=".atozsorted.fcontents.FuulaNamatti"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".fcontents.FannoonHumnaKeenya"
+            android:name=".atozsorted.fcontents.FannoonHumnaKeenya"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".econtents.Eeyyeennii"
+            android:name=".atozsorted.econtents.Eeyyeennii"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".econtents.EeyyeeNuuDhalatee"
+            android:name=".atozsorted.econtents.EeyyeeNuuDhalatee"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".econtents.EenyuuOgeessiAkkaKee"
+            android:name=".atozsorted.econtents.EenyuuOgeessiAkkaKee"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".econtents.EenyuuAbdiinKoo"
+            android:name=".atozsorted.econtents.EenyuuAbdiinKoo"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".econtents.ErgamooniFaarfaataaniiru"
+            android:name=".atozsorted.econtents.ErgamooniFaarfaataaniiru"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".econtents.ErgamaaGabrieelin"
+            android:name=".atozsorted.econtents.ErgamaaGabrieelin"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".econtents.ErgamaaGabrieel"
+            android:name=".atozsorted.econtents.ErgamaaGabrieel"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".econtents.Ergamaa"
+            android:name=".atozsorted.econtents.Ergamaa"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".econtents.EebbifamtudhaIsheen"
+            android:name=".atozsorted.econtents.EebbifamtudhaIsheen"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".econtents.EebbifamaadhaKanEebbifamee"
+            android:name=".atozsorted.econtents.EebbifamaadhaKanEebbifamee"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".dcontents.DursiiGooftaa"
+            android:name=".atozsorted.dcontents.DursiiGooftaa"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".dcontents.DubartootaaKeessaa"
+            android:name=".atozsorted.dcontents.DubartootaaKeessaa"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".dcontents.DuaaKaeera"
+            android:name=".atozsorted.dcontents.DuaaKaeera"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".dcontents.DhugumaDhugaadha"
+            android:name=".atozsorted.dcontents.DhugumaDhugaadha"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".dcontents.DhufeJechi"
+            android:name=".atozsorted.dcontents.DhufeJechi"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".dcontents.DhaabachuDadhabee"
+            android:name=".atozsorted.dcontents.DhaabachuDadhabee"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".dcontents.DeemeIyyesuusi"
+            android:name=".atozsorted.dcontents.DeemeIyyesuusi"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".dcontents.DahooKeenya"
+            android:name=".atozsorted.dcontents.DahooKeenya"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".ccontents.CuuphamuunKee"
+            android:name=".atozsorted.ccontents.CuuphamuunKee"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".bcontents.BoruKanGooftaatii"
+            android:name=".atozsorted.bcontents.BoruKanGooftaatii"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".bcontents.BoqonnaaNaaf"
+            android:name=".atozsorted.bcontents.BoqonnaaNaaf"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".bcontents.BoqonnaaLubbuu"
+            android:name=".atozsorted.bcontents.BoqonnaaLubbuu"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".bcontents.BiyyaKeenyaaf"
+            android:name=".atozsorted.bcontents.BiyyaKeenyaaf"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".bcontents.BiyyaKeenya"
+            android:name=".atozsorted.bcontents.BiyyaKeenya"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".bcontents.BirraanGahee"
+            android:name=".atozsorted.bcontents.BirraanGahee"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".bcontents.BaayeeNaYaaddeessa"
+            android:name=".atozsorted.bcontents.BaayeeNaYaaddeessa"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".bcontents.BaraDargaggummaaKeenya"
+            android:name=".atozsorted.bcontents.BaraDargaggummaaKeenya"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".bcontents.BakkaAaraGalfiiKoo"
+            android:name=".atozsorted.bcontents.BakkaAaraGalfiiKoo"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".bcontents.BagaIsiinGahee"
+            android:name=".atozsorted.bcontents.BagaIsiinGahee"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".bcontents.BagaGammaddanMisiroon"
+            android:name=".atozsorted.bcontents.BagaGammaddanMisiroon"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".bcontents.BagaGammaddanii"
+            android:name=".atozsorted.bcontents.BagaGammaddanii"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".acontents.AyyaanaArgattee"
+            android:name=".atozsorted.acontents.AyyaanaArgattee"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".acontents.AtiBeteliheem"
+            android:name=".atozsorted.acontents.AtiBeteliheem"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".acontents.Arseemaa"
+            android:name=".atozsorted.acontents.Arseemaa"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".acontents.AraarsituuMaariyaamii"
+            android:name=".atozsorted.acontents.AraarsituuMaariyaamii"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".acontents.AniifManniKoo"
+            android:name=".atozsorted.acontents.AniifManniKoo"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".acontents.AndariiKoo"
+            android:name=".atozsorted.acontents.AndariiKoo"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".acontents.AnaafWaaqayyodhaActivity"
+            android:name=".atozsorted.acontents.AnaafWaaqayyodhaActivity"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".acontents.AmmaIfatuuNuufActivity"
+            android:name=".atozsorted.acontents.AmmaIfatuuNuufActivity"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".acontents.AmmaReefuTolee"
+            android:name=".atozsorted.acontents.AmmaReefuTolee"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".acontents.AlfaafiOmeegaaActivity"
+            android:name=".atozsorted.acontents.AlfaafiOmeegaaActivity"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".acontents.AfuurriiQulqulluunBuheeActivity"
+            android:name=".atozsorted.acontents.AfuurriiQulqulluunBuheeActivity"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".acontents.AkkamiinTareeActivity"
+            android:name=".atozsorted.acontents.AkkamiinTareeActivity"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".acontents.AbbaafIlma"
+            android:name=".atozsorted.acontents.AbbaafIlma"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
+
         <activity
             android:name=".MainActivity"
+            android:parentActivityName=".MainHomeActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".MainHomeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity> <!-- Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713 -->
+        </activity>
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-8504401574247581~7886078317" />

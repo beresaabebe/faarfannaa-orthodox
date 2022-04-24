@@ -1,4 +1,4 @@
-package com.beckytech.faarfannaaafaanoromoo.bcontents;
+package com.beckytech.faarfannaaafaanoromoo.atozsorted.bcontents;
 
 import android.content.Context;
 import android.content.Intent;
@@ -30,14 +30,14 @@ public class BagaGammaddanii extends OptionsMenuActivity {
             "Umrii keessan (3x) Waaqayyoo haa babbareechu\n" +
             "\n";
 
-    String mezmurTitle = "Baga Gammaddanii";
+    String mezmurTitle = "15. Baga Gammaddanii";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

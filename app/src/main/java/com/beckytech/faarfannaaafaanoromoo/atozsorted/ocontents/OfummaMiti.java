@@ -56,14 +56,14 @@ public class OfummaMiti extends OptionsMenuActivity {
             "Mucummaatti nu guddifatee\n" +
             "Bakkee onaatii nu waamtee\n";
 
-    String mezmurTitle = "Ofumma miti";
+    String mezmurTitle = "118. Ofumma miti";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

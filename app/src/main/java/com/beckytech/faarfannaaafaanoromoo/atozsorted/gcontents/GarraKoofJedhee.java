@@ -46,14 +46,14 @@ public class GarraKoofJedhee extends OptionsMenuActivity {
             "     Yaa Haadha Waaqayyoo ati haadha Suugaa\n" +
             "    Sidhiisee hin deemuu anoo kan kee dhugaa\n";
 
-    String mezmurTitle = "Garra koof jedhe";
+    String mezmurTitle = "60. Garra koof jedhe";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

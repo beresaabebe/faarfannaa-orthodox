@@ -57,14 +57,14 @@ public class TokkummaaNuufKenni extends OptionsMenuActivity {
             "Yaada mamiif shaakki nurratii fageessi\n" +
             "Jecha sagaale keen nuu dhaabii nu ciimsii\n";
 
-    String mezmurTitle = "Tokkummaa nuuf kenni";
+    String mezmurTitle = "138. Tokkummaa nuuf kenni";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

@@ -57,14 +57,14 @@ public class MaalJedheenDubbaadha extends OptionsMenuActivity {
             "Hamma bara baraatti an garbichakeetii\n" +
             "Na booji'e durbee waa’een gochakeetii\n";
 
-    String mezmurTitle = "Maal jedheen dubbaadha";
+    String mezmurTitle = "91. Maal jedheen dubbaadha";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

@@ -34,14 +34,14 @@ public class IyyesuusCuuphame extends OptionsMenuActivity {
             "Karaa dhiphinaa \n" +
             "Nurraa ka'eeraa\n";
 
-    String mezmurTitle = "Iyyesuus cuuphame";
+    String mezmurTitle = "74. Iyyesuus cuuphame";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

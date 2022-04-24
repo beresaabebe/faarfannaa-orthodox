@@ -51,14 +51,14 @@ public class NaMiladhu extends OptionsMenuActivity {
             "Bara jireenya koo ati naaf eebbisii (2x)\n" +
             "F/taa Habtaamuu Waqgaarii\n";
 
-    String mezmurTitle = "Ni amanna abbatti";
+    String mezmurTitle = "108. Na miladhu";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

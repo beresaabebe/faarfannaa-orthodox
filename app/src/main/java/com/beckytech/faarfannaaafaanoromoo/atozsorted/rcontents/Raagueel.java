@@ -52,14 +52,14 @@ public class Raagueel extends OptionsMenuActivity {
             "Dinni ni moo'ama humni kee jabaadha\n" +
             "Gargaarsa kee argeera kanaf si jaaladha\n";
 
-    String mezmurTitle = "Raagu'eel";
+    String mezmurTitle = "123. Raagu'eel";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

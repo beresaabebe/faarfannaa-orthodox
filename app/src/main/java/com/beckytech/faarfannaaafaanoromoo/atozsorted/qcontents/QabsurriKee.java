@@ -65,14 +65,14 @@ public class QabsurriKee extends OptionsMenuActivity {
             "Eegaa maal jennaa kasoominaa kee \n" +
             "Sirraa barannee obsaaf amantii kee×2.\n";
 
-    String mezmurTitle = "Qabsurri kee";
+    String mezmurTitle = "121. Qabsurri kee";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

@@ -65,14 +65,14 @@ public class Yoordaanoos extends OptionsMenuActivity {
             "Xalayaa garbummaa nu'iif barreeffamee x2\n" +
             "Nuuraa barbadeesse Gooftaa nuuf cuuphamee x2\n";
 
-    String mezmurTitle = "Yoordaanoos";
+    String mezmurTitle = "152. Yoordaanoos";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

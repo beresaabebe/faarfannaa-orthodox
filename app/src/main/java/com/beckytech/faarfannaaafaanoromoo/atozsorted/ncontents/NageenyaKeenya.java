@@ -55,14 +55,14 @@ public class NageenyaKeenya extends OptionsMenuActivity {
             "Gooftaan dabarsee arginee \n" +
             "Waaqa keenyaattis gammannee \n";
 
-    String mezmurTitle = "Nageenya keenya waaqni";
+    String mezmurTitle = "106. Nageenya keenya waaqni";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

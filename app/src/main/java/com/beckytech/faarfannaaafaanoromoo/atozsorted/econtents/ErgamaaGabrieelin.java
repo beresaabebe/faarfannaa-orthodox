@@ -29,14 +29,14 @@ public class ErgamaaGabrieelin extends OptionsMenuActivity {
     String mezmur = "Ergamaa Gabri'eelin fuuldura waaqayyo (2x) dhaabbata (2x)\n" +
             "Ilmaan namootafis dhiitamaafi nageenya kadhata\n";
 
-    String mezmurTitle = "Ergamaa Gabri'eelin";
+    String mezmurTitle = "45. Ergamaa Gabri'eelin";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

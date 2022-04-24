@@ -1,4 +1,4 @@
-package com.beckytech.faarfannaaafaanoromoo.bcontents;
+package com.beckytech.faarfannaaafaanoromoo.atozsorted.bcontents;
 
 import android.content.Context;
 import android.content.Intent;
@@ -52,14 +52,14 @@ public class BiyyaKeenyaaf extends OptionsMenuActivity {
             "\t\t\" harka bal'istanii\n" +
             "\n";
 
-    String mezmurTitle = "Biyya keenyaaf arara kadhaatee";
+    String mezmurTitle = "22. Biyya keenyaaf arara kadhaatee";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

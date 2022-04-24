@@ -38,14 +38,14 @@ public class SiGalateeffanna extends OptionsMenuActivity {
             "Osoo sanyii siin hambisuu baatee  \n" +
             "Ibiddi akka Soodoomii fi Gomoraa dhala namaa nyaatee(2×)                                                     ";
 
-    String mezmurTitle = "Si galateeffanna dubro";
+    String mezmurTitle = "127. Si galateeffanna dubro";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

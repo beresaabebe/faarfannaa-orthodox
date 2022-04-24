@@ -50,14 +50,14 @@ public class MikaaeelNidhaabbataa extends OptionsMenuActivity {
             "Diigeet ilaalee ergamichii\n" +
             "Jireenyaaf ta’e xaalayichii\n";
 
-    String mezmurTitle = "Mikaa'eel ni dhaabbataa cinaa koo";
+    String mezmurTitle = "101. Mikaa'eel ni dhaabbataa cinaa koo";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

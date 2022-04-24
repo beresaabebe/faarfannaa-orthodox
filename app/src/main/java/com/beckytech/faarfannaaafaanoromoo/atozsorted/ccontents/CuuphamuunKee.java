@@ -29,14 +29,14 @@ public class CuuphamuunKee extends OptionsMenuActivity {
     String mezmur = "Cuuphamuun kee nuuf ta’e fayyinaa x2\n" +
             "Nuuf ta’e fayyinaa x4 Cuuphamuun kee nuuf ta’e fayyinaa x2\n";
 
-    String mezmurTitle = "Cuuphamuun kee nuuf ta'ee fayyinaa";
+    String mezmurTitle = "27. Cuuphamuun kee nuuf ta'ee fayyinaa";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

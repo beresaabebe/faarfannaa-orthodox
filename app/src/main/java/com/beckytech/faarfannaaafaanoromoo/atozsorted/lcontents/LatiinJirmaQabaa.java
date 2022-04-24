@@ -51,14 +51,14 @@ public class LatiinJirmaQabaa extends OptionsMenuActivity {
             "  Nuufis haadha keenya haadha bara baraa}×2\n" +
             "  Ilma kee nuuf kadhuu yeroo hunda araara}×2\n";
 
-    String mezmurTitle = "Latiin jirma qabaa";
+    String mezmurTitle = "89. Latiin jirma qabaa";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

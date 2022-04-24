@@ -30,14 +30,14 @@ public class DhugumaDhugaadha extends OptionsMenuActivity {
             "Raajiidha cuuphamuun Gooftaadhaa/4/\n" +
             "አማንበአማን /4/ መንክርስብሐተጥምቀቱ /4/\n";
 
-    String mezmurTitle = "Dhuguma dhugaadha";
+    String mezmurTitle = "32. Dhuguma dhugaadha";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

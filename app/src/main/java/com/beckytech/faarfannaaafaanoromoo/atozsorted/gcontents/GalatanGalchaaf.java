@@ -53,14 +53,14 @@ public class GalatanGalchaaf extends OptionsMenuActivity {
             "Sagalee moo'ichaan nanwaama maqaasaa \n" +
             "Bara jireenya koon dubbadha waa'eesaa\n";
 
-    String mezmurTitle = "Galatan galchaaf";
+    String mezmurTitle = "52. Galatan galchaaf";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

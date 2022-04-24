@@ -57,14 +57,14 @@ public class QorichaFoonKeenya extends OptionsMenuActivity {
             "Galata keef kaane nuto ni dhaabanna\n" +
             "Ati nuuf kadhadhu maariyaam sii waamna\n";
 
-    String mezmurTitle = "Qoricha foon keenya";
+    String mezmurTitle = "122. Qoricha foon keenya";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

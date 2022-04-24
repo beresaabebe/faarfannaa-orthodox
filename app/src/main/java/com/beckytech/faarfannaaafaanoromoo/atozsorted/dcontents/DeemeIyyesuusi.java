@@ -30,14 +30,14 @@ public class DeemeIyyesuusi extends OptionsMenuActivity {
             "Galiila irraa /3/ gara Yoordaanosi /2/\n" +
             "ሖረኢየሱስ /4/ እመገሊላ/3/ ኀበዮርዳኖስ /2/\n";
 
-    String mezmurTitle = "Deeme Iyyesuusi";
+    String mezmurTitle = "29. Deeme Iyyesuusi";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

@@ -2,58 +2,172 @@ package com.beckytech.faarfannaaafaanoromoo;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.ActionBarDrawerToggle;
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-import androidx.core.view.GravityCompat;
-import androidx.drawerlayout.widget.DrawerLayout;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.acontents.AbbaafIlma;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.acontents.AfuurriiQulqulluunBuheeActivity;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.acontents.AkkamiinTareeActivity;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.acontents.AlfaafiOmeegaaActivity;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.acontents.AmmaIfatuuNuufActivity;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.acontents.AmmaReefuTolee;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.acontents.AnaafWaaqayyodhaActivity;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.acontents.AndariiKoo;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.acontents.AniifManniKoo;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.acontents.AraarsituuMaariyaamii;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.acontents.Arseemaa;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.acontents.AtiBeteliheem;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.acontents.AyyaanaArgattee;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.bcontents.BaayeeNaYaaddeessa;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.bcontents.BagaGammaddanMisiroon;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.bcontents.BagaGammaddanii;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.bcontents.BagaIsiinGahee;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.bcontents.BakkaAaraGalfiiKoo;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.bcontents.BaraDargaggummaaKeenya;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.bcontents.BirraanGahee;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.bcontents.BiyyaKeenya;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.bcontents.BiyyaKeenyaaf;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.bcontents.BoqonnaaLubbuu;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.bcontents.BoqonnaaNaaf;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.bcontents.BoruKanGooftaatii;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.ccontents.CubbuunKoo;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.ccontents.CuuphamuunKee;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.dcontents.DahooKeenya;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.dcontents.DeemeIyyesuusi;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.dcontents.DhaabachuDadhabee;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.dcontents.DhufeJechi;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.dcontents.DhugumaDhugaadha;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.dcontents.DuaaKaeera;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.dcontents.DubartootaaKeessaa;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.dcontents.DursiiGooftaa;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.econtents.EebbifamaadhaKanEebbifamee;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.econtents.EebbifamtudhaIsheen;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.econtents.EenyumtuuHinJiru;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.econtents.EenyuuAbdiinKoo;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.econtents.EenyuuOgeessiAkkaKee;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.econtents.EeyyeeNuuDhalatee;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.econtents.Eeyyeennii;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.econtents.Ergamaa;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.econtents.ErgamaaGabrieel;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.econtents.ErgamaaGabrieelin;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.econtents.ErgamooniFaarfaataaniiru;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.fcontents.FannoonHumnaKeenya;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.fcontents.FuulaNamatti;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.gcontents.GalaanaDhaabe;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.gcontents.GalataJedhee;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.gcontents.GalataKee;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.gcontents.GalataWaaqayyo;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.gcontents.GalatanGalchaaf;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.gcontents.Galateeffamaadhaa;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.gcontents.GalmaKoo;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.gcontents.GammadaaMartinuu;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.gcontents.GammadiiKaa;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.gcontents.Gammanneerra;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.gcontents.GannaSodomatti;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.gcontents.GarraKoofJedhee;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.gcontents.GochiGooftaaKeenyaa;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.gcontents.GooftaanCuuphamee;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.gcontents.GooftaanNuufCuuphameera;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.gcontents.GugeeJiraattu;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.gcontents.GurguddootaDhiise;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.gcontents.GuyyaanKeeGuyyaaQaba;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.hcontents.HaadhaWaaqaKanMadaanalamii;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.hcontents.HalleeLuyyaa;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.hcontents.HarkaYohaannisiinCuuphame;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.hcontents.HoolichaDhugaa;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.hcontents.HunduumaCaaltiHaatiGooftaa;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.icontents.IttiFufaa;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.icontents.IyyesuusCuuphame;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.icontents.IyyesuusKiristoos;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.jcontents.JaalalliKeeAddaa;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.jcontents.JireenyaLubbuuKoo;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.kcontents.KaakuAraara;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.kcontents.KanAkkaWaaqayyo;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.kcontents.KanAkkaWaaqayyoEessaatti;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.kcontents.KanFayyuuBarbaadu;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.kcontents.KananIttiinBoonee;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.kcontents.KennaaGuyyaaJimaata;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.kcontents.KennaanKeeJabaa;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.kcontents.KidaaneMihiraat;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.kcontents.Koottuu;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.kcontents.KoottuuHaadhaKoo;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.lcontents.Lakkaame;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.lcontents.LapheenKoo;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.lcontents.LatiinJirmaQabaa;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.mcontents.MaalJedheenDubbaadha;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.mcontents.MaalNamaGootee;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.mcontents.MaaliinFakkeessina;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.mcontents.Maaramiin;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.mcontents.Maariyaam;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.mcontents.MaariyaamNiCaalti;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.mcontents.Maariyaamiidhaaf;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.mcontents.Madanialem;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.mcontents.MallattooNagaa;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.mcontents.MaqaanKeeAjaaiba;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.mcontents.MikaaeelNaafDhufee;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.mcontents.MikaaeelNidhaabbataa;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.mcontents.MootichiYihuudaa;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.mcontents.MucaaKee;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.mcontents.MucaaKoo;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.ncontents.NaMiladhu;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.ncontents.NagaaNaafLabsee;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.ncontents.NageenyaKeenya;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.ncontents.NamatuHinBeknee;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.ncontents.NanYaadadha;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.ncontents.NattiYaahafu;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.ncontents.NiBueIlmi;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.ncontents.NiDhalatee;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.ncontents.NuufDhalatee;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.ncontents.NuufKadhatu;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.ocontents.ObsiNidarba;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.ocontents.OfIrraattinArgee;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.ocontents.OfummaMiti;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.ocontents.OlNaaQabdeta;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.ocontents.OoMaariyaam;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.qcontents.QabsurriKee;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.qcontents.QorichaFoonKeenya;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.rcontents.Raagueel;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.rcontents.RaajiiGiyoorgisii;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.rcontents.Rakkanneerraa;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.scontents.SagaltamiiSaglanuu;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.scontents.SiGalateeffanna;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.scontents.SiMalee;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.scontents.Sillaasee;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.scontents.SillaaseeUumaaKoo;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.scontents.SinFaarfadhaa;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.scontents.SinTaee;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.scontents.SinbooKoo;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.scontents.SittiWaamameera;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.tcontents.TabootaMusee;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.tcontents.TikseeGaariidha;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.tcontents.TikseeGaariinQabaa;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.tcontents.TokkummaaNuufKenni;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.ucontents.UlfinaToloota;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.ucontents.UlfinaWaaqayyof;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.ucontents.UraaelKoottu;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.wcontents.WaaeeKeenHima;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.wcontents.WaaqattiHaaAmannuu;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.wcontents.WaaqayyoAddunyaa;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.wcontents.WaaqayyoRafeeHin;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.wcontents.WangeelaIsaatti;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.ycontents.YaaHaadhaWaaqayyo;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.ycontents.YaaMaariyaam;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.ycontents.YaaMikaaeelii;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.ycontents.YaaWaaqayyoo;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.ycontents.YaaredLubichaa;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.ycontents.Yoordaanoos;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.ycontents.YoordaanoosDhaloonniKooo;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.ycontents.Yoordaanoosii;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.ycontents.Yoordaanositti;
 
-import com.beckytech.faarfannaaafaanoromoo.acontents.*;
-import com.beckytech.faarfannaaafaanoromoo.bcontents.*;
-import com.beckytech.faarfannaaafaanoromoo.ccontents.*;
-import com.beckytech.faarfannaaafaanoromoo.dcontents.*;
-import com.beckytech.faarfannaaafaanoromoo.econtents.*;
-import com.beckytech.faarfannaaafaanoromoo.fcontents.*;
-import com.beckytech.faarfannaaafaanoromoo.gcontents.*;
-import com.beckytech.faarfannaaafaanoromoo.hcontents.*;
-import com.beckytech.faarfannaaafaanoromoo.icontents.*;
-import com.beckytech.faarfannaaafaanoromoo.jcontents.*;
-import com.beckytech.faarfannaaafaanoromoo.kcontents.*;
-import com.beckytech.faarfannaaafaanoromoo.lcontents.*;
-import com.beckytech.faarfannaaafaanoromoo.mcontents.*;
-import com.beckytech.faarfannaaafaanoromoo.ncontents.*;
-import com.beckytech.faarfannaaafaanoromoo.ocontents.*;
-import com.beckytech.faarfannaaafaanoromoo.qcontents.*;
-import com.beckytech.faarfannaaafaanoromoo.rcontents.*;
-import com.beckytech.faarfannaaafaanoromoo.scontents.*;
-import com.beckytech.faarfannaaafaanoromoo.tcontents.*;
-import com.beckytech.faarfannaaafaanoromoo.ucontents.*;
-import com.beckytech.faarfannaaafaanoromoo.wcontents.*;
-import com.beckytech.faarfannaaafaanoromoo.ycontents.*;
-import com.google.android.material.navigation.NavigationView;
 
-
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends OptionsMenuActivity {
 
     ListView listView;
 
@@ -62,7 +176,7 @@ public class MainActivity extends AppCompatActivity {
             "Andarii koo","Aniif manni koo","Araarsituu maariyaamii","Arseemaa","Ati beteliheem",
             "Ayyaana argattee",
             "Baay'ee na yaaddeessa","Baga gammaddanii","Baga gammaddan misirroon","Baga isiin ga'ee",
-            "Bakka aara galfii koo", "Bara dargaggummaa keenya","Birraan ga'ee",
+            "Bakka aara galfii koo", "Bara dargaggummaa keenya","Brain ga'ee",
             "Biyya keenya","Biyya keenyaaf arara kadhaatee","Boqonnaa lubbuu koo",
             "Boqonnaa naaf kenni", "Boru kan gooftaatii",
             "Cubbuun koo baay'attee","Cuuphamuun kee nuuf ta'ee fayyinaa",
@@ -91,7 +205,7 @@ public class MainActivity extends AppCompatActivity {
             "Mallattoo nagaa", "Maqaan kee ajaa’iba","Mikaa'eel naaf dhufee",
             "Mikaa’eliin ni dhaabbataa cinaa koo","Mootichi yihuudaa","Mucaa kee hammadhuuti",
             "Mucaa koo",
-            "Nagaa naaf labsee", "Nageenya keenya","Namatu hin beknee","Naa yaadadha",
+            "Nagaa naaf labsee", "Nageenya keenya","Namatu hin beknee", "Naa miladhu","Naa yaadadha",
             "Natti yaa hafu ","Ni amanna abbatti ","Ni bu'e ilmi",
             "Ni dhalattee", "Nuuf dhalatee", "Nuuf kadhatu ",
             "Obsi ni darba", "Of irraattin argee", "Ofumaa miti", "Ol na qabdeta",
@@ -106,7 +220,7 @@ public class MainActivity extends AppCompatActivity {
             "Ulfina tolootaa (ሙዳየ መና)", "Ulfina waaqayyoof", "Uraa'el koottu",
             "Waa'ee keen hima", "Waaqatti haa amannuu", "Waaqayyo addunyaa daawwatee",
             "Waaqayyo rafee hin beekuu", "Wangeela isaatti",
-            "Yaa haadha waaqayyoo", "Yaa maariyaam", "Yaa mikaa’eelii (o-mikaa'el)", "Yaared lubichaa",
+            "Yaa haadha waaqayyoo", "Yaa maariyaam", "Yaa mikaa’eelii", "Yaared lubichaa",
             "Yaa waaqayyoo","Yoordaanoos", "Yoordaanoosi dhaloonni koo","Yoordaanoosii",
             "Yoordaanositti" };
 
@@ -116,15 +230,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        initUI();
+        initUI(" Faarsaa Tartiiban bakka tokkootti ");
 
         listView = findViewById(R.id.list_item);
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, mezmurName);
-        listView.setAdapter(adapter);
+       // ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, mezmurName);
+        CustomAdapter adapter = new CustomAdapter(this, mezmurName);
 
-//        CustomAdapter adapter = new CustomAdapter(this, mezmurName);
-//        listView.setAdapter(adapter);
+        listView.setAdapter(adapter);
         listView.setSmoothScrollbarEnabled(true);
 
         listView.setOnItemClickListener((parentView, view, position, l) -> {
@@ -559,292 +672,199 @@ public class MainActivity extends AppCompatActivity {
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  107:
-                    startActivity(new Intent(MainActivity.this, NanYaadadha.class));
-                    overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
-                    break;
-                case  108:
-                    startActivity(new Intent(MainActivity.this, NattiYaahafu.class));
-                    overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
-                    break;
-                case  109:
                     startActivity(new Intent(MainActivity.this, NaMiladhu.class));
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
+                case  108:
+                    startActivity(new Intent(MainActivity.this, NanYaadadha.class));
+                    overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
+                    break;
+                case  109:
+                    startActivity(new Intent(MainActivity.this, NattiYaahafu.class));
+                    overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
+                    break;
                 case  110:
-                    startActivity(new Intent(MainActivity.this, NiBueIlmi.class));
+                    startActivity(new Intent(MainActivity.this, NaMiladhu.class));
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  111:
-                    startActivity(new Intent(MainActivity.this, NiDhalatee.class));
+                    startActivity(new Intent(MainActivity.this, NiBueIlmi.class));
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  112:
-                    startActivity(new Intent(MainActivity.this, NuufDhalatee.class));
+                    startActivity(new Intent(MainActivity.this, NiDhalatee.class));
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  113:
-                    startActivity(new Intent(MainActivity.this, NuufKadhatu.class));
+                    startActivity(new Intent(MainActivity.this, NuufDhalatee.class));
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  114:
-                    startActivity(new Intent(MainActivity.this, ObsiNidarba.class));
+                    startActivity(new Intent(MainActivity.this, NuufKadhatu.class));
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  115:
-                    startActivity(new Intent(MainActivity.this, OfIrraattinArgee.class));
+                    startActivity(new Intent(MainActivity.this, ObsiNidarba.class));
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  116:
-                    startActivity(new Intent(MainActivity.this, OfummaMiti.class));
+                    startActivity(new Intent(MainActivity.this, OfIrraattinArgee.class));
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  117:
-                    startActivity(new Intent(MainActivity.this, OlNaaQabdeta.class));
+                    startActivity(new Intent(MainActivity.this, OfummaMiti.class));
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  118:
-                    startActivity(new Intent(MainActivity.this, OoMaariyaam.class));
+                    startActivity(new Intent(MainActivity.this, OlNaaQabdeta.class));
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  119:
-                    startActivity(new Intent(MainActivity.this, QabsurriKee.class));
+                    startActivity(new Intent(MainActivity.this, OoMaariyaam.class));
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  120:
-                    startActivity(new Intent(MainActivity.this, QorichaFoonKeenya.class));
+                    startActivity(new Intent(MainActivity.this, QabsurriKee.class));
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  121:
-                    startActivity(new Intent(MainActivity.this, Raagueel.class));
+                    startActivity(new Intent(MainActivity.this, QorichaFoonKeenya.class));
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  122:
-                    startActivity(new Intent(MainActivity.this, RaajiiGiyoorgisii.class));
+                    startActivity(new Intent(MainActivity.this, Raagueel.class));
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  123:
-                    startActivity(new Intent(MainActivity.this, Rakkanneerraa.class));
+                    startActivity(new Intent(MainActivity.this, RaajiiGiyoorgisii.class));
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  124:
-                    startActivity(new Intent(MainActivity.this, SagaltamiiSaglanuu.class));
+                    startActivity(new Intent(MainActivity.this, Rakkanneerraa.class));
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  125:
-                    startActivity(new Intent(MainActivity.this, SiGalateeffanna.class));
+                    startActivity(new Intent(MainActivity.this, SagaltamiiSaglanuu.class));
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  126:
-                    startActivity(new Intent(MainActivity.this, Sillaasee.class));
+                    startActivity(new Intent(MainActivity.this, SiGalateeffanna.class));
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  127:
-                    startActivity(new Intent(MainActivity.this, SillaaseeUumaaKoo.class));
+                    startActivity(new Intent(MainActivity.this, Sillaasee.class));
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  128:
-                    startActivity(new Intent(MainActivity.this, SiMalee.class));
+                    startActivity(new Intent(MainActivity.this, SillaaseeUumaaKoo.class));
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  129:
-                    startActivity(new Intent(MainActivity.this, SinbooKoo.class));
+                    startActivity(new Intent(MainActivity.this, SiMalee.class));
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  130:
-                    startActivity(new Intent(MainActivity.this, SinFaarfadhaa.class));
+                    startActivity(new Intent(MainActivity.this, SinbooKoo.class));
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  131:
-                    startActivity(new Intent(MainActivity.this, SinTaee.class));
+                    startActivity(new Intent(MainActivity.this, SinFaarfadhaa.class));
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  132:
-                    startActivity(new Intent(MainActivity.this, SittiWaamameera.class));
+                    startActivity(new Intent(MainActivity.this, SinTaee.class));
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  133:
-                    startActivity(new Intent(MainActivity.this, TabootaMusee.class));
+                    startActivity(new Intent(MainActivity.this, SittiWaamameera.class));
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  134:
-                    startActivity(new Intent(MainActivity.this, TikseeGaariidha.class));
+                    startActivity(new Intent(MainActivity.this, TabootaMusee.class));
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  135:
-                    startActivity(new Intent(MainActivity.this, TikseeGaariinQabaa.class));
+                    startActivity(new Intent(MainActivity.this, TikseeGaariidha.class));
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  136:
-                    startActivity(new Intent(MainActivity.this, TokkummaaNuufKenni.class));
+                    startActivity(new Intent(MainActivity.this, TikseeGaariinQabaa.class));
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  137:
-                    startActivity(new Intent(MainActivity.this, UlfinaToloota.class));
+                    startActivity(new Intent(MainActivity.this, TokkummaaNuufKenni.class));
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  138:
-                    startActivity(new Intent(MainActivity.this, UlfinaWaaqayyof.class));
+                    startActivity(new Intent(MainActivity.this, UlfinaToloota.class));
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  139:
-                    startActivity(new Intent(MainActivity.this, UraaelKoottu.class));
+                    startActivity(new Intent(MainActivity.this, UlfinaWaaqayyof.class));
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  140:
-                    startActivity(new Intent(MainActivity.this, WaaeeKeenHima.class));
+                    startActivity(new Intent(MainActivity.this, UraaelKoottu.class));
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  141:
-                    startActivity(new Intent(MainActivity.this, WaaqattiHaaAmannuu.class));
+                    startActivity(new Intent(MainActivity.this, WaaeeKeenHima.class));
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  142:
-                    startActivity(new Intent(MainActivity.this, WaaqayyoAddunyaa.class));
+                    startActivity(new Intent(MainActivity.this, WaaqattiHaaAmannuu.class));
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  143:
-                    startActivity(new Intent(MainActivity.this, WaaqayyoRafeeHin.class));
+                    startActivity(new Intent(MainActivity.this, WaaqayyoAddunyaa.class));
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  144:
-                    startActivity(new Intent(MainActivity.this, WangeelaIsaatti.class));
+                    startActivity(new Intent(MainActivity.this, WaaqayyoRafeeHin.class));
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  145:
-                    startActivity(new Intent(MainActivity.this, YaaHaadhaWaaqayyo.class));
+                    startActivity(new Intent(MainActivity.this, WangeelaIsaatti.class));
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  146:
-                    startActivity(new Intent(MainActivity.this, YaaMaariyaam.class));
+                    startActivity(new Intent(MainActivity.this, YaaHaadhaWaaqayyo.class));
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  147:
-                    startActivity(new Intent(MainActivity.this, YaaMikaaeelii.class));
+                    startActivity(new Intent(MainActivity.this, YaaMaariyaam.class));
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  148:
-                    startActivity(new Intent(MainActivity.this, YaaredLubichaa.class));
+                    startActivity(new Intent(MainActivity.this, YaaMikaaeelii.class));
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  149:
-                    startActivity(new Intent(MainActivity.this, YaaWaaqayyoo.class));
+                    startActivity(new Intent(MainActivity.this, YaaredLubichaa.class));
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  150:
-                    startActivity(new Intent(MainActivity.this, Yoordaanoos.class));
+                    startActivity(new Intent(MainActivity.this, YaaWaaqayyoo.class));
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  151:
-                    startActivity(new Intent(MainActivity.this, YoordaanoosDhaloonniKooo.class));
+                    startActivity(new Intent(MainActivity.this, Yoordaanoos.class));
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  152:
-                    startActivity(new Intent(MainActivity.this, Yoordaanoosii.class));
+                    startActivity(new Intent(MainActivity.this, YoordaanoosDhaloonniKooo.class));
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  153:
+                    startActivity(new Intent(MainActivity.this, Yoordaanoosii.class));
+                    overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
+                    break;
+                case  154:
                     startActivity(new Intent(MainActivity.this, Yoordaanositti.class));
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
             }
         });
-
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        new MenuInflater(this).inflate(R.menu.main, menu);
-        return super.onCreateOptionsMenu(menu);
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        int id = item.getItemId();
-
-        if (item.getItemId() == R.id.aboutusmenu) {
-            startActivity(new Intent(this, AboutUs.class));
-        }
-
-        if (item.getItemId() == R.id.sharemenu) {
-            Intent intent = new Intent(Intent.ACTION_SEND);
-            intent.setType("text/plain");
-            intent.putExtra(Intent.EXTRA_SUBJECT, "https://play.google.com/store/apps/details?id=com.beckytech.faarfannaaafaanoromoo");
-            intent.putExtra(Intent.EXTRA_TEXT, "Download this useful app's from Google play \n https://play.google.com/store/apps/details?id=com.beckytech.faarfannaaafaanoromoo");
-            startActivity(Intent.createChooser(intent,"Share app's link via "));
-        }
-
-        if (item.getItemId() == R.id.starmenu) {
-            String url = "https://play.google.com/store/apps/details?id=com.beckytech.faarfannaaafaanoromoo";
-            Intent  intent = new Intent(Intent.ACTION_VIEW);
-            intent.setData(Uri.parse(url));
-            startActivity(intent);
-        }
-
-        if (item.getItemId() == R.id.checkUpdateMenu) {
-            String url = "https://play.google.com/store/apps/details?id=com.beckytech.faarfannaaafaanoromoo";
-            Intent  intent = new Intent(Intent.ACTION_VIEW);
-            intent.setData(Uri.parse(url));
-            startActivity(intent);
-        }
-
-        if (id == R.id.exitmenu) {
-            Intent close = new Intent(Intent.ACTION_MAIN);
-            AlertDialog.Builder builder = new AlertDialog.Builder(this);
-            builder.setMessage("Cufu barbaade?")
-                    .setCancelable(false)
-                    .setPositiveButton("Eeyyeen", (dialogInterface, i) -> {
-                        close.addCategory(Intent.CATEGORY_HOME);
-                        close.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                        startActivity(close);
-                        finish();
-                    })
-                    .setNegativeButton("Lakki", (dialogInterface, i) -> dialogInterface.cancel()).create().show();
-        }
-
-        if (id == R.id.moreappmenu) {
-            startActivity(new Intent(this, MoreApps.class));
-        }
-
-        if (id == R.id.aboutappmenu) {
-            startActivity(new Intent(this, WaaeeApp.class));
-        }
-
-        if(id == R.id.galatamenu) {
-            startActivity(new Intent(this, GalataActivity.class));
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
-
-    private void initUI() {
-        ActionBar mActionBar = getSupportActionBar();
-        mActionBar.setDisplayShowHomeEnabled(false);
-        mActionBar.setIcon(R.drawable.ic_launcher_foreground);
-        mActionBar.setDisplayShowCustomEnabled(true);
-        mActionBar.setCustomView(R.layout.custom_actionbar_layout);
-        mActionBar.setTitle("Abbaafi Ilma");
-        ColorDrawable colorDrawable = new ColorDrawable(Color.parseColor("#0A6E73"));
-        mActionBar.setBackgroundDrawable(colorDrawable);
-    }
-
-    static class CustomAdapter extends ArrayAdapter<String> {
-        Context context;
-        String[] title;
-
-        CustomAdapter(Context c, String[] title) {
-            super(c, R.layout.listitem, title);
-            this.context = c;
-            this.title = title;
-        }
-
-        @SuppressLint("SetTextI18n")
-        public View getView (int position, View convertView, ViewGroup parent) {
-            LayoutInflater vi = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            @SuppressLint("ViewHolder") View row = vi.inflate(R.layout.listitem, parent, false);
-            TextView titles = (TextView) row.findViewById(R.id.textView1);
-            titles.setText(title[position]);
-            return row;
-        }
     }
 
 }

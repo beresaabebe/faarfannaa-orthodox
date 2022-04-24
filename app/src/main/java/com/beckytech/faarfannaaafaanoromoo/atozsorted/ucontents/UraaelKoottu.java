@@ -67,14 +67,14 @@ public class UraaelKoottu extends OptionsMenuActivity {
             "      \"\"        \"\"      Garuu hin gubanne\n" +
             "      \"\"        \"\"      Maqaa keef hafan\n";
 
-    String mezmurTitle = "Uraa'el koottu";
+    String mezmurTitle = "141. Uraa'el koottu";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

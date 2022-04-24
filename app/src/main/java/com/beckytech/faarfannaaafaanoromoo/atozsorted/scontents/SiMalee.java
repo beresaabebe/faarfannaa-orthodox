@@ -58,14 +58,14 @@ public class SiMalee extends OptionsMenuActivity {
             "kan sitti Abdatu eenyumtuu hin qanaa'u\n" +
             " F/taa Geetahun (Koo'elin)\n";
 
-    String mezmurTitle = "Si malee";
+    String mezmurTitle = "130. Si malee";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

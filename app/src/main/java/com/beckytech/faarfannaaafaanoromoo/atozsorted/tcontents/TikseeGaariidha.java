@@ -53,14 +53,14 @@ public class TikseeGaariidha extends OptionsMenuActivity {
             "Nama hin dagaatu inni hamma dhumaa\n" +
             "F/taa Koo'elin (Geetahun)\n";
 
-    String mezmurTitle = "Tiksee gaariidha ati";
+    String mezmurTitle = "136. Tiksee gaariidha ati";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

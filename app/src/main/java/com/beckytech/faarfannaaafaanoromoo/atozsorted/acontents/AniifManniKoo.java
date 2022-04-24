@@ -1,4 +1,4 @@
-package com.beckytech.faarfannaaafaanoromoo.acontents;
+package com.beckytech.faarfannaaafaanoromoo.atozsorted.acontents;
 
 import android.content.Context;
 import android.content.Intent;
@@ -49,14 +49,14 @@ public class AniifManniKoo extends OptionsMenuActivity {
             "Isaan sun humnaa fi qabeenyaa isaaniin \n" +
             "Nuti garuu ni moonaa yoommiyyuu taanaanii\n";
 
-    String mezmurTitle = "Aniif manni koo";
+    String mezmurTitle = "9. Aniif manni koo";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

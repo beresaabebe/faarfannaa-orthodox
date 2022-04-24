@@ -73,14 +73,14 @@ public class TikseeGaariinQabaa extends OptionsMenuActivity {
             "Iyyesuus jedhamaa\n" +
             "Fayyisaa hundumaa\n";
 
-    String mezmurTitle = "Tiksee gaariin qaba";
+    String mezmurTitle = "137. Tiksee gaariin qaba";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

@@ -33,14 +33,14 @@ public class GalataWaaqayyo extends OptionsMenuActivity {
             "Eeyyee Seexanni haa leeyaatu mormituun dinnikoo/2/ \n" +
             "Humna Gooftaan mo’achuun yoomis kan koo/4/Eeyyee\n";
 
-    String mezmurTitle = "Galata Waaqayyo";
+    String mezmurTitle = "53. Galata Waaqayyo";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

@@ -58,14 +58,14 @@ public class SinFaarfadhaa extends OptionsMenuActivity {
             "Sooma fi kadhanadhaa jabbaadhaa dhabadhaa \n" +
             "Amanti ishee dhugaa taawahidoo qabadhaa\n";
 
-    String mezmurTitle = "Sin faarfadha waaqa koo";
+    String mezmurTitle = "132. Sin faarfadha waaqa koo";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

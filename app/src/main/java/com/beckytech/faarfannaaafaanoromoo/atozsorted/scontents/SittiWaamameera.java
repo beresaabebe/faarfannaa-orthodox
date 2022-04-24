@@ -54,14 +54,14 @@ public class SittiWaamameera extends OptionsMenuActivity {
             "Fannoo kee batadhe siif adda baheera(2)\n\n" +
             " F/taa Dn Pheexiroos Abbabaa\n";
 
-    String mezmurTitle = "Sitti waamameera";
+    String mezmurTitle = "134. Sitti waamameera";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

@@ -45,17 +45,16 @@ public class DubartootaaKeessaa extends OptionsMenuActivity {
             "Gadamessi kee qulqulluudhaa\n" +
             "Kan Ati Deessee Fayyisaadhaa\n" +
             "Gooftaa Adoonaay Abidda baattee(2)\n" +
-            "Ifa Addunyaa nutin nu badhaastee\n" +
-            "   ========•|•========\n";
+            "Ifa Addunyaa nutin nu badhaastee\n";
 
-    String mezmurTitle = "Dubartootaa keessaa";
+    String mezmurTitle = "34. Dubartootaa keessaa";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

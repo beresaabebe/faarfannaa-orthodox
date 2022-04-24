@@ -45,17 +45,16 @@ public class HoolichaDhugaa extends OptionsMenuActivity {
             "Cabaa dhagna keenya ati nuuf dhidhibdee\n" +
             "Hooma hin sodaannu sii faana baanee\n" +
             "Gargaarsa keetin humna argannee\n" +
-            "\n\n" +
             " == F/taa Dn Sabboonaa Geetachoo\n";
 
-    String mezmurTitle = "Hoolicha dhugaa";
+    String mezmurTitle = "70. Hoolicha dhugaa";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

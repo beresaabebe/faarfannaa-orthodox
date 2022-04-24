@@ -51,14 +51,14 @@ public class CubbuunKoo extends OptionsMenuActivity {
             "Amma naa ggamteetii iyyaan jiraa sitii\n" +
             "Ati naa yaadadhu mootummaa keetitii.\n";
 
-    String mezmurTitle = "Cubbuun koo baay'atee";
+    String mezmurTitle = "26. Cubbuun koo baay'atee";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

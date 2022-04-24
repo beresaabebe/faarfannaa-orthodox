@@ -15,5 +15,7 @@
 
         <item name="overlapAnchor">false</item>
         <item name="android:dropDownVerticalOffset">?attr/actionBarSize</item>
+        <item name="popupMenuBackground">@color/color_popup</item>
+
     </style>
 </resources>

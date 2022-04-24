@@ -45,14 +45,14 @@ public class Galateeffamaadhaa extends OptionsMenuActivity {
             "Addunyaa kanarraa eenyutu siin qixxaataa\n" +
             "        \tEeyyee\n";
 
-    String mezmurTitle = "Galateeffamaadha";
+    String mezmurTitle = "54. Galateeffamaadha";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

@@ -67,14 +67,14 @@ public class HaadhaWaaqaKanMadaanalamii extends OptionsMenuActivity {
             "           koottuu gara keenyaa           \"  \n" +
             "Nuu araarsisi yaa waadaa faayyinaa nuu si faarsinaa (×2)\n";
 
-    String mezmurTitle = "Haadha waaqa kan madaanalamii";
+    String mezmurTitle = "67. Haadha waaqa kan madaanalamii";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

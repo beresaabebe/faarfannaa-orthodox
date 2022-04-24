@@ -52,14 +52,14 @@ public class KoottuuHaadhaKoo extends OptionsMenuActivity {
             "Kunoo si waammannaa maaloo akkam nu gootaa \n" +
             "Kottuu haadhakoo Maariyaamii \n";
 
-    String mezmurTitle = "Koottuu haadha koo maariyaami";
+    String mezmurTitle = "76. Koottuu haadha koo maariyaami";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

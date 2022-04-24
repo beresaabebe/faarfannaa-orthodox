@@ -44,14 +44,14 @@ public class Eeyyeennii extends OptionsMenuActivity {
             "Eeyyeen kan kee ajaa'ibumaa Qulqulleetti Arseemaa\n" +
             "Hin callisu qabsuura keen himaa\n";
 
-    String mezmurTitle = "Eeyyeennii";
+    String mezmurTitle = "41. Eeyyeennii";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

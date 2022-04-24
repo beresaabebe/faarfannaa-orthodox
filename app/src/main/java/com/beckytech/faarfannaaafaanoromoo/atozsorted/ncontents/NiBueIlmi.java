@@ -37,14 +37,14 @@ public class NiBueIlmi extends OptionsMenuActivity {
             "ወረደ ወልድ ወረደ ወልድ /6/\n" +
             "እምሰማያት ውስቴ ምጥማቃት(4×)\n";
 
-    String mezmurTitle = "Ni bu'e ilmi (ወረደ ወልድ)";
+    String mezmurTitle = "112. Ni bu'e ilmi (ወረደ ወልድ)";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

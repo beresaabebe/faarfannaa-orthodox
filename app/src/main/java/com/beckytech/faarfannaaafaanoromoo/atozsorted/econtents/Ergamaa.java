@@ -46,14 +46,14 @@ public class Ergamaa extends OptionsMenuActivity {
             "\n\n" +
             "F/taa Habtaamuu Tasfaayee";
 
-    String mezmurTitle = "Ergamaa";
+    String mezmurTitle = "43. Ergamaa";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

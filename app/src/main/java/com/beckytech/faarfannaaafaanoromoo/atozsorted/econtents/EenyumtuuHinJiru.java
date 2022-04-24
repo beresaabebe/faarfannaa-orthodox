@@ -31,14 +31,14 @@ public class EenyumtuuHinJiru extends OptionsMenuActivity {
             "ወእመኑ መሃሬ ዘከማከ(2)\n" +
             "ወኩሉ  የሴፎ ክያኬ(4) እህ\n";
 
-    String mezmurTitle = "Eenyumtu hin jiru kan akka kee";
+    String mezmurTitle = "38. Eenyumtu hin jiru kan akka kee";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

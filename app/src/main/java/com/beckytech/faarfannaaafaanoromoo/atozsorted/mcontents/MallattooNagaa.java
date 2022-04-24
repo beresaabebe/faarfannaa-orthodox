@@ -52,14 +52,14 @@ public class MallattooNagaa extends OptionsMenuActivity {
             "Mudhii koo hidhee sichaan si faarsaa\n" +
             "Akka Aboolii koo warra kaleessaa(2)\n";
 
-    String mezmurTitle = "Mallattoo nagaa";
+    String mezmurTitle = "98. Mallattoo nagaa";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

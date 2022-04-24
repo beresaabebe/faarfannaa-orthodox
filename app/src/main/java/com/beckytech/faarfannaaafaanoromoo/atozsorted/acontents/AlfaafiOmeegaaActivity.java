@@ -1,4 +1,4 @@
-package com.beckytech.faarfannaaafaanoromoo.acontents;
+package com.beckytech.faarfannaaafaanoromoo.atozsorted.acontents;
 
 import android.content.Context;
 import android.content.Intent;
@@ -60,14 +60,14 @@ public class AlfaafiOmeegaaActivity extends OptionsMenuActivity {
             "\tSi qofaadha hundaa kan danda’u\n" +
             "\tMaqaa keetiif galanni haa ta’u \n";
 
-    String mezmurTitle = "Alfaafi Omeegaadha";
+    String mezmurTitle = "4. Alfaafi Omeegaadha";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

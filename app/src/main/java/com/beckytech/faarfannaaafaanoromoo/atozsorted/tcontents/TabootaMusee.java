@@ -36,14 +36,14 @@ public class TabootaMusee extends OptionsMenuActivity {
     String mezmur = "Taboota Musee Phaaxos ishee Siinaa (2)\n" +
             "Shaakorinee (5) Lubichaa Aaroo \n ";
 
-    String mezmurTitle = "Taboota musee";
+    String mezmurTitle = "135. Taboota musee";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

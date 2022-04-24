@@ -65,14 +65,14 @@ public class Gammanneerra extends OptionsMenuActivity {
             "Firii garaa keettiin ……....….>>\n" +
             "Jireenyaa arganne………...…>>\n";
 
-    String mezmurTitle = "Gammanneerra";
+    String mezmurTitle = "58. Gammanneerra";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

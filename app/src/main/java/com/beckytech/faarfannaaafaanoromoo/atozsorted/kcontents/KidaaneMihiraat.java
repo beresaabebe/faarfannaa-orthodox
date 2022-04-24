@@ -56,14 +56,14 @@ public class KidaaneMihiraat extends OptionsMenuActivity {
             "Kanan ittin boonu haati koo naa fayyisu ishee arganii\n" +
             "   F/taa Dn Garramoo\n";
 
-    String mezmurTitle = "Kidaane mihiraat";
+    String mezmurTitle = "84. Kidaane mihiraat";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

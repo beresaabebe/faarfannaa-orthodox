@@ -63,14 +63,14 @@ public class MucaaKee extends OptionsMenuActivity {
             "Dhalannan iyyesuus akkam ajaa'ibaa\n" +
             "Warqeef karbee ixaana sab salganiin dhufa(2)  \n";
 
-    String mezmurTitle = "Mucaa kee hammadhuti";
+    String mezmurTitle = "103. Mucaa kee hammadhuti";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

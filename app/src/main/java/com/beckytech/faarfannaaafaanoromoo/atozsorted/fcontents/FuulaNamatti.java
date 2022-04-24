@@ -46,14 +46,14 @@ public class FuulaNamatti extends OptionsMenuActivity {
             "\n" +
             "F/taa Waldeeseenbaat Baqallaa";
 
-    String mezmurTitle = "Fuula namatti";
+    String mezmurTitle = "48. Fuula namatti";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

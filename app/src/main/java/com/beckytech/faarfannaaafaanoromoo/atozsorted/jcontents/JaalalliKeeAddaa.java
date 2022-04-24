@@ -61,14 +61,14 @@ public class JaalalliKeeAddaa extends OptionsMenuActivity {
             "Waadaa Fannoo Jalaa Maariyaamii Jechuun\n" +
             "Eenyumtuu Hin Qaana'uu Harmee Si Kadhachuun\n";
 
-    String mezmurTitle = "Jaalalli kee addaa";
+    String mezmurTitle = "75. Jaalalli kee addaa";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

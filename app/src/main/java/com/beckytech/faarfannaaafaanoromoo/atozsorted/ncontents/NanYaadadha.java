@@ -57,14 +57,14 @@ public class NanYaadadha extends OptionsMenuActivity {
             "Gaarri kan koo dirree ta'ee\n" +
             "Situ duursee naaf ka'ee\n";
 
-    String mezmurTitle = "Nan yaadadha hin dagadhu";
+    String mezmurTitle = "109. Nan yaadadha hin dagadhu";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abbaaf_ilma);
 
-        initUI();
+        initUI(mezmurTitle);
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
