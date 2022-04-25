@@ -105,7 +105,7 @@ public class OptionsMenuActivity extends AppCompatActivity {
         String[] title;
 
         CustomAdapter(Context context, String[] title) {
-            super(context, R.layout.listitem, title);
+            super(context, R.layout.listhomeitem, title);
             this.context = context;
             this.title = title;
         }
@@ -113,10 +113,10 @@ public class OptionsMenuActivity extends AppCompatActivity {
         @SuppressLint("SetTextI18n")
         public View getView(int position, View convertView, ViewGroup parent) {
             LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            @SuppressLint("ViewHolder") View row = inflater.inflate(R.layout.listitem, parent, false);
+            @SuppressLint("ViewHolder") View row = inflater.inflate(R.layout.listhomeitem, parent, false);
             TextView textView = row.findViewById(R.id.textView1);
             int pos = position +1;
-            textView.setText(pos+". "+title[position]);
+            textView.setText(title[position]);
             return row;
         }
 

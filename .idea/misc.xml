@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/rooba/AndroidStudioProjects/FaarfannaaAfaanOromoo/app/src/main/res/drawable/button_home_bg.xml" value="0.17592592592592593" />
         <entry key="..\:/Users/rooba/AndroidStudioProjects/FaarfannaaAfaanOromoo/app/src/main/res/drawable/button_hover.xml" value="0.18055555555555555" />
         <entry key="..\:/Users/rooba/AndroidStudioProjects/FaarfannaaAfaanOromoo/app/src/main/res/drawable/ic_appss.xml" value="0.20277777777777778" />
         <entry key="..\:/Users/rooba/AndroidStudioProjects/FaarfannaaAfaanOromoo/app/src/main/res/drawable/rounded_conrner.xml" value="0.18055555555555555" />
@@ -45,8 +46,10 @@
         <entry key="..\:/Users/rooba/AndroidStudioProjects/FaarfannaaAfaanOromoo/app/src/main/res/layout/activity_kaaku_araara.xml" value="0.10916919959473151" />
         <entry key="..\:/Users/rooba/AndroidStudioProjects/FaarfannaaAfaanOromoo/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/rooba/AndroidStudioProjects/FaarfannaaAfaanOromoo/app/src/main/res/layout/activity_more_apps.xml" value="0.33" />
+        <entry key="..\:/Users/rooba/AndroidStudioProjects/FaarfannaaAfaanOromoo/app/src/main/res/layout/activity_opener.xml" value="0.10916919959473151" />
         <entry key="..\:/Users/rooba/AndroidStudioProjects/FaarfannaaAfaanOromoo/app/src/main/res/layout/app_bar_main.xml" value="0.10916919959473151" />
         <entry key="..\:/Users/rooba/AndroidStudioProjects/FaarfannaaAfaanOromoo/app/src/main/res/layout/custom_actionbar_layout.xml" value="0.12590579710144928" />
+        <entry key="..\:/Users/rooba/AndroidStudioProjects/FaarfannaaAfaanOromoo/app/src/main/res/layout/listhomeitem.xml" value="0.10916919959473151" />
         <entry key="..\:/Users/rooba/AndroidStudioProjects/FaarfannaaAfaanOromoo/app/src/main/res/layout/listitem.xml" value="0.1" />
         <entry key="..\:/Users/rooba/AndroidStudioProjects/FaarfannaaAfaanOromoo/app/src/main/res/layout/nav_header_main.xml" value="0.10916919959473151" />
         <entry key="..\:/Users/rooba/AndroidStudioProjects/FaarfannaaAfaanOromoo/app/src/main/res/menu/main.xml" value="0.221025641025641" />

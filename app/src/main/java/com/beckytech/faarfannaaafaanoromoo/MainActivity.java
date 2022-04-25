@@ -234,9 +234,8 @@ public class MainActivity extends OptionsMenuActivity {
 
         listView = findViewById(R.id.list_item);
 
-       // ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, mezmurName);
-        CustomAdapter adapter = new CustomAdapter(this, mezmurName);
 
+        CustomMainAdapter adapter = new CustomMainAdapter(this, mezmurName);
         listView.setAdapter(adapter);
         listView.setSmoothScrollbarEnabled(true);
 
@@ -865,6 +864,29 @@ public class MainActivity extends OptionsMenuActivity {
                     break;
             }
         });
+
+    }
+
+    static class CustomMainAdapter extends ArrayAdapter<String> {
+        Context context;
+        String[] title;
+
+        CustomMainAdapter(Context context, String[] title) {
+            super(context, R.layout.listitem, title);
+            this.context = context;
+            this.title = title;
+        }
+
+        @SuppressLint("SetTextI18n")
+        public View getView(int position, View convertView, ViewGroup parent) {
+            LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            @SuppressLint("ViewHolder") View row = inflater.inflate(R.layout.listitem, parent, false);
+            TextView textView = row.findViewById(R.id.textView1);
+            int pos = position +1;
+            textView.setText(pos+". "+title[position]);
+            return row;
+        }
+
     }
 
 }

@@ -48,10 +48,19 @@
             android:fontFamily="serif"
             android:layout_margin="10dp"/>
 
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#4E0875"/>
+
         <com.google.android.gms.ads.AdView
             android:id="@+id/adView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
             ads:adSize="BANNER"
             android:layout_gravity="center_horizontal"
             ads:adUnitId="@string/banner_ad_unit_id"/>

@@ -81,10 +81,15 @@ public class WaaeeApp extends OptionsMenuActivity {
             Toast.makeText(WaaeeApp.this, "Share me, let other know about me!", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(Intent.ACTION_SEND);
             intent.setType("text/plain");
-            intent.putExtra(Intent.EXTRA_SUBJECT, R.string.app_name);
-            intent.putExtra(Intent.EXTRA_TEXT, R.string.app_name);
-            startActivity(Intent.createChooser(intent,"Share me via "));
+            intent.putExtra(Intent.EXTRA_SUBJECT, "https://play.google.com/store/apps/details?id=com.beckytech.faarfannaaafaanoromoo");
+            intent.putExtra(Intent.EXTRA_TEXT, "Download this useful app's from Google play \n https://play.google.com/store/apps/details?id=com.beckytech.faarfannaaafaanoromoo");
+            startActivity(Intent.createChooser(intent,"Share app's link via "));
         });
 
+    }
+
+    @Override
+    public void onBackPressed() {
+        WaaeeApp.this.finish();
     }
 }
