@@ -6,6 +6,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.beckytech.faarfannaaafaanoromoo.adaanee.AdaaneeAsraat;
+import com.beckytech.faarfannaaafaanoromoo.darajee.Darajee;
 
 public class MainHomeActivity extends OptionsMenuActivity {
 
@@ -55,6 +56,11 @@ public class MainHomeActivity extends OptionsMenuActivity {
             if (i == 0) {
                 startActivity(new Intent(MainHomeActivity.this, AdaaneeAsraat.class));
             }
+
+            if (i == 1) {
+                startActivity(new Intent(MainHomeActivity.this, Darajee.class));
+            }
+
 
 
             if (i == 13) {

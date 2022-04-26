@@ -2,6 +2,7 @@ package com.beckytech.faarfannaaafaanoromoo.adaanee;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -48,8 +49,52 @@ public class AdaaneeAsraat extends OptionsMenuActivity {
         listView.setAdapter(adapter);
         listView.setSmoothScrollbarEnabled(true);
 
-        listView.setOnItemClickListener((adapterView, view, i, l) -> Toast.makeText(AdaaneeAsraat.this, "You clicked. "+adapterView.getItemAtPosition(i), Toast.LENGTH_SHORT).show());
-
+        listView.setOnItemClickListener((adapterView, view, i, l) -> {
+           switch (i) {
+               case 0:
+                   startActivity(new Intent(AdaaneeAsraat.this, AkkaBishaanDarbee.class));
+                   break;
+               case 1:
+                   startActivity(new Intent(AdaaneeAsraat.this, AnSiinEebbifamee.class));
+                   break;
+               case 2:
+                   startActivity(new Intent(AdaaneeAsraat.this, FayyisuuKee.class));
+                   break;
+               case 3:
+                   startActivity(new Intent(AdaaneeAsraat.this, FoonsaaMuree.class));
+                   break;
+               case 4:
+                   startActivity(new Intent(AdaaneeAsraat.this, GuddinaaKee.class));
+                   break;
+               case 5:
+                   startActivity(new Intent(AdaaneeAsraat.this, HorreeBulleerra.class));
+                   break;
+               case 6:
+                   startActivity(new Intent(AdaaneeAsraat.this, KanAkkaWaaqayyoo.class));
+                   break;
+               case 7:
+                   startActivity(new Intent(AdaaneeAsraat.this, KennaaGuyyaaJimaata.class));
+                   break;
+               case 8:
+                   startActivity(new Intent(AdaaneeAsraat.this, KiristoosIsuma.class));
+                   break;
+               case 9:
+                   startActivity(new Intent(AdaaneeAsraat.this, MikaaeelNaafDhufee.class));
+                   break;
+               case 10:
+                   startActivity(new Intent(AdaaneeAsraat.this, Qaraniyoo.class));
+                   break;
+               case 11:
+                   startActivity(new Intent(AdaaneeAsraat.this, TikseeGaariinQabaa.class));
+                   break;
+               case 12:
+                   startActivity(new Intent(AdaaneeAsraat.this, YaadaKeenDubroodha.class));
+                   break;
+               case 13:
+                   startActivity(new Intent(AdaaneeAsraat.this, YaaMaariyamiiGiiftiiKoo.class));
+                   break;
+           }
+        });
     }
 
     static class CustomAdapter extends ArrayAdapter<String> {

@@ -10,12 +10,118 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FaarfannaaAfaanOromoo">
 
+        <!--    Darajee Mezmur goes here    -->
         <activity
-            android:name=".adaanee.AdaaneeAsraat"
+            android:name=".darajee.QulqulluuMikaaeel"
+            android:parentActivityName=".darajee.Darajee"
+            android:exported="false" />
+        <activity
+            android:name=".darajee.NuufGolgiQullaa"
+            android:parentActivityName=".darajee.Darajee"
+            android:exported="false" />
+        <activity
+            android:name=".darajee.MadaaGaraaKoo"
+            android:parentActivityName=".darajee.Darajee"
+            android:exported="false" />
+        <activity
+            android:name=".darajee.JawwichiNaNyaachuuf"
+            android:parentActivityName=".darajee.Darajee"
+            android:exported="false" />
+        <activity
+            android:name=".darajee.IyyesuusGooftaaKoo"
+            android:parentActivityName=".darajee.Darajee"
+            android:exported="false" />
+        <activity
+            android:name=".darajee.IyeeluxaafiQirqoos"
+            android:parentActivityName=".darajee.Darajee"
+            android:exported="false" />
+        <activity
+            android:name=".darajee.Itiyoophiyaa"
+            android:parentActivityName=".darajee.Darajee"
+            android:exported="false" />
+        <activity
+            android:name=".darajee.IlilJedhaafiFaarfaadha"
+            android:parentActivityName=".darajee.Darajee"
+            android:exported="false" />
+        <activity
+            android:name=".darajee.HaadhaKooD"
+            android:parentActivityName=".darajee.Darajee"
+            android:exported="false" />
+        <activity
+            android:name=".darajee.HaadhaGaafaRakkoo"
+            android:parentActivityName=".darajee.Darajee"
+            android:exported="false" />
+        <activity
+            android:name=".darajee.AfaanKeenyaaHinQabu"
+            android:parentActivityName=".darajee.Darajee"
+            android:exported="false" />
+        <activity
+            android:name=".darajee.Darajee"
             android:parentActivityName=".MainHomeActivity"
             android:exported="false" />
 
-        <!-- A-Z sorted mezmur activity goes down here -->
+        <!--   Darajee mezmur start here     -->
+
+        <activity
+            android:name=".adaanee.YaadaKeenDubroodha"
+            android:exported="false"
+            android:parentActivityName=".adaanee.AdaaneeAsraat" />
+        <activity
+            android:name=".adaanee.YaaMaariyamiiGiiftiiKoo"
+            android:exported="false"
+            android:parentActivityName=".adaanee.AdaaneeAsraat" />
+        <activity
+            android:name=".adaanee.TikseeGaariinQabaa"
+            android:exported="false"
+            android:parentActivityName=".adaanee.AdaaneeAsraat" />
+        <activity
+            android:name=".adaanee.Qaraniyoo"
+            android:exported="false"
+            android:parentActivityName=".adaanee.AdaaneeAsraat" />
+        <activity
+            android:name=".adaanee.MikaaeelNaafDhufee"
+            android:exported="false"
+            android:parentActivityName=".adaanee.AdaaneeAsraat" />
+        <activity
+            android:name=".adaanee.KiristoosIsuma"
+            android:exported="false"
+            android:parentActivityName=".adaanee.AdaaneeAsraat" />
+        <activity
+            android:name=".adaanee.KennaaGuyyaaJimaata"
+            android:exported="false"
+            android:parentActivityName=".adaanee.AdaaneeAsraat" />
+        <activity
+            android:name=".adaanee.KanAkkaWaaqayyoo"
+            android:exported="false"
+            android:parentActivityName=".adaanee.AdaaneeAsraat" />
+        <activity
+            android:name=".adaanee.HorreeBulleerra"
+            android:exported="false"
+            android:parentActivityName=".adaanee.AdaaneeAsraat" />
+        <activity
+            android:name=".adaanee.GuddinaaKee"
+            android:exported="false"
+            android:parentActivityName=".adaanee.AdaaneeAsraat" />
+        <activity
+            android:name=".adaanee.FoonsaaMuree"
+            android:exported="false"
+            android:parentActivityName=".adaanee.AdaaneeAsraat" />
+        <activity
+            android:name=".adaanee.FayyisuuKee"
+            android:exported="false"
+            android:parentActivityName=".adaanee.AdaaneeAsraat" />
+        <activity
+            android:name=".adaanee.AnSiinEebbifamee"
+            android:exported="false"
+            android:parentActivityName=".adaanee.AdaaneeAsraat" />
+        <activity
+            android:name=".adaanee.AkkaBishaanDarbee"
+            android:exported="false"
+            android:parentActivityName=".adaanee.AdaaneeAsraat" />
+        <activity
+            android:name=".adaanee.AdaaneeAsraat"
+            android:exported="false"
+            android:parentActivityName=".MainHomeActivity" /> <!-- A-Z sorted mezmur activity goes down here -->
         <activity
             android:name=".MoreApps"
             android:exported="false"
@@ -654,7 +760,7 @@
             android:parentActivityName=".MainHomeActivity" />
         <activity
             android:name=".MainHomeActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".OpenerActivity"
             android:exported="true">
