@@ -6,12 +6,36 @@ import com.beckytech.faarfannaaafaanoromoo.OptionsMenuActivity;
 import com.beckytech.faarfannaaafaanoromoo.R;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
 
 public class TikseeGaariinQabaa extends OptionsMenuActivity {
 
     TextView textTitle, textContent;
 
-    String content = "";
+    String content = "Tiksee gaariin qabaa\n" +
+            "Abbaan gaariin qabaa\n" +
+            "Waa’eesaan odeessaa\n" +
+            "Jireenyi koo isaa\n\n" +
+            "Bittaan saa jaalalaa\n" +
+            "Haadhaf Abbaa caalaa\n" +
+            "Ano hubadheeraa\n" +
+            "Harka koo ol kaaseera\n\n" +
+            "Tiksee amanamaa    \n" +
+            "Abbaa jaalatamaa    \n" +
+            "Iddoo boqonnaa koo    \n" +
+            "Iyyesuus nagaa koo\n\n" +
+            "Waa’ee koof dhanamee\n" +
+            "Eebboon waranamee\n" +
+            "Naaf kenne lubbuusaa\n" +
+            "Eenyuu kan akka saa\n\n" +
+            "Naaf yaada hundarra\n" +
+            "Addaan ba'usaa rraa\n" +
+            "Moo’eraa onnee koo\n" +
+            "Iyyesuus mootiin koo\n\n" +
+            "Michuu tokkon qaba\n" +
+            "Gocha saa lallabaa\n" +
+            "Iyyesuus jedhamaa\n" +
+            "Fayyisaa hundumaa\n";
 
     String title = "Tiksee gaariin qabaa";
 
@@ -21,6 +45,9 @@ public class TikseeGaariinQabaa extends OptionsMenuActivity {
         setContentView(R.layout.activity_abbaaf_ilma);
 
         initUI(title);
+
+        MobileAds.initialize(this, initializationStatus -> {
+        });
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

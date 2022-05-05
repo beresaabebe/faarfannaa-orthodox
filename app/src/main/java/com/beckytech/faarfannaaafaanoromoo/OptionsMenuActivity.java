@@ -115,7 +115,6 @@ public class OptionsMenuActivity extends AppCompatActivity {
             LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             @SuppressLint("ViewHolder") View row = inflater.inflate(R.layout.listhomeitem, parent, false);
             TextView textView = row.findViewById(R.id.textView1);
-            int pos = position +1;
             textView.setText(title[position]);
             return row;
         }

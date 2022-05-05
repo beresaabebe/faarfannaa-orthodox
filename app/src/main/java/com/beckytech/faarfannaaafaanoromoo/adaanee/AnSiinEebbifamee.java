@@ -6,12 +6,36 @@ import com.beckytech.faarfannaaafaanoromoo.OptionsMenuActivity;
 import com.beckytech.faarfannaaafaanoromoo.R;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
 
 public class AnSiinEebbifamee extends OptionsMenuActivity {
 
     TextView textTitle, textContent;
 
-    String content = "";
+    String content = "An siin eebbifamee\n" +
+            "Sumaan kabajamee\n" +
+            "Galatoomni jedhaa\n" +
+            "Maqaa keen faarfadhaa\n\n" +
+            "Seenaan koo haaromee\n" +
+            "Sumaan jijjiiramee\n" +
+            "Kuno ol jedheeraa\n" +
+            "An keetii ta’eeraa\n\n" +
+            "Jaalalaan na waamtee\n" +
+            "Gooftaa na guddiftee\n" +
+            "Si natti bareedee\n" +
+            "Surraa kee uffadhee\n\n" +
+            "Faarfataan jedhamee\n" +
+            "An siin filatamee\n" +
+            "Hojiin kee raajiidha\n" +
+            "Gooftaa sin faarfadhaa\n\n" +
+            "Nan faarsa gammachuun\n" +
+            "Maqaa kee ol qabuun\n" +
+            "Kunoo sin Sagadaa\n" +
+            "Narratti maqaa qabdaa\n\n" +
+            "Daandii kee qabadhee\n" +
+            "An jireenya argadhee\n" +
+            "Boodaatti in deebi’uu\n" +
+            "Sirraa adda hin ba'uu.\n";
 
     String title = "An siin eebbifamee";
 
@@ -21,6 +45,9 @@ public class AnSiinEebbifamee extends OptionsMenuActivity {
         setContentView(R.layout.activity_abbaaf_ilma);
 
         initUI(title);
+
+        MobileAds.initialize(this, initializationStatus -> {
+        });
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

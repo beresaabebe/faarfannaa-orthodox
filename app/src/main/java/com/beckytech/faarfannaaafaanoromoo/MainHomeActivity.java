@@ -7,6 +7,9 @@ import android.widget.ListView;
 
 import com.beckytech.faarfannaaafaanoromoo.adaanee.AdaaneeAsraat;
 import com.beckytech.faarfannaaafaanoromoo.darajee.Darajee;
+import com.beckytech.faarfannaaafaanoromoo.lameen2011.Lameen2011;
+import com.beckytech.faarfannaaafaanoromoo.sadaniin2010.Sadaniin2010;
+import com.beckytech.faarfannaaafaanoromoo.sadeeniin2012.Sadeeniin2012;
 
 public class MainHomeActivity extends OptionsMenuActivity {
 
@@ -59,6 +62,18 @@ public class MainHomeActivity extends OptionsMenuActivity {
 
             if (i == 1) {
                 startActivity(new Intent(MainHomeActivity.this, Darajee.class));
+            }
+
+            if (i == 2) {
+                startActivity(new Intent(MainHomeActivity.this, Lameen2011.class));
+            }
+            if (i == 3) {
+                startActivity(new Intent(MainHomeActivity.this, Sadaniin2010.class));
+            }
+
+
+            if (i == 5) {
+                startActivity(new Intent(MainHomeActivity.this, Sadeeniin2012.class));
             }
 
 

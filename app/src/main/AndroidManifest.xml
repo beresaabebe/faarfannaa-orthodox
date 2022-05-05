@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.beckytech.faarfannaaafaanoromoo">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/iconnobg"
@@ -9,59 +12,203 @@
         android:roundIcon="@mipmap/ic_icon2_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FaarfannaaAfaanOromoo">
+        <activity
+            android:name=".sadaniin2010.GebreMenfesQiddus"
+            android:parentActivityName=".sadaniin2010.Sadaniin2010"
+            android:exported="false" />
+        <activity
+            android:name=".sadaniin2010.HundummaCaaltiiHaatiGooftaa"
+            android:parentActivityName=".sadaniin2010.Sadaniin2010"
+            android:exported="false" />
+        <activity
+            android:name=".sadaniin2010.BaraGaddaKootii"
+            android:parentActivityName=".sadaniin2010.Sadaniin2010"
+            android:exported="false" />
+        <activity
+            android:name=".sadaniin2010.GabrieelSadaan"
+            android:parentActivityName=".sadaniin2010.Sadaniin2010"
+            android:exported="false" />
 
-        <!--    Darajee Mezmur goes here    -->
+        <activity
+            android:name=".sadaniin2010.Tawaahidoodha"
+            android:parentActivityName=".sadaniin2010.Sadaniin2010"
+            android:exported="false" />
+        <activity
+            android:name=".sadaniin2010.FannoonHumnaKootii"
+            android:parentActivityName=".sadaniin2010.Sadaniin2010"
+            android:exported="false" />
+        <activity
+            android:name=".sadaniin2010.MikaaeelTikseeKoo"
+            android:parentActivityName=".sadaniin2010.Sadaniin2010"
+            android:exported="false" />
+        <activity
+            android:name=".sadaniin2010.HaadhaWaaqaKootii"
+            android:parentActivityName=".sadaniin2010.Sadaniin2010"
+            android:exported="false" />
+        <activity
+            android:name=".sadaniin2010.GorfadhuuLubbuuKee"
+            android:parentActivityName=".sadaniin2010.Sadaniin2010"
+            android:exported="false" />
+        <activity
+            android:name=".sadaniin2010.Araarsituudha"
+            android:parentActivityName=".sadaniin2010.Sadaniin2010"
+            android:exported="false" />
+        <activity
+            android:name=".sadaniin2010.FannoonHumnaKeenya"
+            android:parentActivityName=".sadaniin2010.Sadaniin2010"
+            android:exported="false" />
+        <activity
+            android:name=".sadaniin2010.Kidanemihireet"
+            android:parentActivityName=".sadaniin2010.Sadaniin2010"
+            android:exported="false" />
+        <activity
+            android:name=".sadaniin2010.Sadaniin2010"
+            android:exported="false"
+            android:parentActivityName=".MainHomeActivity" />
+        <activity
+            android:name=".sadeeniin2012.Arseemaa"
+            android:exported="false"
+            android:parentActivityName=".sadeeniin2012.Sadeeniin2012" />
+        <activity
+            android:name=".sadeeniin2012.KoottaMee"
+            android:exported="false"
+            android:parentActivityName=".sadeeniin2012.Sadeeniin2012" />
+        <activity
+            android:name=".sadeeniin2012.NiDeemna"
+            android:exported="false"
+            android:parentActivityName=".sadeeniin2012.Sadeeniin2012" />
+        <activity
+            android:name=".sadeeniin2012.YaaHaadhaWaaqayyoo"
+            android:exported="false"
+            android:parentActivityName=".sadeeniin2012.Sadeeniin2012" />
+        <activity
+            android:name=".sadeeniin2012.OrtodooksiiDhugaa"
+            android:exported="false"
+            android:parentActivityName=".sadeeniin2012.Sadeeniin2012" />
+        <activity
+            android:name=".sadeeniin2012.DubartootaaKeessaa"
+            android:exported="false"
+            android:parentActivityName=".sadeeniin2012.Sadeeniin2012" />
+        <activity
+            android:name=".sadeeniin2012.YaaWaaqayyoo"
+            android:exported="false"
+            android:parentActivityName=".sadeeniin2012.Sadeeniin2012" />
+        <activity
+            android:name=".sadeeniin2012.HaadhaUumaatiIsheen"
+            android:exported="false"
+            android:parentActivityName=".sadeeniin2012.Sadeeniin2012" />
+        <activity
+            android:name=".sadeeniin2012.EenyuAkkawaaqa"
+            android:exported="false"
+            android:parentActivityName=".sadeeniin2012.Sadeeniin2012" />
+        <activity
+            android:name=".sadeeniin2012.UraaeelErgamaa"
+            android:exported="false"
+            android:parentActivityName=".sadeeniin2012.Sadeeniin2012" />
+        <activity
+            android:name=".sadeeniin2012.GuyyaaQaba"
+            android:exported="false"
+            android:parentActivityName=".sadeeniin2012.Sadeeniin2012" />
+        <activity
+            android:name=".sadeeniin2012.Sadeeniin2012"
+            android:exported="false"
+            android:parentActivityName=".MainHomeActivity" />
+        <activity
+            android:name=".lameen2011.TikseeGaariidhaAti"
+            android:exported="false"
+            android:parentActivityName=".lameen2011.Lameen2011" />
+        <activity
+            android:name=".lameen2011.Sillaasee"
+            android:exported="false"
+            android:parentActivityName=".lameen2011.Lameen2011" />
+        <activity
+            android:name=".lameen2011.SiMalee"
+            android:exported="false"
+            android:parentActivityName=".lameen2011.Lameen2011" />
+        <activity
+            android:name=".lameen2011.QulqulleettiArseema"
+            android:exported="false"
+            android:parentActivityName=".lameen2011.Lameen2011" />
+        <activity
+            android:name=".lameen2011.NuufDhalattee"
+            android:exported="false"
+            android:parentActivityName=".lameen2011.Lameen2011" />
+        <activity
+            android:name=".lameen2011.MaalooHinGoyyominaa"
+            android:exported="false"
+            android:parentActivityName=".lameen2011.Lameen2011" />
+        <activity
+            android:name=".lameen2011.KennaanKeeHinBadu"
+            android:exported="false"
+            android:parentActivityName=".lameen2011.Lameen2011" />
+        <activity
+            android:name=".lameen2011.KakuuAraaraa"
+            android:exported="false"
+            android:parentActivityName=".lameen2011.Lameen2011" />
+        <activity
+            android:name=".lameen2011.ErgamaMikaaeel"
+            android:exported="false"
+            android:parentActivityName=".lameen2011.Lameen2011" />
+        <activity
+            android:name=".lameen2011.EenyuttanGammadaree"
+            android:exported="false"
+            android:parentActivityName=".lameen2011.Lameen2011" />
+        <activity
+            android:name=".lameen2011.AmaanueelAbbaaKoo"
+            android:exported="false"
+            android:parentActivityName=".lameen2011.Lameen2011" />
+        <activity
+            android:name=".lameen2011.Lameen2011"
+            android:exported="false"
+            android:parentActivityName=".MainHomeActivity" /> <!-- Darajee Mezmur goes here -->
         <activity
             android:name=".darajee.QulqulluuMikaaeel"
-            android:parentActivityName=".darajee.Darajee"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".darajee.Darajee" />
         <activity
             android:name=".darajee.NuufGolgiQullaa"
-            android:parentActivityName=".darajee.Darajee"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".darajee.Darajee" />
         <activity
             android:name=".darajee.MadaaGaraaKoo"
-            android:parentActivityName=".darajee.Darajee"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".darajee.Darajee" />
         <activity
             android:name=".darajee.JawwichiNaNyaachuuf"
-            android:parentActivityName=".darajee.Darajee"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".darajee.Darajee" />
         <activity
             android:name=".darajee.IyyesuusGooftaaKoo"
-            android:parentActivityName=".darajee.Darajee"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".darajee.Darajee" />
         <activity
             android:name=".darajee.IyeeluxaafiQirqoos"
-            android:parentActivityName=".darajee.Darajee"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".darajee.Darajee" />
         <activity
             android:name=".darajee.Itiyoophiyaa"
-            android:parentActivityName=".darajee.Darajee"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".darajee.Darajee" />
         <activity
             android:name=".darajee.IlilJedhaafiFaarfaadha"
-            android:parentActivityName=".darajee.Darajee"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".darajee.Darajee" />
         <activity
             android:name=".darajee.HaadhaKooD"
-            android:parentActivityName=".darajee.Darajee"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".darajee.Darajee" />
         <activity
             android:name=".darajee.HaadhaGaafaRakkoo"
-            android:parentActivityName=".darajee.Darajee"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".darajee.Darajee" />
         <activity
             android:name=".darajee.AfaanKeenyaaHinQabu"
-            android:parentActivityName=".darajee.Darajee"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".darajee.Darajee" />
         <activity
             android:name=".darajee.Darajee"
-            android:parentActivityName=".MainHomeActivity"
-            android:exported="false" />
-
-        <!--   Darajee mezmur start here     -->
-
+            android:exported="false"
+            android:parentActivityName=".MainHomeActivity" /> <!-- Darajee mezmur start here -->
         <activity
             android:name=".adaanee.YaadaKeenDubroodha"
             android:exported="false"

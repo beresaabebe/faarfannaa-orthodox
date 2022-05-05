@@ -10,9 +10,12 @@ import android.widget.TextView;
 
 import androidx.core.text.HtmlCompat;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 public class MoreApps extends OptionsMenuActivity {
 
-    ImageView faarfannaa, galataMaariyaam, galatooBarumsaa, wollega, qiddaassee;
+    ImageView faarfannaa, galataMaariyaam, galatooBarumsaa, wollega, qiddaassee, faarsaaCidhaa;
     TextView textView;
     String about = "<p style='text-align:justify'>App'n ani kanan dura hojjedhee akkasumas tola " +
             "bufaachun itti fayyadamu ni dandeessu. kanneen Google play irratti gad lakkifamanirruu kanneen kannis" +
@@ -27,6 +30,10 @@ public class MoreApps extends OptionsMenuActivity {
         setContentView(R.layout.activity_more_apps);
 
         initUI(title);
+
+        AdView mAdView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 
         textView = findViewById(R.id.textAboutApps);
         if (Build.VERSION.SDK_INT == Build.VERSION_CODES.N) {
@@ -71,6 +78,14 @@ public class MoreApps extends OptionsMenuActivity {
         qiddaassee = findViewById(R.id.imageViewQiddaassee);
         qiddaassee.setOnClickListener(view -> {
             String url = "https://play.google.com/store/apps/details?id=com.beckytech.sirnagalatoo";
+            Intent  intent = new Intent(Intent.ACTION_VIEW);
+            intent.setData(Uri.parse(url));
+            startActivity(intent);
+        });
+
+        faarsaaCidhaa = findViewById(R.id.imageViewFaarsaaCidhaa);
+        faarsaaCidhaa.setOnClickListener(view -> {
+            String url = "https://play.google.com/store/apps/details?id=com.beckytech.faarfannaaafaanoromoo";
             Intent  intent = new Intent(Intent.ACTION_VIEW);
             intent.setData(Uri.parse(url));
             startActivity(intent);

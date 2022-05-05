@@ -1,21 +1,9 @@
 package com.beckytech.faarfannaaafaanoromoo;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
-import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.text.Html;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
-import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -55,7 +43,7 @@ public class GalataActivity extends OptionsMenuActivity {
         mAdView.loadAd(adRequest);
 
         textTitle = findViewById(R.id.textTitle);
-        textTitle.setText(" Galata ");
+        textTitle.setText(titles);
 
         if (Build.VERSION.SDK_INT == Build.VERSION_CODES.N) {
             textContents.setText(Html.fromHtml(contents,Html.FROM_HTML_MODE_COMPACT));

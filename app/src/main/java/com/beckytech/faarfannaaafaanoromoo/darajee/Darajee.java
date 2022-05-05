@@ -13,6 +13,7 @@ import android.widget.TextView;
 
 import com.beckytech.faarfannaaafaanoromoo.OptionsMenuActivity;
 import com.beckytech.faarfannaaafaanoromoo.R;
+import com.google.android.gms.ads.MobileAds;
 
 public class Darajee extends OptionsMenuActivity {
 
@@ -36,6 +37,9 @@ public class Darajee extends OptionsMenuActivity {
         setContentView(R.layout.activity_main);
 
         initUI("Faarfataa Darajee");
+
+        MobileAds.initialize(this, initializationStatus -> {
+        });
 
         listView = findViewById(R.id.list_item);
 
@@ -97,8 +101,7 @@ public class Darajee extends OptionsMenuActivity {
             LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             @SuppressLint("ViewHolder") View row = inflater.inflate(R.layout.listitem, parent, false);
             TextView textView = row.findViewById(R.id.textView1);
-            int pos = position+1;
-            textView.setText(pos +"." +title[position]);
+            textView.setText(title[position]);
             return row;
         }
 

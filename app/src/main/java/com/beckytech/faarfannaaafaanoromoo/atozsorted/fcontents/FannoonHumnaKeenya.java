@@ -20,6 +20,7 @@ import com.beckytech.faarfannaaafaanoromoo.OptionsMenuActivity;
 import com.beckytech.faarfannaaafaanoromoo.R;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class FannoonHumnaKeenya extends OptionsMenuActivity {
@@ -31,9 +32,9 @@ public class FannoonHumnaKeenya extends OptionsMenuActivity {
             "Ittiin moona(2) warra diina keenyaa\n" +
             "\n" +
             "                  Fannoon humna keenyaa nuyiif abdii keenyaa\n" +
-            "                                “                           mallattoo naageenyaa\n" +
-            "                              “                           dinni nuun argatuu\n" +
-            "                              “                         isa abdiin keenyaa\n" +
+            "               “         mallattoo naageenyaa\n" +
+            "            “          dinni nuun argatuu\n" +
+            "              “        isa abdiin keenyaa\n" +
             "Fannoon humna keenya dinni haa qaana’uu\n" +
             "\n" +
             "             “                          fannoon abdii keenyaa\n" +
@@ -41,9 +42,9 @@ public class FannoonHumnaKeenya extends OptionsMenuActivity {
             "           “                       warra dina keenyaa\n" +
             "\n" +
             "                 Fannoon humna keenyaa furaa lubbuu keenyaa\n" +
-            "                                “                            fannoon humna keenyaa\n" +
-            "                               “                           jiraachisaa keenyaa\n" +
-            "                               “                         nuuf mallaatoo keenyaa\n" +
+            "                “    fannoon humna keenyaa\n" +
+            "               “    jiraachisaa keenyaa\n" +
+            "            “    nuuf mallaatoo keenyaa\n" +
             "\n" +
             "Fannoon humna keenyaa warra itti amananiif\n" +
             "                “                             fannoon fayyinadhaa\n" +
@@ -58,6 +59,9 @@ public class FannoonHumnaKeenya extends OptionsMenuActivity {
         setContentView(R.layout.activity_abbaaf_ilma);
 
         initUI(mezmurTitle);
+
+        MobileAds.initialize(this, initializationStatus -> {
+        });
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

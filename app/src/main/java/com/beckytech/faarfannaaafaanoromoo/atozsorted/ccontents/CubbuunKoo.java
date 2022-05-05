@@ -20,6 +20,7 @@ import com.beckytech.faarfannaaafaanoromoo.OptionsMenuActivity;
 import com.beckytech.faarfannaaafaanoromoo.R;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class CubbuunKoo extends OptionsMenuActivity {
@@ -59,6 +60,9 @@ public class CubbuunKoo extends OptionsMenuActivity {
         setContentView(R.layout.activity_abbaaf_ilma);
 
         initUI(mezmurTitle);
+
+        MobileAds.initialize(this, initializationStatus -> {
+        });
 
         AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();

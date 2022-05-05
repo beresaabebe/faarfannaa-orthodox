@@ -10,7 +10,6 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.beckytech.faarfannaaafaanoromoo.OptionsMenuActivity;
 import com.beckytech.faarfannaaafaanoromoo.R;
@@ -112,8 +111,7 @@ public class AdaaneeAsraat extends OptionsMenuActivity {
             LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             @SuppressLint("ViewHolder") View row = inflater.inflate(R.layout.listitem, parent, false);
             TextView textView = row.findViewById(R.id.textView1);
-            int pos = position+1;
-            textView.setText(pos +"." +title[position]);
+            textView.setText(title[position]);
             return row;
         }
 
