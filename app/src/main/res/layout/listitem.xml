@@ -9,6 +9,7 @@
         android:id="@+id/textView1"
         android:padding="10dp"
         android:textStyle="bold"
+        android:gravity="center_horizontal"
         android:textAppearance="?android:textAppearanceLarge"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>

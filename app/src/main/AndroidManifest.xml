@@ -13,54 +13,101 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FaarfannaaAfaanOromoo">
         <activity
-            android:name=".sadaniin2010.GebreMenfesQiddus"
-            android:parentActivityName=".sadaniin2010.Sadaniin2010"
+            android:name=".sadeeniin2010.HangafaErgamootaa"
+            android:parentActivityName=".sadeeniin2010.Sadeeniin2010"
             android:exported="false" />
+        <activity
+            android:name=".sadeeniin2010.EegaaAfoomiyaa"
+            android:parentActivityName=".sadeeniin2010.Sadeeniin2010"
+            android:exported="false" />
+        <activity
+            android:name=".sadeeniin2010.BakkaAtiDeemtu"
+            android:parentActivityName=".sadeeniin2010.Sadeeniin2010"
+            android:exported="false" />
+        <activity
+            android:name=".sadeeniin2010.AraarsituuKeenya"
+            android:parentActivityName=".sadeeniin2010.Sadeeniin2010"
+            android:exported="false" />
+        <activity
+            android:name=".sadeeniin2010.KennaaFannooJalaa"
+            android:parentActivityName=".sadeeniin2010.Sadeeniin2010"
+            android:exported="false" />
+        <activity
+            android:name=".sadeeniin2010.AmaanueelUumaaKoo"
+            android:parentActivityName=".sadeeniin2010.Sadeeniin2010"
+            android:exported="false" />
+        <activity
+            android:name=".sadeeniin2010.GaaddisaManasaa"
+            android:parentActivityName=".sadeeniin2010.Sadeeniin2010"
+            android:exported="false" />
+        <activity
+            android:name=".sadeeniin2010.YooTureeyyuu"
+            android:parentActivityName=".sadeeniin2010.Sadeeniin2010"
+            android:exported="false" />
+        <activity
+            android:name=".sadeeniin2010.DeessuuWaaqa"
+            android:parentActivityName=".sadeeniin2010.Sadeeniin2010"
+            android:exported="false" />
+        <activity
+            android:name=".sadeeniin2010.HarmeeIyyesuus"
+            android:parentActivityName=".sadeeniin2010.Sadeeniin2010"
+            android:exported="false" />
+        <activity
+            android:name=".sadeeniin2010.WabiiKiyyaTaii"
+            android:parentActivityName=".sadeeniin2010.Sadeeniin2010"
+            android:exported="false" />
+        <activity
+            android:name=".sadeeniin2010.Sadeeniin2010"
+            android:exported="false"
+            android:parentActivityName=".MainHomeActivity" />
+        <activity
+            android:name=".sadaniin2010.GebreMenfesQiddus"
+            android:exported="false"
+            android:parentActivityName=".sadaniin2010.Sadaniin2010" />
         <activity
             android:name=".sadaniin2010.HundummaCaaltiiHaatiGooftaa"
-            android:parentActivityName=".sadaniin2010.Sadaniin2010"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".sadaniin2010.Sadaniin2010" />
         <activity
             android:name=".sadaniin2010.BaraGaddaKootii"
-            android:parentActivityName=".sadaniin2010.Sadaniin2010"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".sadaniin2010.Sadaniin2010" />
         <activity
             android:name=".sadaniin2010.GabrieelSadaan"
-            android:parentActivityName=".sadaniin2010.Sadaniin2010"
-            android:exported="false" />
-
+            android:exported="false"
+            android:parentActivityName=".sadaniin2010.Sadaniin2010" />
         <activity
             android:name=".sadaniin2010.Tawaahidoodha"
-            android:parentActivityName=".sadaniin2010.Sadaniin2010"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".sadaniin2010.Sadaniin2010" />
         <activity
             android:name=".sadaniin2010.FannoonHumnaKootii"
-            android:parentActivityName=".sadaniin2010.Sadaniin2010"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".sadaniin2010.Sadaniin2010" />
         <activity
             android:name=".sadaniin2010.MikaaeelTikseeKoo"
-            android:parentActivityName=".sadaniin2010.Sadaniin2010"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".sadaniin2010.Sadaniin2010" />
         <activity
             android:name=".sadaniin2010.HaadhaWaaqaKootii"
-            android:parentActivityName=".sadaniin2010.Sadaniin2010"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".sadaniin2010.Sadaniin2010" />
         <activity
             android:name=".sadaniin2010.GorfadhuuLubbuuKee"
-            android:parentActivityName=".sadaniin2010.Sadaniin2010"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".sadaniin2010.Sadaniin2010" />
         <activity
             android:name=".sadaniin2010.Araarsituudha"
-            android:parentActivityName=".sadaniin2010.Sadaniin2010"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".sadaniin2010.Sadaniin2010" />
         <activity
             android:name=".sadaniin2010.FannoonHumnaKeenya"
-            android:parentActivityName=".sadaniin2010.Sadaniin2010"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".sadaniin2010.Sadaniin2010" />
         <activity
             android:name=".sadaniin2010.Kidanemihireet"
-            android:parentActivityName=".sadaniin2010.Sadaniin2010"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".sadaniin2010.Sadaniin2010" />
         <activity
             android:name=".sadaniin2010.Sadaniin2010"
             android:exported="false"
