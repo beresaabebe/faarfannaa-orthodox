@@ -9,7 +9,10 @@
         android:id="@+id/textView1"
         android:padding="12dp"
         android:textStyle="bold"
-        android:gravity="center_horizontal"
+        android:gravity="start"
+        android:paddingStart="50dp"
+        android:background="@drawable/home_item_bg"
+        android:paddingEnd="1dp"
         android:textAppearance="?android:textAppearanceLarge"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>

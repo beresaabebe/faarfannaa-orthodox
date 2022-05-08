@@ -9,9 +9,9 @@
             android:thickness="10dp">
 
             <corners
-                android:topLeftRadius="30dp"
+                android:topLeftRadius="50dp"
                 android:bottomLeftRadius="1dp"
-                android:topRightRadius="30dp"
+                android:topRightRadius="50dp"
                 android:bottomRightRadius="1dp"/>
 
             <solid android:color="#094785"/>

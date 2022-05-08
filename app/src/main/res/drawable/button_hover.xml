@@ -9,10 +9,10 @@
             android:thickness="20dp">
 
             <corners
-                android:topLeftRadius="1dp"
-                android:topRightRadius="1dp"
-                android:bottomLeftRadius="50dp"
-                android:bottomRightRadius="50dp"/>
+                android:topLeftRadius="50dp"
+                android:topRightRadius="50dp"
+                android:bottomLeftRadius="1dp"
+                android:bottomRightRadius="1dp"/>
 
             <solid android:color="#08539E"/>
 
