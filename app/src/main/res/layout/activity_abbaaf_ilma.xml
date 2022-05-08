@@ -36,6 +36,7 @@
             android:minHeight="48dp"
             android:scrollbars="vertical"
             android:gravity="center_horizontal"
+            android:lineSpacingExtra="0dp"
             android:textColor="@color/black"
             android:textIsSelectable="true"
             android:textSize="20sp"

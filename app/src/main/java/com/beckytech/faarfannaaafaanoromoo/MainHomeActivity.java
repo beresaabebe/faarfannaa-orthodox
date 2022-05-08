@@ -7,7 +7,12 @@ import android.widget.ListView;
 
 import com.beckytech.faarfannaaafaanoromoo.adaanee.AdaaneeAsraat;
 import com.beckytech.faarfannaaafaanoromoo.darajee.Darajee;
+import com.beckytech.faarfannaaafaanoromoo.durboomaariyaam.FaarsaaDubrooMaariyaam;
 import com.beckytech.faarfannaaafaanoromoo.faarsaa2014.FaarsaaAddaa2014;
+import com.beckytech.faarfannaaafaanoromoo.faarsaaQulqulloota.FaarsaaQulqulloota;
+import com.beckytech.faarfannaaafaanoromoo.faarsaaergamoota.FaarsaaErgamoota;
+import com.beckytech.faarfannaaafaanoromoo.faarsaagaabbii.FaarsaaGaabbii;
+import com.beckytech.faarfannaaafaanoromoo.faarsaagooftaa.FaarsaaGooftaa;
 import com.beckytech.faarfannaaafaanoromoo.lameen2011.Lameen2011;
 import com.beckytech.faarfannaaafaanoromoo.sadaniin2010.Sadaniin2010;
 import com.beckytech.faarfannaaafaanoromoo.sadeeniin2010.Sadeeniin2010;
@@ -29,6 +34,7 @@ public class MainHomeActivity extends OptionsMenuActivity {
             "Faarsaa Gooftaa",
             "Faarsaa Hangaffaa Faarfattoota",
             "Faarsaa Oromiffaan Amariffaa",
+            "Faarsaa Qulqulloota",
             "Faarsaa Tartiiban bakka tokkootti",
             "Faarsaa Tawaahidoo",
             "Faarsaa Yeroo Adda Addaa",
@@ -84,10 +90,31 @@ public class MainHomeActivity extends OptionsMenuActivity {
                 startActivity(new Intent(MainHomeActivity.this, FaarsaaAddaa2014.class));
             }
 
+            if (i == 7) {
+                startActivity(new Intent(MainHomeActivity.this, FaarsaaDubrooMaariyaam.class));
+            }
+
+            if (i == 8) {
+                startActivity(new Intent(MainHomeActivity.this, FaarsaaErgamoota.class));
+            }
+
+            if (i == 9) {
+                startActivity(new Intent(MainHomeActivity.this, FaarsaaGaabbii.class));
+            }
+
+            if (i == 10) {
+                startActivity(new Intent(MainHomeActivity.this, FaarsaaGooftaa.class));
+            }
+
+
 
             if (i == 13) {
+                startActivity(new Intent(MainHomeActivity.this, FaarsaaQulqulloota.class));
+            }
+            if (i == 14) {
                 startActivity(new Intent(MainHomeActivity.this, MainActivity.class));
             }
+
         });
     }
 }
