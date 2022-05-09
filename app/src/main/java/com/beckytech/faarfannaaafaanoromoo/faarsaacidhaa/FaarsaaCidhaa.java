@@ -1,4 +1,4 @@
-package com.beckytech.faarfannaaafaanoromoo.faarsaatawaahido;
+package com.beckytech.faarfannaaafaanoromoo.faarsaacidhaa;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -15,23 +15,35 @@ import com.beckytech.faarfannaaafaanoromoo.OptionsMenuActivity;
 import com.beckytech.faarfannaaafaanoromoo.R;
 import com.google.android.gms.ads.MobileAds;
 
-public class FaarsaaTawaahido extends OptionsMenuActivity {
+public class FaarsaaCidhaa extends OptionsMenuActivity {
 
     ListView listView;
 
     String[] songTitles = {
-            "Amma reefu tolee eeyyee amma reef tolee", "Ayyaana Argatte Ulfina Durbummaa", "Kan Akka Waaqayyo Arjooman Eenyudhaa",
-            "Kan laphee kiyyaa Eenyuttan himaa", "Kasoomni Kee Dinqii Garraammummaan Kee", "Lapheen Koo Haa Baasu Galata Uumaa Koo",
-            "Nan carromee nan duromee", "Nagaadhaan nuukottu", "Nan carromee nan duromee", "Sin dagadhuu na gudistee tawaahidoo",
-            "Ulfina toloota yaa giiftii", "Yaa Haadha koo waanan sitti himadhe", "Yaa mikaa’eel hangafa ergamootaa"
-    };
+            "Akkaa Abrahamiif Saaraa",
+            "Akkaa  Yaaqemif Hannaa",
+            "Baga gammadanii misiroon lachuu",
+            "Baga gammaddanii Eeyyee",
+            "Baga isin ga’e gammachuu kanaanii",
+            "ዳዊት ይሴብሕ ወይዜምር ዕዝራ",
+            "Dinqii hojjate Gooftani",
+            "Gammachuudha kan amantii keenyaa",
+            "Miidhaganii Bareedu ",
+            "Miisiroon Dhuufni (መጽአ መርዓዊ)",
+            "Misiroon baga geessanii ciidhaa gaa’ila",
+            "Ni Eebbifaman",
+            "Qaanaa galilaatti",
+            "Qanna gaalilatti በቃና ዘገሊላ",
+            "Raajiidha dinqiidha hojiin Waaqadha",
+            "ትዊድሶ መርዓት ወትብ"
+     };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        initUI("Faarsaa Tawaahidoo");
+        initUI("Faarsaa Yeroo Cidhaa");
 
         MobileAds.initialize(this, initializationStatus -> {
         });
@@ -45,43 +57,52 @@ public class FaarsaaTawaahido extends OptionsMenuActivity {
         listView.setOnItemClickListener((adapterView, view, i, l) -> {
             switch (i) {
                 case 0:
-                    startActivity(new Intent(this, AmmaReefuTolee.class));
+                    startActivity(new Intent(this, AkkaaAbrahamiifSaaraa.class));
                     break;
                 case 1:
-                    startActivity(new Intent(this, AyyaanaArgatteUlfinaDurbummaa.class));
+                    startActivity(new Intent(this, AkkaaYaaqemiifHannaa.class));
                     break;
                 case 2:
-                    startActivity(new Intent(this, KanAkkaWaaqayyoArjoomanEenyudhaa.class));
+                    startActivity(new Intent(this, BagaGammadanii.class));
                     break;
                 case 3:
-                    startActivity(new Intent(this, KanLapheeKiyyaa.class));
+                    startActivity(new Intent(this, BagaGammadanni.class));
                     break;
                 case 4:
-                    startActivity(new Intent(this, KasoomniKeeDinqiiGarraammummaanKee.class));
+                    startActivity(new Intent(this, BagaIsiinGaee.class));
                     break;
                 case 5:
-                    startActivity(new Intent(this, LapheenKooHaaBaasuGalataUumaaKoo.class));
+                    startActivity(new Intent(this, DawitYisebiho.class));
                     break;
                 case 6:
-                    startActivity(new Intent(this, Maariyaamiidhaafi.class));
+                    startActivity(new Intent(this, DinqiiHojjette.class));
                     break;
                 case 7:
-                    startActivity(new Intent(this, NagaadhaanNuukottu.class));
+                    startActivity(new Intent(this, Gammachuudha.class));
                     break;
                 case 8:
-                    startActivity(new Intent(this, NanCarroome.class));
+                    startActivity(new Intent(this, MiidhaganiiBareedu.class));
                     break;
                 case 9:
-                    startActivity(new Intent(this, SinDagadhuu.class));
+                    startActivity(new Intent(this, MiisiroonDhuufni.class));
                     break;
                 case 10:
-                    startActivity(new Intent(this, UlfinaTolootaYaaGiiftii.class));
+                    startActivity(new Intent(this, MisirroonBagaGeessanii.class));
                     break;
                 case 11:
-                    startActivity(new Intent(this, YaaHaadhaKooWaananSittiHimadhe.class));
+                    startActivity(new Intent(this, NiiEebbifamman.class));
                     break;
                 case 12:
-                    startActivity(new Intent(this, YaaMikaaeelHangafaErgamootaa.class));
+                    startActivity(new Intent(this, QaanaaGalilaatti.class));
+                    break;
+                case 13:
+                    startActivity(new Intent(this, QannaGaalilatti.class));
+                    break;
+                case 14:
+                    startActivity(new Intent(this, RaajiidhaDinqiidha.class));
+                    break;
+                case 15:
+                    startActivity(new Intent(this, Tiwedisewa.class));
                     break;
             }
         });

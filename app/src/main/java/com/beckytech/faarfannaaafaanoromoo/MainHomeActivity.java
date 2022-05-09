@@ -10,10 +10,13 @@ import com.beckytech.faarfannaaafaanoromoo.darajee.Darajee;
 import com.beckytech.faarfannaaafaanoromoo.durboomaariyaam.FaarsaaDubrooMaariyaam;
 import com.beckytech.faarfannaaafaanoromoo.faarsaa2014.FaarsaaAddaa2014;
 import com.beckytech.faarfannaaafaanoromoo.faarsaaQulqulloota.FaarsaaQulqulloota;
+import com.beckytech.faarfannaaafaanoromoo.faarsaaayyaanna.FaarsaaAyyaana;
+import com.beckytech.faarfannaaafaanoromoo.faarsaacidhaa.FaarsaaCidhaa;
 import com.beckytech.faarfannaaafaanoromoo.faarsaaergamoota.FaarsaaErgamoota;
 import com.beckytech.faarfannaaafaanoromoo.faarsaagaabbii.FaarsaaGaabbii;
 import com.beckytech.faarfannaaafaanoromoo.faarsaagooftaa.FaarsaaGooftaa;
 import com.beckytech.faarfannaaafaanoromoo.faarsaahangaffota.FaarsaaHangaffoota;
+import com.beckytech.faarfannaaafaanoromoo.faarsaatawaahido.FaarsaaTawaahido;
 import com.beckytech.faarfannaaafaanoromoo.lameen2011.Lameen2011;
 import com.beckytech.faarfannaaafaanoromoo.sadaniin2010.Sadaniin2010;
 import com.beckytech.faarfannaaafaanoromoo.sadeeniin2010.Sadeeniin2010;
@@ -37,7 +40,6 @@ public class MainHomeActivity extends OptionsMenuActivity {
             "Faarsaa Qulqulloota",
             "Faarsaa Tartiiban bakka tokkootti",
             "Faarsaa Tawaahidoo",
-            "Faarsaa Yeroo Adda Addaa",
             "Faarsaa Yeroo Ayyaana",
             "Faarsaa Yeroo Ciidhaa",
             "Faarsaa Yeroo Cuuphaa",
@@ -75,6 +77,7 @@ public class MainHomeActivity extends OptionsMenuActivity {
             if (i == 2) {
                 startActivity(new Intent(MainHomeActivity.this, Lameen2011.class));
             }
+
             if (i == 3) {
                 startActivity(new Intent(MainHomeActivity.this, Sadaniin2010.class));
             }
@@ -86,6 +89,7 @@ public class MainHomeActivity extends OptionsMenuActivity {
             if (i == 5) {
                 startActivity(new Intent(MainHomeActivity.this, Sadeeniin2012.class));
             }
+
             if (i == 6) {
                 startActivity(new Intent(MainHomeActivity.this, FaarsaaAddaa2014.class));
             }
@@ -109,11 +113,25 @@ public class MainHomeActivity extends OptionsMenuActivity {
             if (i == 11) {
                 startActivity(new Intent(MainHomeActivity.this, FaarsaaHangaffoota.class));
             }
+
             if (i == 12) {
                 startActivity(new Intent(MainHomeActivity.this, FaarsaaQulqulloota.class));
             }
+
             if (i == 13) {
                 startActivity(new Intent(MainHomeActivity.this, MainActivity.class));
+            }
+
+            if (i == 14) {
+                startActivity(new Intent(MainHomeActivity.this, FaarsaaTawaahido.class));
+            }
+
+            if (i == 15) {
+                startActivity(new Intent(MainHomeActivity.this, FaarsaaAyyaana.class));
+            }
+
+            if (i == 16) {
+                startActivity(new Intent(MainHomeActivity.this, FaarsaaCidhaa.class));
             }
 
         });
