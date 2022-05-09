@@ -14,6 +14,7 @@ import com.beckytech.faarfannaaafaanoromoo.faarsaaayyaanna.FaarsaaAyyaana;
 import com.beckytech.faarfannaaafaanoromoo.faarsaacidhaa.FaarsaaCidhaa;
 import com.beckytech.faarfannaaafaanoromoo.faarsaacuuphaa.FaarsaaCuuphaa;
 import com.beckytech.faarfannaaafaanoromoo.faarsaadhaloota.FaarsaaDhaloota;
+import com.beckytech.faarfannaaafaanoromoo.faarsaaduaa.FaarsaaDuaKaumsaa;
 import com.beckytech.faarfannaaafaanoromoo.faarsaaergamoota.FaarsaaErgamoota;
 import com.beckytech.faarfannaaafaanoromoo.faarsaagaabbii.FaarsaaGaabbii;
 import com.beckytech.faarfannaaafaanoromoo.faarsaagooftaa.FaarsaaGooftaa;
@@ -35,23 +36,23 @@ public class MainHomeActivity extends OptionsMenuActivity {
             "Faarfattoota Obbolaa Sadeeniin 2012",
             "Faarsaa Addaa 2014",
             "Faarsaa Dubroo Maariyaam",
-            "Faarsaa Ergamoota",
-            "Faarsaa Gaabbii",
-            "Faarsaa Gooftaa",
+            "Faarsaa Ergamoota Qulqulluu",
+            "Faarsaa Yeroo sirnaa gaabbii",
+            "Faarsaa Galata Gooftaa",
             "Faarsaa Hangaffaa Faarfattoota",
             "Faarsaa Qulqulloota",
             "Faarsaa Tartiiban bakka tokkootti",
-            "Faarsaa Tawaahidoo",
-            "Faarsaa Yeroo Ayyaana",
-            "Faarsaa Yeroo Ciidhaa",
-            "Faarsaa Yeroo Cuuphaa",
-            "Faarsaa Yeroo Dhaloota Gooftaa",
-            "Faarsaa Yeroo Du’aa Ka’umsaa",
-            "Faarsaa Yeroo Fannoo",
-            "Faarsaa Yeroo Hundaa",
-            "Hiikaa Bultii",
-            "Keebar Tesfaa",
-            "Koo’eel Shawaa"
+            "Faarsaa Ortodooksii Tawaahidoo",
+            "Faarsaa Yeroo Ayyaana adda addaa",
+            "Faarsaa Yeroo Ciidhaa - Gaa'ila",
+            "Faarsaa Yeroo Ayyaana Cuuphaa",
+            "Faarsaa Yeroo Ayyaana Dhaloota Gooftaa",
+            "Faarsaa Yeroo Ayyaana Du’aa Ka’umsaa",
+            "Faarsaa Yeroo Ayyaana Fannoo",
+            "Faarsaa Yeroo Ayyaana Hundaa",
+            "Faarfata Hiikaa Bultii",
+            "Faarfata Keebar Tesfaa",
+            "Faarfata Koo’eel Shawaa"
     };
 
     @Override
@@ -141,7 +142,9 @@ public class MainHomeActivity extends OptionsMenuActivity {
             if (i == 18) {
                 startActivity(new Intent(MainHomeActivity.this, FaarsaaDhaloota.class));
             }
-
+            if (i == 19) {
+                startActivity(new Intent(MainHomeActivity.this, FaarsaaDuaKaumsaa.class));
+            }
         });
     }
 }

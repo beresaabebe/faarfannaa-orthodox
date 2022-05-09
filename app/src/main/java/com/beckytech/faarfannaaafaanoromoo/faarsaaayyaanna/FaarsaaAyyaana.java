@@ -20,7 +20,7 @@ public class FaarsaaAyyaana extends OptionsMenuActivity {
     ListView listView;
 
     String[] songTitles = {
-            "Akka ergamaa gabri’eelii", "Akka yoosef akka solomee osoo taane", "Ayyaana Argattee", "Betelemittii dhalatee", "Bultoo Waaqayyo Ilmaa(ማሕደረመለኮት)",
+            "Akka ergamaa gabri’eelii", "Akka yoosef akka solomee osoo taane", "Ayyaana Argattee", "Betelemittii dhalatee", "Bu'ee jedhaa", "Bultoo Waaqayyo Ilmaa(ማሕደረመለኮት)",
             "Dallaa keessa ciisa", "Dubartoota keessaa filatamtee", "Eenyumtuu Hin Jiru (ወመኑ መሐሪ ዘከማከ)", "Galanni sillaasef በመላእክቲሁ ስቡህ ዘለዓለም",
             "Galateeffamaadha hanga bara baraatti", "Hundaa dabarsitee kan yoonan nugeessee", "Isheen nuuf kadhatti isheen nuuf kadhatti",
             "Ishoo ishoo nuu dhalatee", "Koottu mikaa’eel koottu", "Kunoo dhalateera fayyisaan addunyaa",
@@ -61,91 +61,92 @@ public class FaarsaaAyyaana extends OptionsMenuActivity {
                     startActivity(new Intent(this, Betelememitti.class));
                     break;
                 case 4:
-                    startActivity(new Intent(this, BultooWaaqayyooIlmaaDha.class));
+                    startActivity(new Intent(this, BueeJedhaa.class));
                     break;
                 case 5:
-                    startActivity(new Intent(this, DallaaKeessaCiisa.class));
+                    startActivity(new Intent(this, BultooWaaqayyooIlmaaDha.class));
                     break;
                 case 6:
-                    startActivity(new Intent(this, DubartootaKeessaaFilatamtee.class));
+                    startActivity(new Intent(this, DallaaKeessaCiisa.class));
                     break;
                 case 7:
-                    startActivity(new Intent(this, EenyumtuuHinJiru.class));
+                    startActivity(new Intent(this, DubartootaKeessaaFilatamtee.class));
                     break;
                 case 8:
-                    startActivity(new Intent(this, GalanniSillaasef.class));
+                    startActivity(new Intent(this, EenyumtuuHinJiru.class));
                     break;
                 case 9:
-                    startActivity(new Intent(this, Galateeffamaadha.class));
+                    startActivity(new Intent(this, GalanniSillaasef.class));
                     break;
                 case 10:
-                    startActivity(new Intent(this, HundaaDabarsitee.class));
+                    startActivity(new Intent(this, Galateeffamaadha.class));
                     break;
                 case 11:
-                    startActivity(new Intent(this, IsheenNuufKadhatti.class));
+                    startActivity(new Intent(this, HundaaDabarsitee.class));
                     break;
                 case 12:
-                    startActivity(new Intent(this, IshooIshooNuuDhalatee.class));
+                    startActivity(new Intent(this, IsheenNuufKadhatti.class));
                     break;
                 case 13:
-                    startActivity(new Intent(this, KoottuMikaaeelkoottu.class));
+                    startActivity(new Intent(this, IshooIshooNuuDhalatee.class));
                     break;
                 case 14:
-                    startActivity(new Intent(this, KunooDhalateeraFayyisaanAddunyaa.class));
+                    startActivity(new Intent(this, KoottuMikaaeelkoottu.class));
                     break;
                 case 15:
-                    startActivity(new Intent(this, MaariyaamNiCaalti.class));
+                    startActivity(new Intent(this, KunooDhalateeraFayyisaanAddunyaa.class));
                     break;
                 case 16:
-                    startActivity(new Intent(this, MeeDubbadhaa.class));
+                    startActivity(new Intent(this, MaariyaamNiCaalti.class));
                     break;
                 case 17:
-                    startActivity(new Intent(this, MisiraachooNuGammaneerra.class));
+                    startActivity(new Intent(this, MeeDubbadhaa.class));
                     break;
                 case 18:
-                    startActivity(new Intent(this, MootichiKana.class));
+                    startActivity(new Intent(this, MisiraachooNuGammaneerra.class));
                     break;
                 case 19:
-                    startActivity(new Intent(this, NiAmannaaAbbaattii.class));
+                    startActivity(new Intent(this, MootichiKana.class));
                     break;
                 case 20:
-                    startActivity(new Intent(this, NiDhalateBeeteliheemitti.class));
+                    startActivity(new Intent(this, NiAmannaaAbbaattii.class));
                     break;
                 case 21:
-                    startActivity(new Intent(this, NuufKadhadhuGiiftiiKeenyaa.class));
+                    startActivity(new Intent(this, NiDhalateBeeteliheemitti.class));
                     break;
                 case 22:
-                    startActivity(new Intent(this, SamiirraaNiBue.class));
+                    startActivity(new Intent(this, NuufKadhadhuGiiftiiKeenyaa.class));
                     break;
                 case 23:
-                    startActivity(new Intent(this, SiGalateeffannaDubrooMaariyamii.class));
+                    startActivity(new Intent(this, SamiirraaNiBue.class));
                     break;
                 case 24:
-                    startActivity(new Intent(this, SiWaamnaaAmaanueel.class));
+                    startActivity(new Intent(this, SiGalateeffannaDubrooMaariyamii.class));
                     break;
                 case 25:
-                    startActivity(new Intent(this, TikseeGaariiKeenya.class));
+                    startActivity(new Intent(this, SiWaamnaaAmaanueel.class));
                     break;
                 case 26:
-                    startActivity(new Intent(this, TsillaatiiMusee.class));
+                    startActivity(new Intent(this, TikseeGaariiKeenya.class));
                     break;
                 case 27:
-                    startActivity(new Intent(this, UrjiidhanDhufanii.class));
+                    startActivity(new Intent(this, TsillaatiiMusee.class));
                     break;
                 case 28:
-                    startActivity(new Intent(this, WaaqayyoonNuFayyise.class));
+                    startActivity(new Intent(this, UrjiidhanDhufanii.class));
                     break;
                 case 29:
-                    startActivity(new Intent(this, WangeelattiKanAmantan.class));
+                    startActivity(new Intent(this, WaaqayyoonNuFayyise.class));
                     break;
                 case 30:
-                    startActivity(new Intent(this, YaaGaraaLaafeetii.class));
+                    startActivity(new Intent(this, WangeelattiKanAmantan.class));
                     break;
                 case 31:
+                    startActivity(new Intent(this, YaaGaraaLaafeetii.class));
+                    break;
+                case 32:
                     startActivity(new Intent(this, YaaWaaqayyooGooftaaSiGalateeffannaa.class));
                     break;
-
-
             }
         });
     }
