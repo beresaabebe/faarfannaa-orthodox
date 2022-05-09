@@ -13,6 +13,7 @@ import com.beckytech.faarfannaaafaanoromoo.faarsaaQulqulloota.FaarsaaQulqulloota
 import com.beckytech.faarfannaaafaanoromoo.faarsaaergamoota.FaarsaaErgamoota;
 import com.beckytech.faarfannaaafaanoromoo.faarsaagaabbii.FaarsaaGaabbii;
 import com.beckytech.faarfannaaafaanoromoo.faarsaagooftaa.FaarsaaGooftaa;
+import com.beckytech.faarfannaaafaanoromoo.faarsaahangaffota.FaarsaaHangaffoota;
 import com.beckytech.faarfannaaafaanoromoo.lameen2011.Lameen2011;
 import com.beckytech.faarfannaaafaanoromoo.sadaniin2010.Sadaniin2010;
 import com.beckytech.faarfannaaafaanoromoo.sadeeniin2010.Sadeeniin2010;
@@ -33,7 +34,6 @@ public class MainHomeActivity extends OptionsMenuActivity {
             "Faarsaa Gaabbii",
             "Faarsaa Gooftaa",
             "Faarsaa Hangaffaa Faarfattoota",
-            "Faarsaa Oromiffaan Amariffaa",
             "Faarsaa Qulqulloota",
             "Faarsaa Tartiiban bakka tokkootti",
             "Faarsaa Tawaahidoo",
@@ -106,12 +106,13 @@ public class MainHomeActivity extends OptionsMenuActivity {
                 startActivity(new Intent(MainHomeActivity.this, FaarsaaGooftaa.class));
             }
 
-
-
-            if (i == 13) {
+            if (i == 11) {
+                startActivity(new Intent(MainHomeActivity.this, FaarsaaHangaffoota.class));
+            }
+            if (i == 12) {
                 startActivity(new Intent(MainHomeActivity.this, FaarsaaQulqulloota.class));
             }
-            if (i == 14) {
+            if (i == 13) {
                 startActivity(new Intent(MainHomeActivity.this, MainActivity.class));
             }
 

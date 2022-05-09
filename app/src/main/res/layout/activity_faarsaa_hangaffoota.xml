@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear_top"
+        android:orientation="horizontal"
+        android:background="@drawable/tab_bg">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabMode="auto"
+            app:tabTextColor="@color/white"
+            app:tabGravity="center"
+            android:paddingStart="10dp"
+            android:paddingEnd="1dp"
+            android:background="@drawable/tab_bg_item"
+            app:tabIndicatorColor="#791C9C"
+            app:tabIndicatorAnimationMode="elastic"
+            app:tabIndicatorHeight="2dp"
+            app:tabIndicatorAnimationDuration="3"
+            android:theme="@style/Widget.AppCompat.ListView.Menu"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linear_top">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    </ScrollView>
+
+</RelativeLayout>

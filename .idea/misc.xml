@@ -8,7 +8,10 @@
         <entry key="..\:/Users/10/AndroidStudioProjects/FaarfannaaOrthodox/app/src/main/res/drawable/home_item_bg.xml" value="0.243" />
         <entry key="..\:/Users/10/AndroidStudioProjects/FaarfannaaOrthodox/app/src/main/res/drawable/itembg.xml" value="0.243" />
         <entry key="..\:/Users/10/AndroidStudioProjects/FaarfannaaOrthodox/app/src/main/res/drawable/rounded_conrner.xml" value="0.2265" />
+        <entry key="..\:/Users/10/AndroidStudioProjects/FaarfannaaOrthodox/app/src/main/res/drawable/tab_bg.xml" value="0.1305" />
+        <entry key="..\:/Users/10/AndroidStudioProjects/FaarfannaaOrthodox/app/src/main/res/drawable/tab_bg_item.xml" value="0.1305" />
         <entry key="..\:/Users/10/AndroidStudioProjects/FaarfannaaOrthodox/app/src/main/res/layout/activity_abbaaf_ilma.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/10/AndroidStudioProjects/FaarfannaaOrthodox/app/src/main/res/layout/activity_faarsaa_hangaffoota.xml" value="0.2" />
         <entry key="..\:/Users/10/AndroidStudioProjects/FaarfannaaOrthodox/app/src/main/res/layout/activity_galata.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/10/AndroidStudioProjects/FaarfannaaOrthodox/app/src/main/res/layout/activity_haadhummaa_keen_hima.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/10/AndroidStudioProjects/FaarfannaaOrthodox/app/src/main/res/layout/activity_iyeeluxaafi_qirqoos.xml" value="0.22826086956521738" />
@@ -17,6 +20,10 @@
         <entry key="..\:/Users/10/AndroidStudioProjects/FaarfannaaOrthodox/app/src/main/res/layout/activity_opener.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/10/AndroidStudioProjects/FaarfannaaOrthodox/app/src/main/res/layout/activity_yaa_gara_lafeetti.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/10/AndroidStudioProjects/FaarfannaaOrthodox/app/src/main/res/layout/custom_actionbar_layout.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/10/AndroidStudioProjects/FaarfannaaOrthodox/app/src/main/res/layout/fragment_addunyaa_cubbuurraa.xml" value="0.25" />
+        <entry key="..\:/Users/10/AndroidStudioProjects/FaarfannaaOrthodox/app/src/main/res/layout/fragment_faarsaa_hangaffoota.xml" value="0.25" />
+        <entry key="..\:/Users/10/AndroidStudioProjects/FaarfannaaOrthodox/app/src/main/res/layout/fragment_faarsaa_hangaffota_items.xml" value="0.25" />
+        <entry key="..\:/Users/10/AndroidStudioProjects/FaarfannaaOrthodox/app/src/main/res/layout/fragment_iyyasuus_kiristoos.xml" value="0.25" />
         <entry key="..\:/Users/10/AndroidStudioProjects/FaarfannaaOrthodox/app/src/main/res/layout/listhomeitem.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/10/AndroidStudioProjects/FaarfannaaOrthodox/app/src/main/res/layout/listitem.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/rooba/AndroidStudioProjects/FaarfannaaAfaanOromoo/app/src/main/res/drawable/button_home_bg.xml" value="0.17592592592592593" />
