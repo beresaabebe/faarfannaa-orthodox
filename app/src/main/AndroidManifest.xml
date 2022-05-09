@@ -13,73 +13,225 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FaarfannaaAfaanOromoo">
         <activity
-            android:name=".faarsaacidhaa.RaajiidhaDinqiidha"
-            android:parentActivityName=".faarsaacidhaa.FaarsaaCidhaa"
+            android:name=".faarsaadhaloota.KunooDhalatera"
+            android:parentActivityName=".faarsaadhaloota.FaarsaaDhaloota"
             android:exported="false" />
         <activity
-            android:name=".faarsaacidhaa.Gammachuudha"
-            android:parentActivityName=".faarsaacidhaa.FaarsaaCidhaa"
+            android:name=".faarsaadhaloota.DallaKeessaCiisee"
+            android:parentActivityName=".faarsaadhaloota.FaarsaaDhaloota"
             android:exported="false" />
         <activity
-            android:name=".faarsaacidhaa.DinqiiHojjette"
-            android:parentActivityName=".faarsaacidhaa.FaarsaaCidhaa"
+            android:name=".faarsaadhaloota.UrjiidhaanDhufan"
+            android:parentActivityName=".faarsaadhaloota.FaarsaaDhaloota"
             android:exported="false" />
         <activity
-            android:name=".faarsaacidhaa.BagaIsiinGaee"
-            android:parentActivityName=".faarsaacidhaa.FaarsaaCidhaa"
+            android:name=".faarsaadhaloota.IshooGooftaanNuuDhalateQorichiKeenya"
+            android:parentActivityName=".faarsaadhaloota.FaarsaaDhaloota"
             android:exported="false" />
         <activity
-            android:name=".faarsaacidhaa.BagaGammadanni"
-            android:parentActivityName=".faarsaacidhaa.FaarsaaCidhaa"
+            android:name=".faarsaadhaloota.SamiiIrraaNiBuee"
+            android:parentActivityName=".faarsaadhaloota.FaarsaaDhaloota"
             android:exported="false" />
         <activity
-            android:name=".faarsaacidhaa.BagaGammadanii"
-            android:parentActivityName=".faarsaacidhaa.FaarsaaCidhaa"
+            android:name=".faarsaadhaloota.NuFayyisudhaf"
+            android:parentActivityName=".faarsaadhaloota.FaarsaaDhaloota"
             android:exported="false" />
         <activity
-            android:name=".faarsaacidhaa.MiidhaganiiBareedu"
-            android:parentActivityName=".faarsaacidhaa.FaarsaaCidhaa"
+            android:name=".faarsaadhaloota.MooraaLooniiKeessatti"
+            android:parentActivityName=".faarsaadhaloota.FaarsaaDhaloota"
             android:exported="false" />
         <activity
-            android:name=".faarsaacidhaa.DawitYisebiho"
-            android:parentActivityName=".faarsaacidhaa.FaarsaaCidhaa"
+            android:name=".faarsaadhaloota.GalanniHaaGauAmanueeliini"
+            android:parentActivityName=".faarsaadhaloota.FaarsaaDhaloota"
             android:exported="false" />
         <activity
-            android:name=".faarsaacidhaa.Tiwedisewa"
-            android:parentActivityName=".faarsaacidhaa.FaarsaaCidhaa"
+            android:name=".faarsaadhaloota.IshooIshooNuuDhalate"
+            android:parentActivityName=".faarsaadhaloota.FaarsaaDhaloota"
             android:exported="false" />
         <activity
-            android:name=".faarsaacidhaa.QannaGaalilatti"
-            android:parentActivityName=".faarsaacidhaa.FaarsaaCidhaa"
+            android:name=".faarsaadhaloota.Beeteliyeemitti"
+            android:parentActivityName=".faarsaadhaloota.FaarsaaDhaloota"
             android:exported="false" />
         <activity
-            android:name=".faarsaacidhaa.AkkaaYaaqemiifHannaa"
-            android:parentActivityName=".faarsaacidhaa.FaarsaaCidhaa"
+            android:name=".faarsaadhaloota.AtiAtiBeteliheem"
+            android:parentActivityName=".faarsaadhaloota.FaarsaaDhaloota"
             android:exported="false" />
         <activity
-            android:name=".faarsaacidhaa.MiisiroonDhuufni"
-            android:parentActivityName=".faarsaacidhaa.FaarsaaCidhaa"
-            android:exported="false" />
-        <activity
-            android:name=".faarsaacidhaa.AkkaaAbrahamiifSaaraa"
-            android:parentActivityName=".faarsaacidhaa.FaarsaaCidhaa"
-            android:exported="false" />
-        <activity
-            android:name=".faarsaacidhaa.QaanaaGalilaatti"
-            android:parentActivityName=".faarsaacidhaa.FaarsaaCidhaa"
-            android:exported="false" />
-        <activity
-            android:name=".faarsaacidhaa.MisirroonBagaGeessanii"
-            android:parentActivityName=".faarsaacidhaa.FaarsaaCidhaa"
-            android:exported="false" />
-        <activity
-            android:name=".faarsaacidhaa.FaarsaaCidhaa"
+            android:name=".faarsaadhaloota.FaarsaaDhaloota"
             android:parentActivityName=".MainHomeActivity"
             android:exported="false" />
         <activity
+            android:name=".faarsaacuuphaa.JechiDhufee"
+            android:exported="false"
+            android:parentActivityName=".faarsaacuuphaa.FaarsaaCuuphaa" />
+        <activity
+            android:name=".faarsaacuuphaa.GannaSoddomatti"
+            android:exported="false"
+            android:parentActivityName=".faarsaacuuphaa.FaarsaaCuuphaa" />
+        <activity
+            android:name=".faarsaacuuphaa.HarkaYohaannisiinCuuphame"
+            android:exported="false"
+            android:parentActivityName=".faarsaacuuphaa.FaarsaaCuuphaa" />
+        <activity
+            android:name=".faarsaacuuphaa.RaajiidhaaCuphamuunGooftadhaa"
+            android:exported="false"
+            android:parentActivityName=".faarsaacuuphaa.FaarsaaCuuphaa" />
+        <activity
+            android:name=".faarsaacuuphaa.DhufeJechi"
+            android:exported="false"
+            android:parentActivityName=".faarsaacuuphaa.FaarsaaCuuphaa" />
+        <activity
+            android:name=".faarsaacuuphaa.DeemeIyyesuus"
+            android:exported="false"
+            android:parentActivityName=".faarsaacuuphaa.FaarsaaCuuphaa" />
+        <activity
+            android:name=".faarsaacuuphaa.CuuphaamuusanYoordaanositti"
+            android:exported="false"
+            android:parentActivityName=".faarsaacuuphaa.FaarsaaCuuphaa" />
+        <activity
+            android:name=".faarsaacuuphaa.Cuuphame"
+            android:exported="false"
+            android:parentActivityName=".faarsaacuuphaa.FaarsaaCuuphaa" />
+        <activity
+            android:name=".faarsaacuuphaa.YordaanosittiCuuphameAmanueel"
+            android:exported="false"
+            android:parentActivityName=".faarsaacuuphaa.FaarsaaCuuphaa" />
+        <activity
+            android:name=".faarsaacuuphaa.SagaltamiiSaglanu"
+            android:exported="false"
+            android:parentActivityName=".faarsaacuuphaa.FaarsaaCuuphaa" />
+        <activity
+            android:name=".faarsaacuuphaa.GaliilatiDhaqe"
+            android:exported="false"
+            android:parentActivityName=".faarsaacuuphaa.FaarsaaCuuphaa" />
+        <activity
+            android:name=".faarsaacuuphaa.GooftaasaaDursee"
+            android:exported="false"
+            android:parentActivityName=".faarsaacuuphaa.FaarsaaCuuphaa" />
+        <activity
+            android:name=".faarsaacuuphaa.BeenaaNiDeemna"
+            android:exported="false"
+            android:parentActivityName=".faarsaacuuphaa.FaarsaaCuuphaa" />
+        <activity
+            android:name=".faarsaacuuphaa.YordaanosGammaddee"
+            android:exported="false"
+            android:parentActivityName=".faarsaacuuphaa.FaarsaaCuuphaa" />
+        <activity
+            android:name=".faarsaacuuphaa.NiCuuphameIyyesuus"
+            android:exported="false"
+            android:parentActivityName=".faarsaacuuphaa.FaarsaaCuuphaa" />
+        <activity
+            android:name=".faarsaacuuphaa.NuufCuuphame"
+            android:exported="false"
+            android:parentActivityName=".faarsaacuuphaa.FaarsaaCuuphaa" />
+        <activity
+            android:name=".faarsaacuuphaa.Yordaanositti"
+            android:exported="false"
+            android:parentActivityName=".faarsaacuuphaa.FaarsaaCuuphaa" />
+        <activity
+            android:name=".faarsaacuuphaa.NiBueIlmi"
+            android:exported="false"
+            android:parentActivityName=".faarsaacuuphaa.FaarsaaCuuphaa" />
+        <activity
+            android:name=".faarsaacuuphaa.CuuphameJira"
+            android:exported="false"
+            android:parentActivityName=".faarsaacuuphaa.FaarsaaCuuphaa" />
+        <activity
+            android:name=".faarsaacuuphaa.AmantiifCuuphaadhaa"
+            android:exported="false"
+            android:parentActivityName=".faarsaacuuphaa.FaarsaaCuuphaa" />
+        <activity
+            android:name=".faarsaacuuphaa.IlmaAbbaaIlmaMaariyaami"
+            android:exported="false"
+            android:parentActivityName=".faarsaacuuphaa.FaarsaaCuuphaa" />
+        <activity
+            android:name=".faarsaacuuphaa.NutiCuuphamne"
+            android:exported="false"
+            android:parentActivityName=".faarsaacuuphaa.FaarsaaCuuphaa" />
+        <activity
+            android:name=".faarsaacuuphaa.IyyesuusCuuphame"
+            android:exported="false"
+            android:parentActivityName=".faarsaacuuphaa.FaarsaaCuuphaa" />
+        <activity
+            android:name=".faarsaacuuphaa.YoordaanoosiDhaloonniKoo"
+            android:exported="false"
+            android:parentActivityName=".faarsaacuuphaa.FaarsaaCuuphaa" />
+        <activity
+            android:name=".faarsaacuuphaa.WalakkaaGalaanaa"
+            android:exported="false"
+            android:parentActivityName=".faarsaacuuphaa.FaarsaaCuuphaa" />
+        <activity
+            android:name=".faarsaacuuphaa.FaarsaaCuuphaa"
+            android:exported="false"
+            android:parentActivityName=".MainHomeActivity" />
+        <activity
+            android:name=".faarsaacidhaa.RaajiidhaDinqiidha"
+            android:exported="false"
+            android:parentActivityName=".faarsaacidhaa.FaarsaaCidhaa" />
+        <activity
+            android:name=".faarsaacidhaa.Gammachuudha"
+            android:exported="false"
+            android:parentActivityName=".faarsaacidhaa.FaarsaaCidhaa" />
+        <activity
+            android:name=".faarsaacidhaa.DinqiiHojjette"
+            android:exported="false"
+            android:parentActivityName=".faarsaacidhaa.FaarsaaCidhaa" />
+        <activity
+            android:name=".faarsaacidhaa.BagaIsiinGaee"
+            android:exported="false"
+            android:parentActivityName=".faarsaacidhaa.FaarsaaCidhaa" />
+        <activity
+            android:name=".faarsaacidhaa.BagaGammadanni"
+            android:exported="false"
+            android:parentActivityName=".faarsaacidhaa.FaarsaaCidhaa" />
+        <activity
+            android:name=".faarsaacidhaa.BagaGammadanii"
+            android:exported="false"
+            android:parentActivityName=".faarsaacidhaa.FaarsaaCidhaa" />
+        <activity
+            android:name=".faarsaacidhaa.MiidhaganiiBareedu"
+            android:exported="false"
+            android:parentActivityName=".faarsaacidhaa.FaarsaaCidhaa" />
+        <activity
+            android:name=".faarsaacidhaa.DawitYisebiho"
+            android:exported="false"
+            android:parentActivityName=".faarsaacidhaa.FaarsaaCidhaa" />
+        <activity
+            android:name=".faarsaacidhaa.Tiwedisewa"
+            android:exported="false"
+            android:parentActivityName=".faarsaacidhaa.FaarsaaCidhaa" />
+        <activity
+            android:name=".faarsaacidhaa.QannaGaalilatti"
+            android:exported="false"
+            android:parentActivityName=".faarsaacidhaa.FaarsaaCidhaa" />
+        <activity
+            android:name=".faarsaacidhaa.AkkaaYaaqemiifHannaa"
+            android:exported="false"
+            android:parentActivityName=".faarsaacidhaa.FaarsaaCidhaa" />
+        <activity
+            android:name=".faarsaacidhaa.MiisiroonDhuufni"
+            android:exported="false"
+            android:parentActivityName=".faarsaacidhaa.FaarsaaCidhaa" />
+        <activity
+            android:name=".faarsaacidhaa.AkkaaAbrahamiifSaaraa"
+            android:exported="false"
+            android:parentActivityName=".faarsaacidhaa.FaarsaaCidhaa" />
+        <activity
+            android:name=".faarsaacidhaa.QaanaaGalilaatti"
+            android:exported="false"
+            android:parentActivityName=".faarsaacidhaa.FaarsaaCidhaa" />
+        <activity
+            android:name=".faarsaacidhaa.MisirroonBagaGeessanii"
+            android:exported="false"
+            android:parentActivityName=".faarsaacidhaa.FaarsaaCidhaa" />
+        <activity
+            android:name=".faarsaacidhaa.FaarsaaCidhaa"
+            android:exported="false"
+            android:parentActivityName=".MainHomeActivity" />
+        <activity
             android:name=".faarsaacidhaa.NiiEebbifamman"
-            android:parentActivityName=".faarsaacidhaa.FaarsaaCidhaa"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".faarsaacidhaa.FaarsaaCidhaa" />
         <activity
             android:name=".faarsaaayyaanna.NiDhalateBeeteliheemitti"
             android:exported="false"

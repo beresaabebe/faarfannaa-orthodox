@@ -12,6 +12,8 @@ import com.beckytech.faarfannaaafaanoromoo.faarsaa2014.FaarsaaAddaa2014;
 import com.beckytech.faarfannaaafaanoromoo.faarsaaQulqulloota.FaarsaaQulqulloota;
 import com.beckytech.faarfannaaafaanoromoo.faarsaaayyaanna.FaarsaaAyyaana;
 import com.beckytech.faarfannaaafaanoromoo.faarsaacidhaa.FaarsaaCidhaa;
+import com.beckytech.faarfannaaafaanoromoo.faarsaacuuphaa.FaarsaaCuuphaa;
+import com.beckytech.faarfannaaafaanoromoo.faarsaadhaloota.FaarsaaDhaloota;
 import com.beckytech.faarfannaaafaanoromoo.faarsaaergamoota.FaarsaaErgamoota;
 import com.beckytech.faarfannaaafaanoromoo.faarsaagaabbii.FaarsaaGaabbii;
 import com.beckytech.faarfannaaafaanoromoo.faarsaagooftaa.FaarsaaGooftaa;
@@ -132,6 +134,12 @@ public class MainHomeActivity extends OptionsMenuActivity {
 
             if (i == 16) {
                 startActivity(new Intent(MainHomeActivity.this, FaarsaaCidhaa.class));
+            }
+            if (i == 17) {
+                startActivity(new Intent(MainHomeActivity.this, FaarsaaCuuphaa.class));
+            }
+            if (i == 18) {
+                startActivity(new Intent(MainHomeActivity.this, FaarsaaDhaloota.class));
             }
 
         });
