@@ -16,10 +16,13 @@ import com.beckytech.faarfannaaafaanoromoo.faarsaacuuphaa.FaarsaaCuuphaa;
 import com.beckytech.faarfannaaafaanoromoo.faarsaadhaloota.FaarsaaDhaloota;
 import com.beckytech.faarfannaaafaanoromoo.faarsaaduaa.FaarsaaDuaKaumsaa;
 import com.beckytech.faarfannaaafaanoromoo.faarsaaergamoota.FaarsaaErgamoota;
+import com.beckytech.faarfannaaafaanoromoo.faarsaafannoo.FaarsaaFannoo;
 import com.beckytech.faarfannaaafaanoromoo.faarsaagaabbii.FaarsaaGaabbii;
 import com.beckytech.faarfannaaafaanoromoo.faarsaagooftaa.FaarsaaGooftaa;
 import com.beckytech.faarfannaaafaanoromoo.faarsaahangaffota.FaarsaaHangaffoota;
+import com.beckytech.faarfannaaafaanoromoo.faarsaahiikaa.FaarsaaHiikaa;
 import com.beckytech.faarfannaaafaanoromoo.faarsaatawaahido.FaarsaaTawaahido;
+import com.beckytech.faarfannaaafaanoromoo.faarsaayeroohundaa.FaarsaaYerooHundaa;
 import com.beckytech.faarfannaaafaanoromoo.lameen2011.Lameen2011;
 import com.beckytech.faarfannaaafaanoromoo.sadaniin2010.Sadaniin2010;
 import com.beckytech.faarfannaaafaanoromoo.sadeeniin2010.Sadeeniin2010;
@@ -49,7 +52,7 @@ public class MainHomeActivity extends OptionsMenuActivity {
             "Faarsaa Yeroo Ayyaana Dhaloota Gooftaa",
             "Faarsaa Yeroo Ayyaana Du’aa Ka’umsaa",
             "Faarsaa Yeroo Ayyaana Fannoo",
-            "Faarsaa Yeroo Ayyaana Hundaa",
+            "Faarsaa Yeroo Hundaa",
             "Faarfata Hiikaa Bultii",
             "Faarfata Keebar Tesfaa",
             "Faarfata Koo’eel Shawaa"
@@ -145,6 +148,16 @@ public class MainHomeActivity extends OptionsMenuActivity {
             if (i == 19) {
                 startActivity(new Intent(MainHomeActivity.this, FaarsaaDuaKaumsaa.class));
             }
+            if (i == 20) {
+                startActivity(new Intent(MainHomeActivity.this, FaarsaaFannoo.class));
+            }
+            if (i == 21) {
+                startActivity(new Intent(MainHomeActivity.this, FaarsaaYerooHundaa.class));
+            }
+            if (i == 22) {
+                startActivity(new Intent(MainHomeActivity.this, FaarsaaHiikaa.class));
+            }
+
         });
     }
 }

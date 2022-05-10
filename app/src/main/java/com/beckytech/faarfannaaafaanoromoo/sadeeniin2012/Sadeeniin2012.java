@@ -96,7 +96,8 @@ public class Sadeeniin2012 extends OptionsMenuActivity {
             LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             @SuppressLint("ViewHolder") View row = inflater.inflate(R.layout.listitem, parent, false);
             TextView textView = row.findViewById(R.id.textView1);
-            textView.setText(title[position]);
+            String symbolSign = "\uD83C\uDF39✝\uD83C\uDF39";
+            textView.setText(symbolSign +" "+ title[position]);
             return row;
         }
 

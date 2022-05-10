@@ -86,8 +86,9 @@ public class FaarsaaDuaKaumsaa extends OptionsMenuActivity {
         public View getView(int position, View convertView, ViewGroup parent) {
             LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             @SuppressLint("ViewHolder") View row = inflater.inflate(R.layout.listitem, parent, false);
-            TextView btn = row.findViewById(R.id.textView1);
-            btn.setText(title[position]);
+            TextView textView = row.findViewById(R.id.textView1);
+            String symbolSign = "\uD83C\uDF39✝\uD83C\uDF39";
+            textView.setText(symbolSign +" "+ title[position]);
             return row;
         }
 

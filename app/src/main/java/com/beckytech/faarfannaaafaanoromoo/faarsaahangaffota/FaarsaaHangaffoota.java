@@ -22,13 +22,15 @@ public class FaarsaaHangaffoota extends OptionsMenuActivity {
         TabLayout tabLayout = findViewById(R.id.tabs);
         ViewPager2 viewPager2 = findViewById(R.id.view_pager);
 
-        tabLayout.addTab(tabLayout.newTab().setText("Na moo’te jireenyi koo"));
-        tabLayout.addTab(tabLayout.newTab().setText("Addunyaa Cubbuurraa"));
-        tabLayout.addTab(tabLayout.newTab().setText("Qulqulloonni"));
-        tabLayout.addTab(tabLayout.newTab().setText("Qaraaniyoorratti"));
-        tabLayout.addTab(tabLayout.newTab().setText("Iyyesuus Kiristoos"));
-        tabLayout.addTab(tabLayout.newTab().setText("Ifa Kan Uffate"));
-        tabLayout.addTab(tabLayout.newTab().setText("Osoo hin qophaa'inaa"));
+        String symbolSign = "✝\uD83C\uDF39";
+
+        tabLayout.addTab(tabLayout.newTab().setText(symbolSign + " Na moo’te jireenyi koo"));
+        tabLayout.addTab(tabLayout.newTab().setText(symbolSign + " Addunyaa Cubbuurraa"));
+        tabLayout.addTab(tabLayout.newTab().setText(symbolSign + " Qulqulloonni"));
+        tabLayout.addTab(tabLayout.newTab().setText(symbolSign + " Qaraaniyoorratti"));
+        tabLayout.addTab(tabLayout.newTab().setText(symbolSign + " Iyyesuus Kiristoos"));
+        tabLayout.addTab(tabLayout.newTab().setText(symbolSign + " Ifa Kan Uffate"));
+        tabLayout.addTab(tabLayout.newTab().setText(symbolSign + " Osoo hin qophaa'inaa"));
 
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
