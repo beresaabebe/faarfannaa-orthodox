@@ -28,7 +28,7 @@ public class FaarsaaHiikaa extends OptionsMenuActivity {
         tabLayout.addTab(tabLayout.newTab().setText(symbolSign + " Gaaddisa kochoo keen"));
         tabLayout.addTab(tabLayout.newTab().setText(symbolSign + " Itti fufaa"));
         tabLayout.addTab(tabLayout.newTab().setText(symbolSign + " Jireenya Lubbuu koo"));
-        tabLayout.addTab(tabLayout.newTab().setText(symbolSign + " aariyaam nuti si jaalanna"));
+        tabLayout.addTab(tabLayout.newTab().setText(symbolSign + " Maariyaam nuti si jaalanna"));
 
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 

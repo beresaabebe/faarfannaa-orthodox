@@ -7,16 +7,23 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/iconnobg"
+        android:icon="@drawable/faarsaicon"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_icon2_round"
+        android:roundIcon="@drawable/faarsaicon"
         android:supportsRtl="true"
         android:theme="@style/Theme.FaarfannaaAfaanOromoo">
-
+        <activity
+            android:name=".faarsaakooeel.FaarsaaKooeel"
+            android:exported="false"
+            android:parentActivityName=".MainHomeActivity" />
+        <activity
+            android:name=".faarsaaKeeber.FaarsaaKeeber"
+            android:exported="false"
+            android:parentActivityName=".MainHomeActivity" />
         <activity
             android:name=".faarsaahiikaa.FaarsaaHiikaa"
-            android:parentActivityName=".MainHomeActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".MainHomeActivity" />
         <activity
             android:name=".faarsaayeroohundaa.Hoosainaa"
             android:exported="false"

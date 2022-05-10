@@ -19,7 +19,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_margin="10dp"
             android:contentDescription="@string/todo"
-            android:src="@drawable/iconnobg" />
+            android:src="@drawable/faarsaicon" />
 
         <TextView
             android:id="@+id/textTitle"

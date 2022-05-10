@@ -24,9 +24,10 @@ public class GalataActivity extends OptionsMenuActivity {
             "<p style='text-align:justify;'>Itti ansuudhaan Maatiin koo, hiriyyoonni koo akkasumas namootni na beektanis ta'ee kanneen " +
             "na hin beekne yeroo hundaa haalla adda addaattin jajabbinaa naaf taasiftani Waaqayyoon gatii lubbuu " +
             "isiniif haa taasisuun. Ameen.</p>" +
-            "<p style='text-align:justify;'>Walaloo faarfannawwani bifa adda addaan bakkee adda addaatti kan lakkiftan hundaa keessaniif galanni koo" +
-            " guddaadha. Waaqayyoon ammas kana caala nama mana isaa keessa taajajiluu isiin haa taasisu. Eebbii abboota " +
-            "qulqulloota, ayyaanni isaanif isiniif haa baay'atu.</p>" +
+            "<p style='text-align:justify;'>Walaloo faarfannawwani bakkaa tokkootti qindeessun akkan app kana bifa salphaafi" +
+            "itti fayyadamuuf nama hin rakkisneetti tolutti akka hojjedhuf kan naaf kennee Faarfataa <b> Koo'eel Shawaa</b> f" +
+            " galanni koo guddaadha. Waaqayyoon ammas kana caala nama mana isaa keessa taajajiluu si haa taasisu. Eebbii abboota " +
+            "qulqulloota, ayyaanni isaanif sif haa baay'atu.</p>" +
             "<p style='text-align:justify;'>Isiniis app kan Google play irraa busuun jaallachun waan itti fayyadmatanniif galannii keessa " +
             "jireenya bara baraa isiniif haa ta'u. Ameen!</p>";
 
