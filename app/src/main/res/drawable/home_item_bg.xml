@@ -9,8 +9,10 @@
                 android:bottomRightRadius="1dp"
                 android:topLeftRadius="1dp"
                 android:topRightRadius="50dp"/>
-            <solid
-                android:color="#0D5E5C"/>
+            <gradient
+                android:endColor="#393838"
+                android:startColor="#8E8B8B"
+                android:centerColor="#AAAAAA"/>
         </shape>
     </item>
 </selector>

@@ -10,87 +10,108 @@
         android:icon="@drawable/faarsaicon"
         android:label="@string/app_name"
         android:roundIcon="@drawable/faarsaicon"
+        android:hardwareAccelerated="true"
         android:supportsRtl="true"
         android:theme="@style/Theme.FaarfannaaAfaanOromoo">
         <activity
             android:name=".faarsaakooeel.FaarsaaKooeel"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainHomeActivity" />
         <activity
             android:name=".faarsaaKeeber.FaarsaaKeeber"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainHomeActivity" />
         <activity
             android:name=".faarsaahiikaa.FaarsaaHiikaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainHomeActivity" />
         <activity
             android:name=".faarsaayeroohundaa.Hoosainaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaayeroohundaa.FaarsaaYerooHundaa" />
         <activity
             android:name=".faarsaayeroohundaa.CuuphamuunKee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaayeroohundaa.FaarsaaYerooHundaa" />
         <activity
             android:name=".faarsaayeroohundaa.AbbootiinQulqulluu"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaayeroohundaa.FaarsaaYerooHundaa" />
         <activity
             android:name=".faarsaayeroohundaa.YaaUumaaKoo"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaayeroohundaa.FaarsaaYerooHundaa" />
         <activity
             android:name=".faarsaayeroohundaa.YaaManaWaaqayyoo"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaayeroohundaa.FaarsaaYerooHundaa" />
         <activity
             android:name=".faarsaayeroohundaa.SiifanDhiiseYaaHaadhaKoo"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaayeroohundaa.FaarsaaYerooHundaa" />
         <activity
             android:name=".faarsaayeroohundaa.MaalooYaaWaaqakoo"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaayeroohundaa.FaarsaaYerooHundaa" />
         <activity
             android:name=".faarsaayeroohundaa.KoottaYaaNamootaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaayeroohundaa.FaarsaaYerooHundaa" />
         <activity
             android:name=".faarsaayeroohundaa.LakkiiGorfamii"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaayeroohundaa.FaarsaaYerooHundaa" />
         <activity
             android:name=".faarsaayeroohundaa.AkkaBiyyaLafaaf"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaayeroohundaa.FaarsaaYerooHundaa" />
         <activity
             android:name=".faarsaayeroohundaa.AnooGochaKootiin"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaayeroohundaa.FaarsaaYerooHundaa" />
         <activity
             android:name=".faarsaayeroohundaa.AkkaJechaaKee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaayeroohundaa.FaarsaaYerooHundaa" />
         <activity
             android:name=".faarsaayeroohundaa.MooraaLooniiKeessatti"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaayeroohundaa.FaarsaaYerooHundaa" />
         <activity
             android:name=".faarsaayeroohundaa.OolmaanKeeYaaGiiftii"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaayeroohundaa.FaarsaaYerooHundaa" />
         <activity
             android:name=".faarsaayeroohundaa.HaadhaKoo"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaayeroohundaa.FaarsaaYerooHundaa" />
         <activity
             android:name=".faarsaayeroohundaa.WaanNaafGooteHundaaf"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaayeroohundaa.FaarsaaYerooHundaa" />
         <activity
             android:name=".faarsaayeroohundaa.WaaeeKeenHima"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaayeroohundaa.FaarsaaYerooHundaa" />
         <activity
             android:name=".faarsaayeroohundaa.TeessumaSillaasee"
@@ -98,526 +119,657 @@
         <activity
             android:name=".faarsaayeroohundaa.KananIttinBoonee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaayeroohundaa.FaarsaaYerooHundaa" />
         <activity
             android:name=".faarsaayeroohundaa.KanKaleessaDarbe"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaayeroohundaa.FaarsaaYerooHundaa" />
         <activity
             android:name=".faarsaayeroohundaa.JaalatamaadhaMaqaanKee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaayeroohundaa.FaarsaaYerooHundaa" />
         <activity
             android:name=".faarsaayeroohundaa.JaalalaanHundaGoote"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaayeroohundaa.FaarsaaYerooHundaa" />
         <activity
             android:name=".faarsaayeroohundaa.HojiinKeeRaajiidhaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaayeroohundaa.FaarsaaYerooHundaa" />
         <activity
             android:name=".faarsaayeroohundaa.HaaGalateeffamuWaaqniHaraanNuGaee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaayeroohundaa.FaarsaaYerooHundaa" />
         <activity
             android:name=".faarsaayeroohundaa.HaaGalateeffannu"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaayeroohundaa.FaarsaaYerooHundaa" />
         <activity
             android:name=".faarsaayeroohundaa.GalmaKoo"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaayeroohundaa.FaarsaaYerooHundaa" />
         <activity
             android:name=".faarsaayeroohundaa.GalanniIsaaKanAmalummaasaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaayeroohundaa.FaarsaaYerooHundaa" />
         <activity
             android:name=".faarsaayeroohundaa.BaayatusBarriQoruumsaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaayeroohundaa.FaarsaaYerooHundaa" />
         <activity
             android:name=".faarsaayeroohundaa.AdoonayiiAtiWaqaaJirataa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaayeroohundaa.FaarsaaYerooHundaa" />
         <activity
             android:name=".faarsaayeroohundaa.AnaFaanaTai"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaayeroohundaa.FaarsaaYerooHundaa" />
         <activity
             android:name=".faarsaayeroohundaa.FaarsaaYerooHundaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainHomeActivity" />
         <activity
             android:name=".faarsaafannoo.FannoonArgameera"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaafannoo.FaarsaaFannoo" />
         <activity
             android:name=".faarsaafannoo.Argameera"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaafannoo.FaarsaaFannoo" />
         <activity
             android:name=".faarsaafannoo.FannoonGooftaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaafannoo.FaarsaaFannoo" />
         <activity
             android:name=".faarsaafannoo.DamaraaWalitti"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaafannoo.FaarsaaFannoo" />
         <activity
             android:name=".faarsaafannoo.MallattooDhugaadha"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaafannoo.FaarsaaFannoo" />
         <activity
             android:name=".faarsaafannoo.ArgaameeFannoonGooftaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaafannoo.FaarsaaFannoo" />
         <activity
             android:name=".faarsaafannoo.SabaKiristannaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaafannoo.FaarsaaFannoo" />
         <activity
             android:name=".faarsaafannoo.FannooGooftan"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaafannoo.FaarsaaFannoo" />
         <activity
             android:name=".faarsaafannoo.YaaWaaqayyooGooftaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaafannoo.FaarsaaFannoo" />
         <activity
             android:name=".faarsaafannoo.SabaKootiifi"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaafannoo.FaarsaaFannoo" />
         <activity
             android:name=".faarsaafannoo.AniyyuuGaabberraa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaafannoo.FaarsaaFannoo" />
         <activity
             android:name=".faarsaafannoo.JaalalliWaaqayyoo"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaafannoo.FaarsaaFannoo" />
         <activity
             android:name=".faarsaafannoo.AarsaatuAgarsiisee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaafannoo.FaarsaaFannoo" />
         <activity
             android:name=".faarsaafannoo.AyyaanaWaggaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaafannoo.FaarsaaFannoo" />
         <activity
             android:name=".faarsaafannoo.LoolaFannoosaatin"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaafannoo.FaarsaaFannoo" />
         <activity
             android:name=".faarsaafannoo.FannooIfaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaafannoo.FaarsaaFannoo" />
         <activity
             android:name=".faarsaafannoo.FaarsaaFannoo"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainHomeActivity" />
         <activity
             android:name=".faarsaaayyaanna.BueeJedhaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaaayyaanna.FaarsaaAyyaana" />
         <activity
             android:name=".faarsaaduaa.HafuurriQulqulluunBue"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaaduaa.FaarsaaDuaKaumsaa" />
         <activity
             android:name=".faarsaaduaa.IsinGaruuTuraa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaaduaa.FaarsaaDuaKaumsaa" />
         <activity
             android:name=".faarsaaduaa.KanHinDuuneDuee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaaduaa.FaarsaaDuaKaumsaa" />
         <activity
             android:name=".faarsaaduaa.LaftiQulqulloofte"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaaduaa.FaarsaaDuaKaumsaa" />
         <activity
             android:name=".faarsaaduaa.KiristoosKaeera"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaaduaa.FaarsaaDuaKaumsaa" />
         <activity
             android:name=".faarsaaduaa.HaraTaeGammachuun"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaaduaa.FaarsaaDuaKaumsaa" />
         <activity
             android:name=".faarsaaduaa.DuaaKaeera"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaaduaa.FaarsaaDuaKaumsaa" />
         <activity
             android:name=".faarsaaduaa.FaarsaaDuaKaumsaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainHomeActivity" />
         <activity
             android:name=".faarsaadhaloota.KunooDhalatera"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaadhaloota.FaarsaaDhaloota" />
         <activity
             android:name=".faarsaadhaloota.DallaKeessaCiisee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaadhaloota.FaarsaaDhaloota" />
         <activity
             android:name=".faarsaadhaloota.UrjiidhaanDhufan"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaadhaloota.FaarsaaDhaloota" />
         <activity
             android:name=".faarsaadhaloota.IshooGooftaanNuuDhalateQorichiKeenya"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaadhaloota.FaarsaaDhaloota" />
         <activity
             android:name=".faarsaadhaloota.SamiiIrraaNiBuee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaadhaloota.FaarsaaDhaloota" />
         <activity
             android:name=".faarsaadhaloota.NuFayyisudhaf"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaadhaloota.FaarsaaDhaloota" />
         <activity
             android:name=".faarsaadhaloota.MooraaLooniiKeessatti"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaadhaloota.FaarsaaDhaloota" />
         <activity
             android:name=".faarsaadhaloota.GalanniHaaGauAmanueeliini"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaadhaloota.FaarsaaDhaloota" />
         <activity
             android:name=".faarsaadhaloota.IshooIshooNuuDhalate"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaadhaloota.FaarsaaDhaloota" />
         <activity
             android:name=".faarsaadhaloota.Beeteliyeemitti"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaadhaloota.FaarsaaDhaloota" />
         <activity
             android:name=".faarsaadhaloota.AtiAtiBeteliheem"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaadhaloota.FaarsaaDhaloota" />
         <activity
             android:name=".faarsaadhaloota.FaarsaaDhaloota"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainHomeActivity" />
         <activity
             android:name=".faarsaacuuphaa.JechiDhufee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaacuuphaa.FaarsaaCuuphaa" />
         <activity
             android:name=".faarsaacuuphaa.GannaSoddomatti"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaacuuphaa.FaarsaaCuuphaa" />
         <activity
             android:name=".faarsaacuuphaa.HarkaYohaannisiinCuuphame"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaacuuphaa.FaarsaaCuuphaa" />
         <activity
             android:name=".faarsaacuuphaa.RaajiidhaaCuphamuunGooftadhaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaacuuphaa.FaarsaaCuuphaa" />
         <activity
             android:name=".faarsaacuuphaa.DhufeJechi"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaacuuphaa.FaarsaaCuuphaa" />
         <activity
             android:name=".faarsaacuuphaa.DeemeIyyesuus"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaacuuphaa.FaarsaaCuuphaa" />
         <activity
             android:name=".faarsaacuuphaa.CuuphaamuusanYoordaanositti"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaacuuphaa.FaarsaaCuuphaa" />
         <activity
             android:name=".faarsaacuuphaa.Cuuphame"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaacuuphaa.FaarsaaCuuphaa" />
         <activity
             android:name=".faarsaacuuphaa.YordaanosittiCuuphameAmanueel"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaacuuphaa.FaarsaaCuuphaa" />
         <activity
             android:name=".faarsaacuuphaa.SagaltamiiSaglanu"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaacuuphaa.FaarsaaCuuphaa" />
         <activity
             android:name=".faarsaacuuphaa.GaliilatiDhaqe"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaacuuphaa.FaarsaaCuuphaa" />
         <activity
             android:name=".faarsaacuuphaa.GooftaasaaDursee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaacuuphaa.FaarsaaCuuphaa" />
         <activity
             android:name=".faarsaacuuphaa.BeenaaNiDeemna"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaacuuphaa.FaarsaaCuuphaa" />
         <activity
             android:name=".faarsaacuuphaa.YordaanosGammaddee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaacuuphaa.FaarsaaCuuphaa" />
         <activity
             android:name=".faarsaacuuphaa.NiCuuphameIyyesuus"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaacuuphaa.FaarsaaCuuphaa" />
         <activity
             android:name=".faarsaacuuphaa.NuufCuuphame"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaacuuphaa.FaarsaaCuuphaa" />
         <activity
             android:name=".faarsaacuuphaa.Yordaanositti"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaacuuphaa.FaarsaaCuuphaa" />
         <activity
             android:name=".faarsaacuuphaa.NiBueIlmi"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaacuuphaa.FaarsaaCuuphaa" />
         <activity
             android:name=".faarsaacuuphaa.CuuphameJira"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaacuuphaa.FaarsaaCuuphaa" />
         <activity
             android:name=".faarsaacuuphaa.AmantiifCuuphaadhaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaacuuphaa.FaarsaaCuuphaa" />
         <activity
             android:name=".faarsaacuuphaa.IlmaAbbaaIlmaMaariyaami"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaacuuphaa.FaarsaaCuuphaa" />
         <activity
             android:name=".faarsaacuuphaa.NutiCuuphamne"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaacuuphaa.FaarsaaCuuphaa" />
         <activity
             android:name=".faarsaacuuphaa.IyyesuusCuuphame"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaacuuphaa.FaarsaaCuuphaa" />
         <activity
             android:name=".faarsaacuuphaa.YoordaanoosiDhaloonniKoo"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaacuuphaa.FaarsaaCuuphaa" />
         <activity
             android:name=".faarsaacuuphaa.WalakkaaGalaanaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaacuuphaa.FaarsaaCuuphaa" />
         <activity
             android:name=".faarsaacuuphaa.FaarsaaCuuphaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainHomeActivity" />
         <activity
             android:name=".faarsaacidhaa.RaajiidhaDinqiidha"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaacidhaa.FaarsaaCidhaa" />
         <activity
             android:name=".faarsaacidhaa.Gammachuudha"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaacidhaa.FaarsaaCidhaa" />
         <activity
             android:name=".faarsaacidhaa.DinqiiHojjette"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaacidhaa.FaarsaaCidhaa" />
         <activity
             android:name=".faarsaacidhaa.BagaIsiinGaee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaacidhaa.FaarsaaCidhaa" />
         <activity
             android:name=".faarsaacidhaa.BagaGammadanni"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaacidhaa.FaarsaaCidhaa" />
         <activity
             android:name=".faarsaacidhaa.BagaGammadanii"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaacidhaa.FaarsaaCidhaa" />
         <activity
             android:name=".faarsaacidhaa.MiidhaganiiBareedu"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaacidhaa.FaarsaaCidhaa" />
         <activity
             android:name=".faarsaacidhaa.DawitYisebiho"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaacidhaa.FaarsaaCidhaa" />
         <activity
             android:name=".faarsaacidhaa.Tiwedisewa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaacidhaa.FaarsaaCidhaa" />
         <activity
             android:name=".faarsaacidhaa.QannaGaalilatti"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaacidhaa.FaarsaaCidhaa" />
         <activity
             android:name=".faarsaacidhaa.AkkaaYaaqemiifHannaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaacidhaa.FaarsaaCidhaa" />
         <activity
             android:name=".faarsaacidhaa.MiisiroonDhuufni"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaacidhaa.FaarsaaCidhaa" />
         <activity
             android:name=".faarsaacidhaa.AkkaaAbrahamiifSaaraa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaacidhaa.FaarsaaCidhaa" />
         <activity
             android:name=".faarsaacidhaa.QaanaaGalilaatti"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaacidhaa.FaarsaaCidhaa" />
         <activity
             android:name=".faarsaacidhaa.MisirroonBagaGeessanii"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaacidhaa.FaarsaaCidhaa" />
         <activity
             android:name=".faarsaacidhaa.FaarsaaCidhaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainHomeActivity" />
         <activity
             android:name=".faarsaacidhaa.NiiEebbifamman"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaacidhaa.FaarsaaCidhaa" />
         <activity
             android:name=".faarsaaayyaanna.NiDhalateBeeteliheemitti"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaaayyaanna.FaarsaaAyyaana" />
         <activity
             android:name=".faarsaaayyaanna.YaaGaraaLaafeetii"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaaayyaanna.FaarsaaAyyaana" />
         <activity
             android:name=".faarsaaayyaanna.YaaWaaqayyooGooftaaSiGalateeffannaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaaayyaanna.FaarsaaAyyaana" />
         <activity
             android:name=".faarsaaayyaanna.AyyaanaArgattee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaaayyaanna.FaarsaaAyyaana" />
         <activity
             android:name=".faarsaaayyaanna.MeeDubbadhaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaaayyaanna.FaarsaaAyyaana" />
         <activity
             android:name=".faarsaaayyaanna.GalanniSillaasef"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaaayyaanna.FaarsaaAyyaana" />
         <activity
             android:name=".faarsaaayyaanna.EenyumtuuHinJiru"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaaayyaanna.FaarsaaAyyaana" />
         <activity
             android:name=".faarsaaayyaanna.MaariyaamNiCaalti"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaaayyaanna.FaarsaaAyyaana" />
         <activity
             android:name=".faarsaaayyaanna.Galateeffamaadha"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaaayyaanna.FaarsaaAyyaana" />
         <activity
             android:name=".faarsaaayyaanna.NiAmannaaAbbaattii"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaaayyaanna.FaarsaaAyyaana" />
         <activity
             android:name=".faarsaaayyaanna.HundaaDabarsitee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaaayyaanna.FaarsaaAyyaana" />
         <activity
             android:name=".faarsaaayyaanna.MootichiKana"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaaayyaanna.FaarsaaAyyaana" />
         <activity
             android:name=".faarsaaayyaanna.TsillaatiiMusee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaaayyaanna.FaarsaaAyyaana" />
         <activity
             android:name=".faarsaaayyaanna.BultooWaaqayyooIlmaaDha"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaaayyaanna.FaarsaaAyyaana" />
         <activity
             android:name=".faarsaaayyaanna.WaaqayyoonNuFayyise"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaaayyaanna.FaarsaaAyyaana" />
         <activity
             android:name=".faarsaaayyaanna.DubartootaKeessaaFilatamtee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaaayyaanna.FaarsaaAyyaana" />
         <activity
             android:name=".faarsaaayyaanna.TikseeGaariiKeenya"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaaayyaanna.FaarsaaAyyaana" />
         <activity
             android:name=".faarsaaayyaanna.SiGalateeffannaDubrooMaariyamii"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaaayyaanna.FaarsaaAyyaana" />
         <activity
             android:name=".faarsaaayyaanna.NuufKadhadhuGiiftiiKeenyaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaaayyaanna.FaarsaaAyyaana" />
         <activity
             android:name=".faarsaaayyaanna.SiWaamnaaAmaanueel"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaaayyaanna.FaarsaaAyyaana" />
         <activity
             android:name=".faarsaaayyaanna.KoottuMikaaeelkoottu"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaaayyaanna.FaarsaaAyyaana" />
         <activity
             android:name=".faarsaaayyaanna.IsheenNuufKadhatti"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaaayyaanna.FaarsaaAyyaana" />
         <activity
             android:name=".faarsaaayyaanna.AkkaErgamaaGabrieeli"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaaayyaanna.FaarsaaAyyaana" />
         <activity
             android:name=".faarsaaayyaanna.Betelememitti"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaaayyaanna.FaarsaaAyyaana" />
         <activity
             android:name=".faarsaaayyaanna.DallaaKeessaCiisa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaaayyaanna.FaarsaaAyyaana" />
         <activity
             android:name=".faarsaaayyaanna.AkkaYoosefAkkaSolomeeOsooTaane"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaaayyaanna.FaarsaaAyyaana" />
         <activity
             android:name=".faarsaaayyaanna.MisiraachooNuGammaneerra"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaaayyaanna.FaarsaaAyyaana" />
         <activity
             android:name=".faarsaaayyaanna.SamiirraaNiBue"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaaayyaanna.FaarsaaAyyaana" />
         <activity
             android:name=".faarsaaayyaanna.UrjiidhanDhufanii"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaaayyaanna.FaarsaaAyyaana" />
         <activity
             android:name=".faarsaaayyaanna.IshooIshooNuuDhalatee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaaayyaanna.FaarsaaAyyaana" />
         <activity
             android:name=".faarsaaayyaanna.KunooDhalateeraFayyisaanAddunyaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaaayyaanna.FaarsaaAyyaana" />
         <activity
             android:name=".faarsaaayyaanna.WangeelattiKanAmantan"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaaayyaanna.FaarsaaAyyaana" />
         <activity
             android:name=".faarsaaayyaanna.FaarsaaAyyaana"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainHomeActivity" />
         <activity
             android:name=".faarsaatawaahido.NagaadhaanNuukottu"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaatawaahido.FaarsaaTawaahido" />
         <activity
             android:name=".faarsaatawaahido.KanAkkaWaaqayyoArjoomanEenyudhaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaatawaahido.FaarsaaTawaahido" />
         <activity
             android:name=".faarsaatawaahido.UlfinaTolootaYaaGiiftii"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaatawaahido.FaarsaaTawaahido" />
         <activity
             android:name=".faarsaatawaahido.LapheenKooHaaBaasuGalataUumaaKoo"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaatawaahido.FaarsaaTawaahido" />
         <activity
             android:name=".faarsaatawaahido.YaaMikaaeelHangafaErgamootaa"
@@ -626,1151 +778,1438 @@
         <activity
             android:name=".faarsaatawaahido.Maariyaamiidhaafi"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaatawaahido.FaarsaaTawaahido" />
         <activity
             android:name=".faarsaatawaahido.KasoomniKeeDinqiiGarraammummaanKee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaatawaahido.FaarsaaTawaahido" />
         <activity
             android:name=".faarsaatawaahido.AyyaanaArgatteUlfinaDurbummaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaatawaahido.FaarsaaTawaahido" />
         <activity
             android:name=".faarsaatawaahido.YaaHaadhaKooWaananSittiHimadhe"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaatawaahido.FaarsaaTawaahido" />
         <activity
             android:name=".faarsaatawaahido.AmmaReefuTolee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaatawaahido.FaarsaaTawaahido" />
         <activity
             android:name=".faarsaatawaahido.KanLapheeKiyyaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaatawaahido.FaarsaaTawaahido" />
         <activity
             android:name=".faarsaatawaahido.SinDagadhuu"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaatawaahido.FaarsaaTawaahido" />
         <activity
             android:name=".faarsaatawaahido.NanCarroome"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaatawaahido.FaarsaaTawaahido" />
         <activity
             android:name=".faarsaatawaahido.FaarsaaTawaahido"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainHomeActivity" />
         <activity
             android:name=".faarsaahangaffota.FaarsaaHangaffoota"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:label="@string/title_activity_faarsaa_hangaffoota"
             android:parentActivityName=".MainHomeActivity" />
         <activity
             android:name=".faarsaagooftaa.Yakkakeenyaisadarbeenuttihinlakkahinii"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.YaaWaaqayyoosiyaagalatu"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.Yaanamadafitiideebiigarawaaqatti"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.WaltajjiiwwanIsaanamootaguutaman"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.Waaqayyoonudhagaibaayisneesikadhanna"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.WaaqayyooQulqulluuUumaaUumamtootaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.Waaqajaalalaawaaqajaalalaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.WaannagargaareefiWaaqni"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.Waannaafgootehundaafgooftaagalatoomii"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.Ittiqaanaugochasaalaaleetoo"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.WaaeekeenhimaGochakeenhima"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.Uggumraajiidhadhiifamnikee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.TokkummaaNuufKenniYaaGooftaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.TeessumaSillaasee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.DabarsiteeOfLaatteAtiNuFayyiste"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.SiWaamnaaKiristoosii"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.SiwaamnaaAmaanueelii"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.QulqulluWaaqayyogalanisiifhaatau"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.QaraaniyooIrratti"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.Qalbiihaajijjirrannu"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.NuufkenniWaaqayyoosammuufqalbii"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.NugargaaraGooftaakeenya"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.Nanbeekaiddookookaleessaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.MaqaaabbaakanIlmaaAfuuraQulqulluu"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.Namatuhinbeeknemalee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.Nageenyiwaaqayyoonurraafagaatinii"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.Dueeduaakookanhambisee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.MootummaanIsaaKanbara"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.MootichiYihudaaIyyesuus"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.MiillaKooKufaatiirraa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.MaqaaIsaaFaarfadhaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.NamootaHaaDeemnuuManaWaaqaKeenya"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.MadaniAlemNuFayyiseeJechaIsaatin"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.YaaWaaqayyoNagaadhaanNuBulchi"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.Mootichikanamootichi"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.Koottuyaawaaqakoo"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.KoottuMiikaaeel"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.Kananittinboonee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.KanWaaqnijaallatee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.Kannafiltee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.Kankaleessadarbe"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.Kanakkakoohinjiru"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.Jechakeedhagauuf"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.Jajjabaadhaamantikeessanitti"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.Jaalatamaadhamaqaankee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.JaalalaanHundagoote"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.Iyyesuuskiristoosmootii"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.Iyyerusaalemgaluufjajjabaadha"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.Iyyasuuskiristooswaaqayyoodha"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.Israaeelidhamaqaankoo"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.Ifakanuffate"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.HunduuKanDarbuu"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.Hundumaadandeessahomtuu"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.HundaaDabarsitee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.Reebamuunkansiifhintaane"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.Hojiinkeeraajiidha"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.Hindandeessa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.HaammenyaFageessi"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.HaaGalateeffannuAmaanueliin"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.HaagalateeffanuWaaqayyoni"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.HaaGalateeffamuWaaqni"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.Haadhufaanijoolleen"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.Guyyaankeeguyyaaqaba"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.GalatakeeWaaqakoo"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.GochiGooftaaKeenyaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.Gammannerrabaayyee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.Galmakoogalgala"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.Galateeffamaadhahammabarabaraatti"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.Galatangalchaafiiwaaqakoofii"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.GalataWaaqayyooguyyaaharaaebbisee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.GalataWaaqayyoo"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.GalataWaaqayyooyeroohundumaatti"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.GalatakeeyaaWaaqayyoo"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.GalannihaatauWaaqa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.GalanniSillaseef"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.Galanniisaakanamalummaasaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.Galannigalannihaataufsillaaseef"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.DhugumaDhugaadhaGalateefameeraa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.EyyeeQaraaniyootti"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.Eenyumtuhinjiruu"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.DursiiGooftaaDuraaKoo"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.DuaKeessaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.DhugumaDhuguma"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.JaalalliHarkise"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.HaaGalateeffannu"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.MeeDubbadhaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.DhiifamniBaayeedha"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.BiyyaKooIrraanfadhee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.BaayatusBarriQoruumsaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.AnaTaanaTai"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.AdoonayiiAtiWaaqaJirataa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagooftaa.FaarsaaGooftaa" />
         <activity
             android:name=".faarsaagooftaa.FaarsaaGooftaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainHomeActivity" />
         <activity
             android:name=".faarsaaQulqulloota.WareegamaIsxifaanoos"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaaQulqulloota.FaarsaaQulqulloota" />
         <activity
             android:name=".faarsaaQulqulloota.TaklaHayimaanoot"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaaQulqulloota.FaarsaaQulqulloota" />
         <activity
             android:name=".faarsaaQulqulloota.RaajiiGiyoorgisii"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaaQulqulloota.FaarsaaQulqulloota" />
         <activity
             android:name=".faarsaaQulqulloota.UrjiiIfaanQulqulluu"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaaQulqulloota.FaarsaaQulqulloota" />
         <activity
             android:name=".faarsaaQulqulloota.QulqulloonniHinduunu"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaaQulqulloota.FaarsaaQulqulloota" />
         <activity
             android:name=".faarsaaQulqulloota.QabsurriiKeeAddaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaaQulqulloota.FaarsaaQulqulloota" />
         <activity
             android:name=".faarsaaQulqulloota.KennaanKeeJabaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaaQulqulloota.FaarsaaQulqulloota" />
         <activity
             android:name=".faarsaaQulqulloota.KadhatanBaasiliyoosi"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaaQulqulloota.FaarsaaQulqulloota" />
         <activity
             android:name=".faarsaaQulqulloota.KanIsaRukkutaniif"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaaQulqulloota.FaarsaaQulqulloota" />
         <activity
             android:name=".faarsaaQulqulloota.GiyoorgisiinJaabadha"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaaQulqulloota.FaarsaaQulqulloota" />
         <activity
             android:name=".faarsaaQulqulloota.BuuraYeedalooEegale"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaaQulqulloota.FaarsaaQulqulloota" />
         <activity
             android:name=".faarsaaQulqulloota.BaeBiyyaKaaraanitii"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaaQulqulloota.FaarsaaQulqulloota" />
         <activity
             android:name=".faarsaaQulqulloota.ArseemaaQulqulluu"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaaQulqulloota.FaarsaaQulqulloota" />
         <activity
             android:name=".faarsaaQulqulloota.AbbootiinQulqulluu"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaaQulqulloota.FaarsaaQulqulloota" />
         <activity
             android:name=".faarsaaQulqulloota.FaarsaaQulqulloota"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainHomeActivity" />
         <activity
             android:name=".faarsaagaabbii.YaaUumaaKoo"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagaabbii.FaarsaaGaabbii" />
         <activity
             android:name=".faarsaagaabbii.SiifanDhiiseYaaHaadhakoo"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagaabbii.FaarsaaGaabbii" />
         <activity
             android:name=".faarsaagaabbii.OolmaaWaaqaKoo"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagaabbii.FaarsaaGaabbii" />
         <activity
             android:name=".faarsaagaabbii.NarraaBaayateeOlmaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagaabbii.FaarsaaGaabbii" />
         <activity
             android:name=".faarsaagaabbii.MaalooYaaWaaqaKoo"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagaabbii.FaarsaaGaabbii" />
         <activity
             android:name=".faarsaagaabbii.KottaaYaaNamootaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagaabbii.FaarsaaGaabbii" />
         <activity
             android:name=".faarsaagaabbii.LakkiYaaMucaaKoo"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagaabbii.FaarsaaGaabbii" />
         <activity
             android:name=".faarsaagaabbii.LakkiiGorfamiiGorfamii"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagaabbii.FaarsaaGaabbii" />
         <activity
             android:name=".faarsaagaabbii.JaalalliiSamirraa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagaabbii.FaarsaaGaabbii" />
         <activity
             android:name=".faarsaagaabbii.AkkaBiyyaLafaaf"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagaabbii.FaarsaaGaabbii" />
         <activity
             android:name=".faarsaagaabbii.MalaanHimaaAnii"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagaabbii.FaarsaaGaabbii" />
         <activity
             android:name=".faarsaagaabbii.GooftaanKeenyaNuufSome"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagaabbii.FaarsaaGaabbii" />
         <activity
             android:name=".faarsaagaabbii.KanSome"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagaabbii.FaarsaaGaabbii" />
         <activity
             android:name=".faarsaagaabbii.MuseenSoomeera"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagaabbii.FaarsaaGaabbii" />
         <activity
             android:name=".faarsaagaabbii.GoftaanQorameeraDiinaHamaadhaani"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagaabbii.FaarsaaGaabbii" />
         <activity
             android:name=".faarsaagaabbii.YaaNamaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagaabbii.FaarsaaGaabbii" />
         <activity
             android:name=".faarsaagaabbii.WaaqayyooGooftaaKoo"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagaabbii.FaarsaaGaabbii" />
         <activity
             android:name=".faarsaagaabbii.AnaafWaaqayyoodha"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagaabbii.FaarsaaGaabbii" />
         <activity
             android:name=".faarsaagaabbii.YaaWaaqayyooNuutiSikadhannaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagaabbii.FaarsaaGaabbii" />
         <activity
             android:name=".faarsaagaabbii.YaaNamaaDeebii"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagaabbii.FaarsaaGaabbii" />
         <activity
             android:name=".faarsaagaabbii.JaalalliWaaqayyoo"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagaabbii.FaarsaaGaabbii" />
         <activity
             android:name=".faarsaagaabbii.LubbuuSiifAbbomamu"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagaabbii.FaarsaaGaabbii" />
         <activity
             android:name=".faarsaagaabbii.YaaManaWaaqayyoo"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagaabbii.FaarsaaGaabbii" />
         <activity
             android:name=".faarsaagaabbii.DandettiiIsaatiin"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagaabbii.FaarsaaGaabbii" />
         <activity
             android:name=".faarsaagaabbii.NanDhibinLubbuuKoo"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagaabbii.FaarsaaGaabbii" />
         <activity
             android:name=".faarsaagaabbii.KitaabaQulqulluuHunduuNiDubbisaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagaabbii.FaarsaaGaabbii" />
         <activity
             android:name=".faarsaagaabbii.AnooGochaKootiin"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagaabbii.FaarsaaGaabbii" />
         <activity
             android:name=".faarsaagaabbii.AkkaJechaKeeKan"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaagaabbii.FaarsaaGaabbii" />
         <activity
             android:name=".faarsaagaabbii.FaarsaaGaabbii"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainHomeActivity" />
         <activity
             android:name=".faarsaaergamoota.YaaGabreeliiNuuAraarsi"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaaergamoota.FaarsaaErgamoota" />
         <activity
             android:name=".faarsaaergamoota.QulqulluuMikaeel"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaaergamoota.FaarsaaErgamoota" />
         <activity
             android:name=".faarsaaergamoota.NaannooWarraWaaqayyoon"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaaergamoota.FaarsaaErgamoota" />
         <activity
             android:name=".faarsaaergamoota.MaqaaKeeAjaaiba"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaaergamoota.FaarsaaErgamoota" />
         <activity
             android:name=".faarsaaergamoota.GalaanaDhaabee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaaergamoota.FaarsaaErgamoota" />
         <activity
             android:name=".faarsaaergamoota.Afoomiyaadhanii"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaaergamoota.FaarsaaErgamoota" />
         <activity
             android:name=".faarsaaergamoota.ErgamaaGabrieel"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaaergamoota.FaarsaaErgamoota" />
         <activity
             android:name=".faarsaaergamoota.DandeetiiWaanDhabdeef"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaaergamoota.FaarsaaErgamoota" />
         <activity
             android:name=".faarsaaergamoota.AkkaNuuEebbistuuf"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaaergamoota.FaarsaaErgamoota" />
         <activity
             android:name=".faarsaaergamoota.AkkaAnaaniya"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaaergamoota.FaarsaaErgamoota" />
         <activity
             android:name=".faarsaaergamoota.FaarsaaErgamoota"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainHomeActivity" />
         <activity
             android:name=".durboomaariyaam.YaaHaadhaKeenyaMaariyaamii"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".durboomaariyaam.FaarsaaDubrooMaariyaam" />
         <activity
             android:name=".durboomaariyaam.YaaGiiftiiKooAbdijireenyaKoo"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".durboomaariyaam.FaarsaaDubrooMaariyaam" />
         <activity
             android:name=".durboomaariyaam.YaaGiiftiiKoo"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".durboomaariyaam.FaarsaaDubrooMaariyaam" />
         <activity
             android:name=".durboomaariyaam.YaaGaraaLafeetti"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".durboomaariyaam.FaarsaaDubrooMaariyaam" />
         <activity
             android:name=".durboomaariyaam.UumamaHundumaIrraa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".durboomaariyaam.FaarsaaDubrooMaariyaam" />
         <activity
             android:name=".durboomaariyaam.SiGalateffannaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".durboomaariyaam.FaarsaaDubrooMaariyaam" />
         <activity
             android:name=".durboomaariyaam.RaawwatameHannaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".durboomaariyaam.FaarsaaDubrooMaariyaam" />
         <activity
             android:name=".durboomaariyaam.QulqullootaIrraQulqulluu"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".durboomaariyaam.FaarsaaDubrooMaariyaam" />
         <activity
             android:name=".durboomaariyaam.QorichaFoonKeenya"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".durboomaariyaam.FaarsaaDubrooMaariyaam" />
         <activity
             android:name=".durboomaariyaam.OolmaanKeeYaaGiiftii"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".durboomaariyaam.FaarsaaDubrooMaariyaam" />
         <activity
             android:name=".durboomaariyaam.ObboleettiiErgamootaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".durboomaariyaam.FaarsaaDubrooMaariyaam" />
         <activity
             android:name=".durboomaariyaam.NuufKadhadhuGiiftii"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".durboomaariyaam.FaarsaaDubrooMaariyaam" />
         <activity
             android:name=".durboomaariyaam.NuufKadhadhuGiiftiiKeenya"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".durboomaariyaam.FaarsaaDubrooMaariyaam" />
         <activity
             android:name=".durboomaariyaam.NuufKadhadhu"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".durboomaariyaam.FaarsaaDubrooMaariyaam" />
         <activity
             android:name=".durboomaariyaam.NuuAraarsi"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".durboomaariyaam.FaarsaaDubrooMaariyaam" />
         <activity
             android:name=".durboomaariyaam.NagaadhaanNuKottuu"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".durboomaariyaam.FaarsaaDubrooMaariyaam" />
         <activity
             android:name=".durboomaariyaam.NiMoaate"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".durboomaariyaam.FaarsaaDubrooMaariyaam" />
         <activity
             android:name=".durboomaariyaam.MuseenKanArgee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".durboomaariyaam.FaarsaaDubrooMaariyaam" />
         <activity
             android:name=".durboomaariyaam.MucaaKeeBaachudhaan"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".durboomaariyaam.FaarsaaDubrooMaariyaam" />
         <activity
             android:name=".durboomaariyaam.MaariyaamiinGaddaLubbuu"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".durboomaariyaam.FaarsaaDubrooMaariyaam" />
         <activity
             android:name=".durboomaariyaam.MaariyaamHarmeeIyyesuus"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".durboomaariyaam.FaarsaaDubrooMaariyaam" />
         <activity
             android:name=".durboomaariyaam.MaariyaamDubroo"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".durboomaariyaam.FaarsaaDubrooMaariyaam" />
         <activity
             android:name=".durboomaariyaam.MaaramiinQubeedha"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".durboomaariyaam.FaarsaaDubrooMaariyaam" />
         <activity
             android:name=".durboomaariyaam.MaaramiGiiftiKoo"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".durboomaariyaam.FaarsaaDubrooMaariyaam" />
         <activity
             android:name=".durboomaariyaam.Maaluma"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".durboomaariyaam.FaarsaaDubrooMaariyaam" />
         <activity
             android:name=".durboomaariyaam.LatiinJirmaQabaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".durboomaariyaam.FaarsaaDubrooMaariyaam" />
         <activity
             android:name=".durboomaariyaam.IsheenHoo"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".durboomaariyaam.FaarsaaDubrooMaariyaam" />
         <activity
             android:name=".durboomaariyaam.HinDogogorreNuti"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".durboomaariyaam.FaarsaaDubrooMaariyaam" />
         <activity
             android:name=".durboomaariyaam.HaadhaWaaqaKanMadaanalamii"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".durboomaariyaam.FaarsaaDubrooMaariyaam" />
         <activity
             android:name=".durboomaariyaam.HaadhaKoo"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".durboomaariyaam.FaarsaaDubrooMaariyaam" />
         <activity
             android:name=".durboomaariyaam.GiiftiiKooMaariyaam"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".durboomaariyaam.FaarsaaDubrooMaariyaam" />
         <activity
             android:name=".durboomaariyaam.GammadiiKaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".durboomaariyaam.FaarsaaDubrooMaariyaam" />
         <activity
             android:name=".durboomaariyaam.GammadaaNamoota"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".durboomaariyaam.FaarsaaDubrooMaariyaam" />
         <activity
             android:name=".durboomaariyaam.EenyuttanHimadhaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".durboomaariyaam.FaarsaaDubrooMaariyaam" />
         <activity
             android:name=".durboomaariyaam.BeelaKeefDheebuuKee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".durboomaariyaam.FaarsaaDubrooMaariyaam" />
         <activity
             android:name=".durboomaariyaam.AraarsituMaariyaam"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".durboomaariyaam.FaarsaaDubrooMaariyaam" />
         <activity
             android:name=".durboomaariyaam.AnisDhallootadha"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".durboomaariyaam.FaarsaaDubrooMaariyaam" />
         <activity
             android:name=".durboomaariyaam.AkkaMikaaelaaErgamaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".durboomaariyaam.FaarsaaDubrooMaariyaam" />
         <activity
             android:name=".durboomaariyaam.AbbaanKeenyaYaaiqoob"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".durboomaariyaam.FaarsaaDubrooMaariyaam" />
         <activity
             android:name=".durboomaariyaam.JechaKeessaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".durboomaariyaam.FaarsaaDubrooMaariyaam" />
         <activity
             android:name=".durboomaariyaam.FaarsaaDubrooMaariyaam"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainHomeActivity" />
         <activity
             android:name=".faarsaa2014.WaaqummaaKee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaa2014.FaarsaaAddaa2014" />
         <activity
             android:name=".faarsaa2014.WaaeeKeenHimaIyyesuus"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaa2014.FaarsaaAddaa2014" />
         <activity
             android:name=".faarsaa2014.AgartuuKoo"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaa2014.FaarsaaAddaa2014" />
         <activity
             android:name=".faarsaa2014.JaalallikeeAddaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaa2014.FaarsaaAddaa2014" />
         <activity
             android:name=".faarsaa2014.WaaeeKeenHima"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaa2014.FaarsaaAddaa2014" />
         <activity
             android:name=".faarsaa2014.NiDandeessaaYaaGooftaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaa2014.FaarsaaAddaa2014" />
         <activity
             android:name=".faarsaa2014.BuuuraYeedaloo"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaa2014.FaarsaaAddaa2014" />
         <activity
             android:name=".faarsaa2014.FooliinKee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaa2014.FaarsaaAddaa2014" />
         <activity
             android:name=".faarsaa2014.RaajiifQabsuuraKee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaa2014.FaarsaaAddaa2014" />
         <activity
             android:name=".faarsaa2014.MaariyaamNiCaalti"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaa2014.FaarsaaAddaa2014" />
         <activity
             android:name=".faarsaa2014.SillaaseeUumaaKoo"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaa2014.FaarsaaAddaa2014" />
         <activity
             android:name=".faarsaa2014.HaadhummaaKeenHima"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaa2014.FaarsaaAddaa2014" />
         <activity
             android:name=".faarsaa2014.RajiiUlfinniKee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaa2014.FaarsaaAddaa2014" />
         <activity
             android:name=".faarsaa2014.MikaaeelKoottu"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaa2014.FaarsaaAddaa2014" />
         <activity
             android:name=".faarsaa2014.Jilbinfadhee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaa2014.FaarsaaAddaa2014" />
         <activity
             android:name=".faarsaa2014.IddooBuufataKee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaa2014.FaarsaaAddaa2014" />
         <activity
             android:name=".faarsaa2014.OolmaaKee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaa2014.FaarsaaAddaa2014" />
         <activity
             android:name=".faarsaa2014.DhaadannooKoo"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaa2014.FaarsaaAddaa2014" />
         <activity
             android:name=".faarsaa2014.UffataWarqee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaa2014.FaarsaaAddaa2014" />
         <activity
             android:name=".faarsaa2014.HandariiNagaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaa2014.FaarsaaAddaa2014" />
         <activity
             android:name=".faarsaa2014.GalataKee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaa2014.FaarsaaAddaa2014" />
         <activity
             android:name=".faarsaa2014.MallattooDhugaadha"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaa2014.FaarsaaAddaa2014" />
         <activity
             android:name=".faarsaa2014.Gammadaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaa2014.FaarsaaAddaa2014" />
         <activity
             android:name=".faarsaa2014.Damaraa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaa2014.FaarsaaAddaa2014" />
         <activity
             android:name=".faarsaa2014.FannoonGooftaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaa2014.FaarsaaAddaa2014" />
         <activity
             android:name=".faarsaa2014.Argameera"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaa2014.FaarsaaAddaa2014" />
         <activity
             android:name=".faarsaa2014.FannoonArgameera"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaa2014.FaarsaaAddaa2014" />
         <activity
             android:name=".faarsaa2014.AlaabanKeeIsa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".faarsaa2014.FaarsaaAddaa2014" />
         <activity
             android:name=".faarsaa2014.FaarsaaAddaa2014"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainHomeActivity" />
         <activity
             android:name=".sadeeniin2010.HangafaErgamootaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".sadeeniin2010.Sadeeniin2010" />
         <activity
             android:name=".sadeeniin2010.EegaaAfoomiyaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".sadeeniin2010.Sadeeniin2010" />
         <activity
             android:name=".sadeeniin2010.BakkaAtiDeemtu"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".sadeeniin2010.Sadeeniin2010" />
         <activity
             android:name=".sadeeniin2010.AraarsituuKeenya"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".sadeeniin2010.Sadeeniin2010" />
         <activity
             android:name=".sadeeniin2010.KennaaFannooJalaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".sadeeniin2010.Sadeeniin2010" />
         <activity
             android:name=".sadeeniin2010.AmaanueelUumaaKoo"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".sadeeniin2010.Sadeeniin2010" />
         <activity
             android:name=".sadeeniin2010.GaaddisaManasaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".sadeeniin2010.Sadeeniin2010" />
         <activity
             android:name=".sadeeniin2010.YooTureeyyuu"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".sadeeniin2010.Sadeeniin2010" />
         <activity
             android:name=".sadeeniin2010.DeessuuWaaqa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".sadeeniin2010.Sadeeniin2010" />
         <activity
             android:name=".sadeeniin2010.HarmeeIyyesuus"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".sadeeniin2010.Sadeeniin2010" />
         <activity
             android:name=".sadeeniin2010.WabiiKiyyaTaii"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".sadeeniin2010.Sadeeniin2010" />
         <activity
             android:name=".sadeeniin2010.Sadeeniin2010"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainHomeActivity" />
         <activity
             android:name=".sadaniin2010.GebreMenfesQiddus"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".sadaniin2010.Sadaniin2010" />
         <activity
             android:name=".sadaniin2010.HundummaCaaltiiHaatiGooftaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".sadaniin2010.Sadaniin2010" />
         <activity
             android:name=".sadaniin2010.BaraGaddaKootii"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".sadaniin2010.Sadaniin2010" />
         <activity
             android:name=".sadaniin2010.GabrieelSadaan"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".sadaniin2010.Sadaniin2010" />
         <activity
             android:name=".sadaniin2010.Tawaahidoodha"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".sadaniin2010.Sadaniin2010" />
         <activity
             android:name=".sadaniin2010.FannoonHumnaKootii"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".sadaniin2010.Sadaniin2010" />
         <activity
             android:name=".sadaniin2010.MikaaeelTikseeKoo"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".sadaniin2010.Sadaniin2010" />
         <activity
             android:name=".sadaniin2010.HaadhaWaaqaKootii"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".sadaniin2010.Sadaniin2010" />
         <activity
             android:name=".sadaniin2010.GorfadhuuLubbuuKee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".sadaniin2010.Sadaniin2010" />
         <activity
             android:name=".sadaniin2010.Araarsituudha"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".sadaniin2010.Sadaniin2010" />
         <activity
             android:name=".sadaniin2010.FannoonHumnaKeenya"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".sadaniin2010.Sadaniin2010" />
         <activity
             android:name=".sadaniin2010.Kidanemihireet"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".sadaniin2010.Sadaniin2010" />
         <activity
             android:name=".sadaniin2010.Sadaniin2010"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainHomeActivity" />
         <activity
             android:name=".sadeeniin2012.Arseemaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".sadeeniin2012.Sadeeniin2012" />
         <activity
             android:name=".sadeeniin2012.KoottaMee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".sadeeniin2012.Sadeeniin2012" />
         <activity
             android:name=".sadeeniin2012.NiDeemna"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".sadeeniin2012.Sadeeniin2012" />
         <activity
             android:name=".sadeeniin2012.YaaHaadhaWaaqayyoo"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".sadeeniin2012.Sadeeniin2012" />
         <activity
             android:name=".sadeeniin2012.OrtodooksiiDhugaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".sadeeniin2012.Sadeeniin2012" />
         <activity
             android:name=".sadeeniin2012.DubartootaaKeessaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".sadeeniin2012.Sadeeniin2012" />
         <activity
             android:name=".sadeeniin2012.YaaWaaqayyoo"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".sadeeniin2012.Sadeeniin2012" />
         <activity
             android:name=".sadeeniin2012.HaadhaUumaatiIsheen"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".sadeeniin2012.Sadeeniin2012" />
         <activity
             android:name=".sadeeniin2012.EenyuAkkawaaqa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".sadeeniin2012.Sadeeniin2012" />
         <activity
             android:name=".sadeeniin2012.UraaeelErgamaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".sadeeniin2012.Sadeeniin2012" />
         <activity
             android:name=".sadeeniin2012.GuyyaaQaba"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".sadeeniin2012.Sadeeniin2012" />
         <activity
             android:name=".sadeeniin2012.Sadeeniin2012"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainHomeActivity" />
         <activity
             android:name=".lameen2011.TikseeGaariidhaAti"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".lameen2011.Lameen2011" />
         <activity
             android:name=".lameen2011.Sillaasee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".lameen2011.Lameen2011" />
         <activity
             android:name=".lameen2011.SiMalee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".lameen2011.Lameen2011" />
         <activity
             android:name=".lameen2011.QulqulleettiArseema"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".lameen2011.Lameen2011" />
         <activity
             android:name=".lameen2011.NuufDhalattee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".lameen2011.Lameen2011" />
         <activity
             android:name=".lameen2011.MaalooHinGoyyominaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".lameen2011.Lameen2011" />
         <activity
             android:name=".lameen2011.KennaanKeeHinBadu"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".lameen2011.Lameen2011" />
         <activity
             android:name=".lameen2011.KakuuAraaraa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".lameen2011.Lameen2011" />
         <activity
             android:name=".lameen2011.ErgamaMikaaeel"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".lameen2011.Lameen2011" />
         <activity
             android:name=".lameen2011.EenyuttanGammadaree"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".lameen2011.Lameen2011" />
         <activity
             android:name=".lameen2011.AmaanueelAbbaaKoo"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".lameen2011.Lameen2011" />
         <activity
             android:name=".lameen2011.Lameen2011"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainHomeActivity" /> <!-- Darajee Mezmur goes here -->
         <activity
             android:name=".darajee.QulqulluuMikaaeel"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".darajee.Darajee" />
         <activity
             android:name=".darajee.NuufGolgiQullaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".darajee.Darajee" />
         <activity
             android:name=".darajee.MadaaGaraaKoo"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".darajee.Darajee" />
         <activity
             android:name=".darajee.JawwichiNaNyaachuuf"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".darajee.Darajee" />
         <activity
             android:name=".darajee.IyyesuusGooftaaKoo"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".darajee.Darajee" />
         <activity
             android:name=".darajee.IyeeluxaafiQirqoos"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".darajee.Darajee" />
         <activity
             android:name=".darajee.Itiyoophiyaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".darajee.Darajee" />
         <activity
             android:name=".darajee.IlilJedhaafiFaarfaadha"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".darajee.Darajee" />
         <activity
             android:name=".darajee.HaadhaKooD"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".darajee.Darajee" />
         <activity
             android:name=".darajee.HaadhaGaafaRakkoo"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".darajee.Darajee" />
         <activity
             android:name=".darajee.AfaanKeenyaaHinQabu"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".darajee.Darajee" />
         <activity
             android:name=".darajee.Darajee"
@@ -1779,458 +2218,573 @@
         <activity
             android:name=".adaanee.YaadaKeenDubroodha"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".adaanee.AdaaneeAsraat" />
         <activity
             android:name=".adaanee.YaaMaariyamiiGiiftiiKoo"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".adaanee.AdaaneeAsraat" />
         <activity
             android:name=".adaanee.TikseeGaariinQabaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".adaanee.AdaaneeAsraat" />
         <activity
             android:name=".adaanee.Qaraniyoo"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".adaanee.AdaaneeAsraat" />
         <activity
             android:name=".adaanee.MikaaeelNaafDhufee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".adaanee.AdaaneeAsraat" />
         <activity
             android:name=".adaanee.KiristoosIsuma"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".adaanee.AdaaneeAsraat" />
         <activity
             android:name=".adaanee.KennaaGuyyaaJimaata"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".adaanee.AdaaneeAsraat" />
         <activity
             android:name=".adaanee.KanAkkaWaaqayyoo"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".adaanee.AdaaneeAsraat" />
         <activity
             android:name=".adaanee.HorreeBulleerra"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".adaanee.AdaaneeAsraat" />
         <activity
             android:name=".adaanee.GuddinaaKee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".adaanee.AdaaneeAsraat" />
         <activity
             android:name=".adaanee.FoonsaaMuree"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".adaanee.AdaaneeAsraat" />
         <activity
             android:name=".adaanee.FayyisuuKee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".adaanee.AdaaneeAsraat" />
         <activity
             android:name=".adaanee.AnSiinEebbifamee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".adaanee.AdaaneeAsraat" />
         <activity
             android:name=".adaanee.AkkaBishaanDarbee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".adaanee.AdaaneeAsraat" />
         <activity
             android:name=".adaanee.AdaaneeAsraat"
             android:exported="false"
-            android:parentActivityName=".MainHomeActivity" /> <!-- A-Z sorted mezmur activity goes down here -->
+            android:hardwareAccelerated="true"
+            android:parentActivityName=".MainHomeActivity" />
+        <!-- A-Z sorted mezmur activity goes down here -->
         <activity
             android:name=".MoreApps"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".AboutUs"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".WaaeeApp"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".GalataActivity"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.wcontents.WaaeeKeenHima"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.ycontents.Yoordaanositti"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.ycontents.Yoordaanoosii"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.ycontents.YoordaanoosDhaloonniKooo"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.ycontents.Yoordaanoos"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.ycontents.YaaredLubichaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.ycontents.YaaWaaqayyoo"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.ycontents.YaaMikaaeelii"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.ycontents.YaaHaadhaWaaqayyo"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.ycontents.YaaMaariyaam"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.wcontents.WangeelaIsaatti"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.wcontents.WaaqayyoRafeeHin"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.wcontents.WaaqayyoAddunyaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.wcontents.WaaqattiHaaAmannuu"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.ucontents.UraaelKoottu"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.ucontents.UlfinaWaaqayyof"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.ucontents.UlfinaToloota"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.tcontents.TokkummaaNuufKenni"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.tcontents.TikseeGaariinQabaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.tcontents.TikseeGaariidha"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.tcontents.TabootaMusee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.scontents.SittiWaamameera"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.scontents.SinbooKoo"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.scontents.SinTaee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.scontents.SillaaseeUumaaKoo"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.scontents.Sillaasee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.scontents.SinFaarfadhaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.scontents.SiMalee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.scontents.SiGalateeffanna"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.scontents.SagaltamiiSaglanuu"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.rcontents.Rakkanneerraa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.rcontents.RaajiiGiyoorgisii"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.rcontents.Raagueel"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.qcontents.QorichaFoonKeenya"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.qcontents.QabsurriKee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.ocontents.OfIrraattinArgee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.ocontents.OlNaaQabdeta"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.ocontents.ObsiNidarba"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.ocontents.OoMaariyaam"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.ocontents.OfummaMiti"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.ncontents.NuufKadhatu"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.ncontents.NuufDhalatee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.ncontents.NiDhalatee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.ncontents.NiBueIlmi"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.ncontents.NaMiladhu"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.ncontents.NattiYaahafu"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.ncontents.NamatuHinBeknee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.ncontents.NageenyaKeenya"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.ncontents.NagaaNaafLabsee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.ncontents.NanYaadadha"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.econtents.EenyumtuuHinJiru"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.ccontents.CubbuunKoo"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.kcontents.KanAkkaWaaqayyoEessaatti"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.mcontents.MucaaKoo"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.mcontents.MucaaKee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.mcontents.MootichiYihuudaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.mcontents.MikaaeelNaafDhufee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.mcontents.MikaaeelNidhaabbataa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.mcontents.MaqaanKeeAjaaiba"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.mcontents.MallattooNagaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.mcontents.Madanialem"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.mcontents.Maariyaamiidhaaf"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.mcontents.MaariyaamNiCaalti"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.mcontents.Maariyaam"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.mcontents.Maaramiin"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.mcontents.MaaliinFakkeessina"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.mcontents.MaalNamaGootee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.mcontents.MaalJedheenDubbaadha"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.lcontents.LatiinJirmaQabaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.lcontents.LapheenKoo"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.lcontents.Lakkaame"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.kcontents.KoottuuHaadhaKoo"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.kcontents.Koottuu"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.kcontents.KidaaneMihiraat"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.kcontents.KennaanKeeJabaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.kcontents.KennaaGuyyaaJimaata"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.kcontents.KananIttiinBoonee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.kcontents.KanFayyuuBarbaadu"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.kcontents.KanAkkaWaaqayyo"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.kcontents.KaakuAraara"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.jcontents.JireenyaLubbuuKoo"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.jcontents.JaalalliKeeAddaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.icontents.IyyesuusCuuphame"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.icontents.IyyesuusKiristoos"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.icontents.IttiFufaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.hcontents.HunduumaCaaltiHaatiGooftaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.hcontents.HoolichaDhugaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.hcontents.HarkaYohaannisiinCuuphame"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.hcontents.HalleeLuyyaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.hcontents.HaadhaWaaqaKanMadaanalamii"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.gcontents.GuyyaanKeeGuyyaaQaba"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.gcontents.GurguddootaDhiise"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.gcontents.GugeeJiraattu"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.gcontents.GooftaanNuufCuuphameera"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.gcontents.GooftaanCuuphamee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.gcontents.GochiGooftaaKeenyaa"
@@ -2239,234 +2793,292 @@
         <activity
             android:name=".atozsorted.gcontents.GarraKoofJedhee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.gcontents.GannaSodomatti"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.gcontents.Gammanneerra"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.gcontents.GammadiiKaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.gcontents.GammadaaMartinuu"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.gcontents.GalmaKoo"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.gcontents.Galateeffamaadhaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.gcontents.GalatanGalchaaf"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.gcontents.GalataWaaqayyo"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.gcontents.GalataKee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.gcontents.GalataJedhee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.gcontents.GalaanaDhaabe"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.fcontents.FuulaNamatti"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.fcontents.FannoonHumnaKeenya"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.econtents.Eeyyeennii"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.econtents.EeyyeeNuuDhalatee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.econtents.EenyuuOgeessiAkkaKee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.econtents.EenyuuAbdiinKoo"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.econtents.ErgamooniFaarfaataaniiru"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.econtents.ErgamaaGabrieelin"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.econtents.ErgamaaGabrieel"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.econtents.Ergamaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.econtents.EebbifamtudhaIsheen"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.econtents.EebbifamaadhaKanEebbifamee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.dcontents.DursiiGooftaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.dcontents.DubartootaaKeessaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.dcontents.DuaaKaeera"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.dcontents.DhugumaDhugaadha"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.dcontents.DhufeJechi"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.dcontents.DhaabachuDadhabee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.dcontents.DeemeIyyesuusi"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.dcontents.DahooKeenya"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.ccontents.CuuphamuunKee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.bcontents.BoruKanGooftaatii"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.bcontents.BoqonnaaNaaf"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.bcontents.BoqonnaaLubbuu"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.bcontents.BiyyaKeenyaaf"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.bcontents.BiyyaKeenya"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.bcontents.BirraanGahee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.bcontents.BaayeeNaYaaddeessa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.bcontents.BaraDargaggummaaKeenya"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.bcontents.BakkaAaraGalfiiKoo"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.bcontents.BagaIsiinGahee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.bcontents.BagaGammaddanMisiroon"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.bcontents.BagaGammaddanii"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.acontents.AyyaanaArgattee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.acontents.AtiBeteliheem"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.acontents.Arseemaa"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.acontents.AraarsituuMaariyaamii"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.acontents.AniifManniKoo"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.acontents.AndariiKoo"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.acontents.AnaafWaaqayyodhaActivity"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.acontents.AmmaIfatuuNuufActivity"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.acontents.AmmaReefuTolee"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.acontents.AlfaafiOmeegaaActivity"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.acontents.AfuurriiQulqulluunBuheeActivity"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.acontents.AkkamiinTareeActivity"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".atozsorted.acontents.AbbaafIlma"
             android:exported="false"
+            android:hardwareAccelerated="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity"
