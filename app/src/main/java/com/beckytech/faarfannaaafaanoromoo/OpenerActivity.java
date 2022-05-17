@@ -75,6 +75,7 @@ public class OpenerActivity extends AppCompatActivity {
     public void startMainActivity() {
         Intent intent = new Intent(this, MainHomeActivity.class);
         this.startActivity(intent);
+        OpenerActivity.this.finish();
     }
 
 }
