@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,9 +12,19 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
+
 import com.beckytech.faarfannaaafaanoromoo.OptionsMenuActivity;
 import com.beckytech.faarfannaaafaanoromoo.R;
+import com.beckytech.faarfannaaafaanoromoo.darajee.AfaanKeenyaaHinQabu;
+import com.beckytech.faarfannaaafaanoromoo.darajee.Darajee;
+import com.google.android.gms.ads.AdError;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.FullScreenContentCallback;
+import com.google.android.gms.ads.LoadAdError;
 import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.interstitial.InterstitialAd;
+import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback;
 
 public class FaarsaaAddaa2014 extends OptionsMenuActivity {
 
@@ -35,6 +46,8 @@ public class FaarsaaAddaa2014 extends OptionsMenuActivity {
             "Waa'ee keen hima Iyyesuus", "Waaqummaa kee"
     };
 
+    private InterstitialAd mInterstitialAd;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,6 +57,10 @@ public class FaarsaaAddaa2014 extends OptionsMenuActivity {
 
         MobileAds.initialize(this, initializationStatus -> {
         });
+        MobileAds.initialize(this, initializationStatus -> {
+        });
+
+        setAds();
 
         listView = findViewById(R.id.list_item);
 
@@ -54,6 +71,7 @@ public class FaarsaaAddaa2014 extends OptionsMenuActivity {
         listView.setOnItemClickListener((adapterView, view, i, l) -> {
             switch (i) {
                 case 0:
+
                     startActivity(new Intent(FaarsaaAddaa2014.this, AgartuuKoo.class));
                     break;
                 case 1:
@@ -63,7 +81,35 @@ public class FaarsaaAddaa2014 extends OptionsMenuActivity {
                     startActivity(new Intent(FaarsaaAddaa2014.this, Argameera.class));
                     break;
                 case 3:
-                    startActivity(new Intent(FaarsaaAddaa2014.this, BuuuraYeedaloo.class));
+                    if (mInterstitialAd != null) {
+                        mInterstitialAd.show(FaarsaaAddaa2014.this);
+                        mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback(){
+                            @Override
+                            public void onAdDismissedFullScreenContent() {
+                                super.onAdDismissedFullScreenContent();
+                                startActivity(new Intent(FaarsaaAddaa2014.this, BuuuraYeedaloo.class));
+                                mInterstitialAd = null;
+                                setAds();
+                            }
+
+                            @Override
+                            public void onAdFailedToShowFullScreenContent(@NonNull AdError adError) {
+                                // Called when fullscreen content failed to show.
+                                Log.d("TAG", "The ad failed to show.");
+                            }
+
+                            @Override
+                            public void onAdShowedFullScreenContent() {
+                                // Called when fullscreen content is shown.
+                                // Make sure to set your reference to null so you don't
+                                // show it a second time.
+                                mInterstitialAd = null;
+                                Log.d("TAG", "The ad was shown.");
+                            }
+                        });
+                    } else {
+                        startActivity(new Intent(FaarsaaAddaa2014.this, BuuuraYeedaloo.class));
+                    }
                     break;
                 case 4:
                     startActivity(new Intent(FaarsaaAddaa2014.this, Damaraa.class));
@@ -81,7 +127,35 @@ public class FaarsaaAddaa2014 extends OptionsMenuActivity {
                     startActivity(new Intent(FaarsaaAddaa2014.this, FooliinKee.class));
                     break;
                 case 9:
-                    startActivity(new Intent(FaarsaaAddaa2014.this, GalataKee.class));
+                    if (mInterstitialAd != null) {
+                        mInterstitialAd.show(FaarsaaAddaa2014.this);
+                        mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback(){
+                            @Override
+                            public void onAdDismissedFullScreenContent() {
+                                super.onAdDismissedFullScreenContent();
+                                startActivity(new Intent(FaarsaaAddaa2014.this, GalataKee.class));
+                                mInterstitialAd = null;
+                                setAds();
+                            }
+
+                            @Override
+                            public void onAdFailedToShowFullScreenContent(@NonNull AdError adError) {
+                                // Called when fullscreen content failed to show.
+                                Log.d("TAG", "The ad failed to show.");
+                            }
+
+                            @Override
+                            public void onAdShowedFullScreenContent() {
+                                // Called when fullscreen content is shown.
+                                // Make sure to set your reference to null so you don't
+                                // show it a second time.
+                                mInterstitialAd = null;
+                                Log.d("TAG", "The ad was shown.");
+                            }
+                        });
+                    } else {
+                        startActivity(new Intent(FaarsaaAddaa2014.this, GalataKee.class));
+                    }
                     break;
                 case 10:
                     startActivity(new Intent(FaarsaaAddaa2014.this, Gammadaa.class));
@@ -99,7 +173,35 @@ public class FaarsaaAddaa2014 extends OptionsMenuActivity {
                     startActivity(new Intent(FaarsaaAddaa2014.this, JaalallikeeAddaa.class));
                     break;
                 case 15:
-                    startActivity(new Intent(FaarsaaAddaa2014.this, Jilbinfadhee.class));
+                    if (mInterstitialAd != null) {
+                        mInterstitialAd.show(FaarsaaAddaa2014.this);
+                        mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback(){
+                            @Override
+                            public void onAdDismissedFullScreenContent() {
+                                super.onAdDismissedFullScreenContent();
+                                startActivity(new Intent(FaarsaaAddaa2014.this, Jilbinfadhee.class));
+                                mInterstitialAd = null;
+                                setAds();
+                            }
+
+                            @Override
+                            public void onAdFailedToShowFullScreenContent(@NonNull AdError adError) {
+                                // Called when fullscreen content failed to show.
+                                Log.d("TAG", "The ad failed to show.");
+                            }
+
+                            @Override
+                            public void onAdShowedFullScreenContent() {
+                                // Called when fullscreen content is shown.
+                                // Make sure to set your reference to null so you don't
+                                // show it a second time.
+                                mInterstitialAd = null;
+                                Log.d("TAG", "The ad was shown.");
+                            }
+                        });
+                    } else {
+                        startActivity(new Intent(FaarsaaAddaa2014.this, Jilbinfadhee.class));
+                    }
                     break;
                 case 16:
                     startActivity(new Intent(FaarsaaAddaa2014.this, MaariyaamNiCaalti.class));
@@ -117,7 +219,35 @@ public class FaarsaaAddaa2014 extends OptionsMenuActivity {
                     startActivity(new Intent(FaarsaaAddaa2014.this, OolmaaKee.class));
                     break;
                 case 21:
-                    startActivity(new Intent(FaarsaaAddaa2014.this, RaajiifQabsuuraKee.class));
+                    if (mInterstitialAd != null) {
+                        mInterstitialAd.show(FaarsaaAddaa2014.this);
+                        mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback(){
+                            @Override
+                            public void onAdDismissedFullScreenContent() {
+                                super.onAdDismissedFullScreenContent();
+                                startActivity(new Intent(FaarsaaAddaa2014.this, RaajiifQabsuuraKee.class));
+                                mInterstitialAd = null;
+                                setAds();
+                            }
+
+                            @Override
+                            public void onAdFailedToShowFullScreenContent(@NonNull AdError adError) {
+                                // Called when fullscreen content failed to show.
+                                Log.d("TAG", "The ad failed to show.");
+                            }
+
+                            @Override
+                            public void onAdShowedFullScreenContent() {
+                                // Called when fullscreen content is shown.
+                                // Make sure to set your reference to null so you don't
+                                // show it a second time.
+                                mInterstitialAd = null;
+                                Log.d("TAG", "The ad was shown.");
+                            }
+                        });
+                    } else {
+                        startActivity(new Intent(FaarsaaAddaa2014.this, RaajiifQabsuuraKee.class));
+                    }
                     break;
                 case 22:
                     startActivity(new Intent(FaarsaaAddaa2014.this, RajiiUlfinniKee.class));
@@ -135,7 +265,35 @@ public class FaarsaaAddaa2014 extends OptionsMenuActivity {
                     startActivity(new Intent(FaarsaaAddaa2014.this, WaaeeKeenHimaIyyesuus.class));
                     break;
                 case 27:
-                    startActivity(new Intent(FaarsaaAddaa2014.this, WaaqummaaKee.class));
+                    if (mInterstitialAd != null) {
+                        mInterstitialAd.show(FaarsaaAddaa2014.this);
+                        mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback(){
+                            @Override
+                            public void onAdDismissedFullScreenContent() {
+                                super.onAdDismissedFullScreenContent();
+                                startActivity(new Intent(FaarsaaAddaa2014.this, WaaqummaaKee.class));
+                                mInterstitialAd = null;
+                                setAds();
+                            }
+
+                            @Override
+                            public void onAdFailedToShowFullScreenContent(@NonNull AdError adError) {
+                                // Called when fullscreen content failed to show.
+                                Log.d("TAG", "The ad failed to show.");
+                            }
+
+                            @Override
+                            public void onAdShowedFullScreenContent() {
+                                // Called when fullscreen content is shown.
+                                // Make sure to set your reference to null so you don't
+                                // show it a second time.
+                                mInterstitialAd = null;
+                                Log.d("TAG", "The ad was shown.");
+                            }
+                        });
+                    } else {
+                        startActivity(new Intent(FaarsaaAddaa2014.this, WaaqummaaKee.class));
+                    }
                     break;
 
             }
@@ -162,5 +320,22 @@ public class FaarsaaAddaa2014 extends OptionsMenuActivity {
             return row;
         }
 
+    }
+
+    private void setAds() {
+        AdRequest adRequest = new AdRequest.Builder().build();
+
+        InterstitialAd.load(this,getString(R.string.test_interstitial_ads_unit_id), adRequest,
+                new InterstitialAdLoadCallback() {
+                    @Override
+                    public void onAdLoaded(@NonNull InterstitialAd interstitialAd) {
+                        mInterstitialAd = interstitialAd;
+                    }
+
+                    @Override
+                    public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
+                        mInterstitialAd = null;
+                    }
+                });
     }
 }

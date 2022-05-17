@@ -4,12 +4,15 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
 
 import com.beckytech.faarfannaaafaanoromoo.atozsorted.acontents.AbbaafIlma;
 import com.beckytech.faarfannaaafaanoromoo.atozsorted.acontents.AfuurriiQulqulluunBuheeActivity;
@@ -165,6 +168,13 @@ import com.beckytech.faarfannaaafaanoromoo.atozsorted.ycontents.Yoordaanoos;
 import com.beckytech.faarfannaaafaanoromoo.atozsorted.ycontents.YoordaanoosDhaloonniKooo;
 import com.beckytech.faarfannaaafaanoromoo.atozsorted.ycontents.Yoordaanoosii;
 import com.beckytech.faarfannaaafaanoromoo.atozsorted.ycontents.Yoordaanositti;
+import com.google.android.gms.ads.AdError;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.FullScreenContentCallback;
+import com.google.android.gms.ads.LoadAdError;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.interstitial.InterstitialAd;
+import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback;
 
 
 public class MainActivity extends OptionsMenuActivity {
@@ -224,6 +234,8 @@ public class MainActivity extends OptionsMenuActivity {
             "Yaa waaqayyoo","Yoordaanoos", "Yoordaanoosi dhaloonni koo","Yoordaanoosii",
             "Yoordaanositti" };
 
+    private InterstitialAd mInterstitialAd;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -231,6 +243,10 @@ public class MainActivity extends OptionsMenuActivity {
         setContentView(R.layout.activity_main);
 
         initUI(" Faarsaa Tartiiban bakka tokkootti ");
+
+        MobileAds.initialize(this, initializationStatus -> {});
+
+        setAds();
 
         listView = findViewById(R.id.list_item);
 
@@ -255,12 +271,68 @@ public class MainActivity extends OptionsMenuActivity {
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  3:
-                    startActivity(new Intent(MainActivity.this, AlfaafiOmeegaaActivity.class));
-                    overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
+                    if (mInterstitialAd != null) {
+                        mInterstitialAd.show(MainActivity.this);
+                        mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback(){
+                            @Override
+                            public void onAdDismissedFullScreenContent() {
+                                super.onAdDismissedFullScreenContent();
+                                startActivity(new Intent(MainActivity.this, AlfaafiOmeegaaActivity.class));
+                                mInterstitialAd = null;
+                                setAds();
+                            }
+
+                            @Override
+                            public void onAdFailedToShowFullScreenContent(@NonNull AdError adError) {
+                                // Called when fullscreen content failed to show.
+                                Log.d("TAG", "The ad failed to show.");
+                            }
+
+                            @Override
+                            public void onAdShowedFullScreenContent() {
+                                // Called when fullscreen content is shown.
+                                // Make sure to set your reference to null so you don't
+                                // show it a second time.
+                                mInterstitialAd = null;
+                                Log.d("TAG", "The ad was shown.");
+                            }
+                        });
+                    } else {
+                        startActivity(new Intent(MainActivity.this, AlfaafiOmeegaaActivity.class));
+                        overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
+                    }
                     break;
                 case  4:
-                    startActivity(new Intent(MainActivity.this, AmmaIfatuuNuufActivity.class));
-                    overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
+                    if (mInterstitialAd != null) {
+                        mInterstitialAd.show(MainActivity.this);
+                        mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback(){
+                            @Override
+                            public void onAdDismissedFullScreenContent() {
+                                super.onAdDismissedFullScreenContent();
+                                startActivity(new Intent(MainActivity.this, AmmaIfatuuNuufActivity.class));
+                                mInterstitialAd = null;
+                                setAds();
+                            }
+
+                            @Override
+                            public void onAdFailedToShowFullScreenContent(@NonNull AdError adError) {
+                                // Called when fullscreen content failed to show.
+                                Log.d("TAG", "The ad failed to show.");
+                            }
+
+                            @Override
+                            public void onAdShowedFullScreenContent() {
+                                // Called when fullscreen content is shown.
+                                // Make sure to set your reference to null so you don't
+                                // show it a second time.
+                                mInterstitialAd = null;
+                                Log.d("TAG", "The ad was shown.");
+                            }
+                        });
+                    } else {
+                        startActivity(new Intent(MainActivity.this, AmmaIfatuuNuufActivity.class));
+                        overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
+                    }
                     break;
                 case  5:
                     startActivity(new Intent(MainActivity.this, AmmaReefuTolee.class));
@@ -279,8 +351,36 @@ public class MainActivity extends OptionsMenuActivity {
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  9:
-                    startActivity(new Intent(MainActivity.this, AraarsituuMaariyaamii.class));
-                    overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
+                    if (mInterstitialAd != null) {
+                        mInterstitialAd.show(MainActivity.this);
+                        mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback(){
+                            @Override
+                            public void onAdDismissedFullScreenContent() {
+                                super.onAdDismissedFullScreenContent();
+                                startActivity(new Intent(MainActivity.this, AraarsituuMaariyaamii.class));
+                                mInterstitialAd = null;
+                                setAds();
+                            }
+
+                            @Override
+                            public void onAdFailedToShowFullScreenContent(@NonNull AdError adError) {
+                                // Called when fullscreen content failed to show.
+                                Log.d("TAG", "The ad failed to show.");
+                            }
+
+                            @Override
+                            public void onAdShowedFullScreenContent() {
+                                // Called when fullscreen content is shown.
+                                // Make sure to set your reference to null so you don't
+                                // show it a second time.
+                                mInterstitialAd = null;
+                                Log.d("TAG", "The ad was shown.");
+                            }
+                        });
+                    } else {
+                        startActivity(new Intent(MainActivity.this, AraarsituuMaariyaamii.class));
+                        overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
+                    }
                     break;
                 case  10:
                     startActivity(new Intent(MainActivity.this, Arseemaa.class));
@@ -291,8 +391,36 @@ public class MainActivity extends OptionsMenuActivity {
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  12:
-                    startActivity(new Intent(MainActivity.this, AyyaanaArgattee.class));
-                    overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
+                    if (mInterstitialAd != null) {
+                        mInterstitialAd.show(MainActivity.this);
+                        mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback(){
+                            @Override
+                            public void onAdDismissedFullScreenContent() {
+                                super.onAdDismissedFullScreenContent();
+                                startActivity(new Intent(MainActivity.this, AyyaanaArgattee.class));
+                                mInterstitialAd = null;
+                                setAds();
+                            }
+
+                            @Override
+                            public void onAdFailedToShowFullScreenContent(@NonNull AdError adError) {
+                                // Called when fullscreen content failed to show.
+                                Log.d("TAG", "The ad failed to show.");
+                            }
+
+                            @Override
+                            public void onAdShowedFullScreenContent() {
+                                // Called when fullscreen content is shown.
+                                // Make sure to set your reference to null so you don't
+                                // show it a second time.
+                                mInterstitialAd = null;
+                                Log.d("TAG", "The ad was shown.");
+                            }
+                        });
+                    } else {
+                        startActivity(new Intent(MainActivity.this, AyyaanaArgattee.class));
+                        overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
+                    }
                     break;
                 case  13:
                     startActivity(new Intent(MainActivity.this, BaayeeNaYaaddeessa.class));
@@ -311,8 +439,36 @@ public class MainActivity extends OptionsMenuActivity {
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  17:
-                    startActivity(new Intent(MainActivity.this, BakkaAaraGalfiiKoo.class));
-                    overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
+                    if (mInterstitialAd != null) {
+                        mInterstitialAd.show(MainActivity.this);
+                        mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback(){
+                            @Override
+                            public void onAdDismissedFullScreenContent() {
+                                super.onAdDismissedFullScreenContent();
+                                startActivity(new Intent(MainActivity.this, BakkaAaraGalfiiKoo.class));
+                                mInterstitialAd = null;
+                                setAds();
+                            }
+
+                            @Override
+                            public void onAdFailedToShowFullScreenContent(@NonNull AdError adError) {
+                                // Called when fullscreen content failed to show.
+                                Log.d("TAG", "The ad failed to show.");
+                            }
+
+                            @Override
+                            public void onAdShowedFullScreenContent() {
+                                // Called when fullscreen content is shown.
+                                // Make sure to set your reference to null so you don't
+                                // show it a second time.
+                                mInterstitialAd = null;
+                                Log.d("TAG", "The ad was shown.");
+                            }
+                        });
+                    } else {
+                        startActivity(new Intent(MainActivity.this, BakkaAaraGalfiiKoo.class));
+                        overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
+                    }
                     break;
                 case  18:
                     startActivity(new Intent(MainActivity.this, BaraDargaggummaaKeenya.class));
@@ -331,8 +487,36 @@ public class MainActivity extends OptionsMenuActivity {
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  22:
-                    startActivity(new Intent(MainActivity.this, BoqonnaaLubbuu.class));
-                    overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
+                    if (mInterstitialAd != null) {
+                        mInterstitialAd.show(MainActivity.this);
+                        mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback(){
+                            @Override
+                            public void onAdDismissedFullScreenContent() {
+                                super.onAdDismissedFullScreenContent();
+                                startActivity(new Intent(MainActivity.this, BoqonnaaLubbuu.class));
+                                mInterstitialAd = null;
+                                setAds();
+                            }
+
+                            @Override
+                            public void onAdFailedToShowFullScreenContent(@NonNull AdError adError) {
+                                // Called when fullscreen content failed to show.
+                                Log.d("TAG", "The ad failed to show.");
+                            }
+
+                            @Override
+                            public void onAdShowedFullScreenContent() {
+                                // Called when fullscreen content is shown.
+                                // Make sure to set your reference to null so you don't
+                                // show it a second time.
+                                mInterstitialAd = null;
+                                Log.d("TAG", "The ad was shown.");
+                            }
+                        });
+                    } else {
+                        startActivity(new Intent(MainActivity.this, BoqonnaaLubbuu.class));
+                        overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
+                    }
                     break;
                 case  23:
                     startActivity(new Intent(MainActivity.this, BoqonnaaNaaf.class));
@@ -355,8 +539,36 @@ public class MainActivity extends OptionsMenuActivity {
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  28:
-                    startActivity(new Intent(MainActivity.this, DeemeIyyesuusi.class));
-                    overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
+                    if (mInterstitialAd != null) {
+                        mInterstitialAd.show(MainActivity.this);
+                        mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback(){
+                            @Override
+                            public void onAdDismissedFullScreenContent() {
+                                super.onAdDismissedFullScreenContent();
+                                startActivity(new Intent(MainActivity.this, DeemeIyyesuusi.class));
+                                mInterstitialAd = null;
+                                setAds();
+                            }
+
+                            @Override
+                            public void onAdFailedToShowFullScreenContent(@NonNull AdError adError) {
+                                // Called when fullscreen content failed to show.
+                                Log.d("TAG", "The ad failed to show.");
+                            }
+
+                            @Override
+                            public void onAdShowedFullScreenContent() {
+                                // Called when fullscreen content is shown.
+                                // Make sure to set your reference to null so you don't
+                                // show it a second time.
+                                mInterstitialAd = null;
+                                Log.d("TAG", "The ad was shown.");
+                            }
+                        });
+                    } else {
+                        startActivity(new Intent(MainActivity.this, DeemeIyyesuusi.class));
+                        overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
+                    }
                     break;
                 case  29:
                     startActivity(new Intent(MainActivity.this, DhaabachuDadhabee.class));
@@ -375,8 +587,36 @@ public class MainActivity extends OptionsMenuActivity {
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  33:
-                    startActivity(new Intent(MainActivity.this, DubartootaaKeessaa.class));
-                    overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
+                    if (mInterstitialAd != null) {
+                        mInterstitialAd.show(MainActivity.this);
+                        mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback(){
+                            @Override
+                            public void onAdDismissedFullScreenContent() {
+                                super.onAdDismissedFullScreenContent();
+                                startActivity(new Intent(MainActivity.this, DubartootaaKeessaa.class));
+                                mInterstitialAd = null;
+                                setAds();
+                            }
+
+                            @Override
+                            public void onAdFailedToShowFullScreenContent(@NonNull AdError adError) {
+                                // Called when fullscreen content failed to show.
+                                Log.d("TAG", "The ad failed to show.");
+                            }
+
+                            @Override
+                            public void onAdShowedFullScreenContent() {
+                                // Called when fullscreen content is shown.
+                                // Make sure to set your reference to null so you don't
+                                // show it a second time.
+                                mInterstitialAd = null;
+                                Log.d("TAG", "The ad was shown.");
+                            }
+                        });
+                    } else {
+                        startActivity(new Intent(MainActivity.this, DubartootaaKeessaa.class));
+                        overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
+                    }
                     break;
                 case  34:
                     startActivity(new Intent(MainActivity.this, DursiiGooftaa.class));
@@ -395,8 +635,36 @@ public class MainActivity extends OptionsMenuActivity {
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  38:
-                    startActivity(new Intent(MainActivity.this, EenyuuAbdiinKoo.class));
-                    overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
+                    if (mInterstitialAd != null) {
+                        mInterstitialAd.show(MainActivity.this);
+                        mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback(){
+                            @Override
+                            public void onAdDismissedFullScreenContent() {
+                                super.onAdDismissedFullScreenContent();
+                                startActivity(new Intent(MainActivity.this, EenyuuAbdiinKoo.class));
+                                mInterstitialAd = null;
+                                setAds();
+                            }
+
+                            @Override
+                            public void onAdFailedToShowFullScreenContent(@NonNull AdError adError) {
+                                // Called when fullscreen content failed to show.
+                                Log.d("TAG", "The ad failed to show.");
+                            }
+
+                            @Override
+                            public void onAdShowedFullScreenContent() {
+                                // Called when fullscreen content is shown.
+                                // Make sure to set your reference to null so you don't
+                                // show it a second time.
+                                mInterstitialAd = null;
+                                Log.d("TAG", "The ad was shown.");
+                            }
+                        });
+                    } else {
+                        startActivity(new Intent(MainActivity.this, EenyuuAbdiinKoo.class));
+                        overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
+                    }
                     break;
                 case  39:
                     startActivity(new Intent(MainActivity.this, EenyuuOgeessiAkkaKee.class));
@@ -415,8 +683,36 @@ public class MainActivity extends OptionsMenuActivity {
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  43:
-                    startActivity(new Intent(MainActivity.this, ErgamaaGabrieel.class));
-                    overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
+                    if (mInterstitialAd != null) {
+                        mInterstitialAd.show(MainActivity.this);
+                        mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback(){
+                            @Override
+                            public void onAdDismissedFullScreenContent() {
+                                super.onAdDismissedFullScreenContent();
+                                startActivity(new Intent(MainActivity.this, ErgamaaGabrieel.class));
+                                mInterstitialAd = null;
+                                setAds();
+                            }
+
+                            @Override
+                            public void onAdFailedToShowFullScreenContent(@NonNull AdError adError) {
+                                // Called when fullscreen content failed to show.
+                                Log.d("TAG", "The ad failed to show.");
+                            }
+
+                            @Override
+                            public void onAdShowedFullScreenContent() {
+                                // Called when fullscreen content is shown.
+                                // Make sure to set your reference to null so you don't
+                                // show it a second time.
+                                mInterstitialAd = null;
+                                Log.d("TAG", "The ad was shown.");
+                            }
+                        });
+                    } else {
+                        startActivity(new Intent(MainActivity.this, ErgamaaGabrieel.class));
+                        overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
+                    }
                     break;
                 case  44:
                     startActivity(new Intent(MainActivity.this, ErgamaaGabrieelin.class));
@@ -435,8 +731,36 @@ public class MainActivity extends OptionsMenuActivity {
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  48:
-                    startActivity(new Intent(MainActivity.this, GalaanaDhaabe.class));
-                    overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
+                    if (mInterstitialAd != null) {
+                        mInterstitialAd.show(MainActivity.this);
+                        mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback(){
+                            @Override
+                            public void onAdDismissedFullScreenContent() {
+                                super.onAdDismissedFullScreenContent();
+                                startActivity(new Intent(MainActivity.this, GalaanaDhaabe.class));
+                                mInterstitialAd = null;
+                                setAds();
+                            }
+
+                            @Override
+                            public void onAdFailedToShowFullScreenContent(@NonNull AdError adError) {
+                                // Called when fullscreen content failed to show.
+                                Log.d("TAG", "The ad failed to show.");
+                            }
+
+                            @Override
+                            public void onAdShowedFullScreenContent() {
+                                // Called when fullscreen content is shown.
+                                // Make sure to set your reference to null so you don't
+                                // show it a second time.
+                                mInterstitialAd = null;
+                                Log.d("TAG", "The ad was shown.");
+                            }
+                        });
+                    } else {
+                        startActivity(new Intent(MainActivity.this, GalaanaDhaabe.class));
+                        overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
+                    }
                     break;
                 case  49:
                     startActivity(new Intent(MainActivity.this, GalataJedhee.class));
@@ -455,8 +779,36 @@ public class MainActivity extends OptionsMenuActivity {
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  53:
-                    startActivity(new Intent(MainActivity.this, Galateeffamaadhaa.class));
-                    overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
+                    if (mInterstitialAd != null) {
+                        mInterstitialAd.show(MainActivity.this);
+                        mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback(){
+                            @Override
+                            public void onAdDismissedFullScreenContent() {
+                                super.onAdDismissedFullScreenContent();
+                                startActivity(new Intent(MainActivity.this, Galateeffamaadhaa.class));
+                                mInterstitialAd = null;
+                                setAds();
+                            }
+
+                            @Override
+                            public void onAdFailedToShowFullScreenContent(@NonNull AdError adError) {
+                                // Called when fullscreen content failed to show.
+                                Log.d("TAG", "The ad failed to show.");
+                            }
+
+                            @Override
+                            public void onAdShowedFullScreenContent() {
+                                // Called when fullscreen content is shown.
+                                // Make sure to set your reference to null so you don't
+                                // show it a second time.
+                                mInterstitialAd = null;
+                                Log.d("TAG", "The ad was shown.");
+                            }
+                        });
+                    } else {
+                        startActivity(new Intent(MainActivity.this, Galateeffamaadhaa.class));
+                        overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
+                    }
                     break;
                 case  54:
                     startActivity(new Intent(MainActivity.this, GalmaKoo.class));
@@ -479,8 +831,36 @@ public class MainActivity extends OptionsMenuActivity {
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  59:
-                    startActivity(new Intent(MainActivity.this, GarraKoofJedhee.class));
-                    overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
+                    if (mInterstitialAd != null) {
+                        mInterstitialAd.show(MainActivity.this);
+                        mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback(){
+                            @Override
+                            public void onAdDismissedFullScreenContent() {
+                                super.onAdDismissedFullScreenContent();
+                                startActivity(new Intent(MainActivity.this, GarraKoofJedhee.class));
+                                mInterstitialAd = null;
+                                setAds();
+                            }
+
+                            @Override
+                            public void onAdFailedToShowFullScreenContent(@NonNull AdError adError) {
+                                // Called when fullscreen content failed to show.
+                                Log.d("TAG", "The ad failed to show.");
+                            }
+
+                            @Override
+                            public void onAdShowedFullScreenContent() {
+                                // Called when fullscreen content is shown.
+                                // Make sure to set your reference to null so you don't
+                                // show it a second time.
+                                mInterstitialAd = null;
+                                Log.d("TAG", "The ad was shown.");
+                            }
+                        });
+                    } else {
+                        startActivity(new Intent(MainActivity.this, GarraKoofJedhee.class));
+                        overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
+                    }
                     break;
                 case  60:
                     startActivity(new Intent(MainActivity.this, GochiGooftaaKeenyaa.class));
@@ -503,8 +883,36 @@ public class MainActivity extends OptionsMenuActivity {
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  65:
-                    startActivity(new Intent(MainActivity.this, GuyyaanKeeGuyyaaQaba.class));
-                    overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
+                    if (mInterstitialAd != null) {
+                        mInterstitialAd.show(MainActivity.this);
+                        mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback(){
+                            @Override
+                            public void onAdDismissedFullScreenContent() {
+                                super.onAdDismissedFullScreenContent();
+                                startActivity(new Intent(MainActivity.this, GuyyaanKeeGuyyaaQaba.class));
+                                mInterstitialAd = null;
+                                setAds();
+                            }
+
+                            @Override
+                            public void onAdFailedToShowFullScreenContent(@NonNull AdError adError) {
+                                // Called when fullscreen content failed to show.
+                                Log.d("TAG", "The ad failed to show.");
+                            }
+
+                            @Override
+                            public void onAdShowedFullScreenContent() {
+                                // Called when fullscreen content is shown.
+                                // Make sure to set your reference to null so you don't
+                                // show it a second time.
+                                mInterstitialAd = null;
+                                Log.d("TAG", "The ad was shown.");
+                            }
+                        });
+                    } else {
+                        startActivity(new Intent(MainActivity.this, GuyyaanKeeGuyyaaQaba.class));
+                        overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
+                    }
                     break;
                 case  66:
                     startActivity(new Intent(MainActivity.this, HaadhaWaaqaKanMadaanalamii.class));
@@ -527,8 +935,36 @@ public class MainActivity extends OptionsMenuActivity {
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  71:
-                    startActivity(new Intent(MainActivity.this, IttiFufaa.class));
-                    overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
+                    if (mInterstitialAd != null) {
+                        mInterstitialAd.show(MainActivity.this);
+                        mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback(){
+                            @Override
+                            public void onAdDismissedFullScreenContent() {
+                                super.onAdDismissedFullScreenContent();
+                                startActivity(new Intent(MainActivity.this, IttiFufaa.class));
+                                mInterstitialAd = null;
+                                setAds();
+                            }
+
+                            @Override
+                            public void onAdFailedToShowFullScreenContent(@NonNull AdError adError) {
+                                // Called when fullscreen content failed to show.
+                                Log.d("TAG", "The ad failed to show.");
+                            }
+
+                            @Override
+                            public void onAdShowedFullScreenContent() {
+                                // Called when fullscreen content is shown.
+                                // Make sure to set your reference to null so you don't
+                                // show it a second time.
+                                mInterstitialAd = null;
+                                Log.d("TAG", "The ad was shown.");
+                            }
+                        });
+                    } else {
+                        startActivity(new Intent(MainActivity.this, IttiFufaa.class));
+                        overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
+                    }
                     break;
                 case  72:
                     startActivity(new Intent(MainActivity.this, IyyesuusCuuphame.class));
@@ -547,8 +983,36 @@ public class MainActivity extends OptionsMenuActivity {
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  76:
-                    startActivity(new Intent(MainActivity.this, KaakuAraara.class));
-                    overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
+                    if (mInterstitialAd != null) {
+                        mInterstitialAd.show(MainActivity.this);
+                        mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback(){
+                            @Override
+                            public void onAdDismissedFullScreenContent() {
+                                super.onAdDismissedFullScreenContent();
+                                startActivity(new Intent(MainActivity.this, KaakuAraara.class));
+                                mInterstitialAd = null;
+                                setAds();
+                            }
+
+                            @Override
+                            public void onAdFailedToShowFullScreenContent(@NonNull AdError adError) {
+                                // Called when fullscreen content failed to show.
+                                Log.d("TAG", "The ad failed to show.");
+                            }
+
+                            @Override
+                            public void onAdShowedFullScreenContent() {
+                                // Called when fullscreen content is shown.
+                                // Make sure to set your reference to null so you don't
+                                // show it a second time.
+                                mInterstitialAd = null;
+                                Log.d("TAG", "The ad was shown.");
+                            }
+                        });
+                    } else {
+                        startActivity(new Intent(MainActivity.this, KaakuAraara.class));
+                        overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
+                    }
                     break;
                 case  77:
                     startActivity(new Intent(MainActivity.this, KanAkkaWaaqayyo.class));
@@ -567,8 +1031,36 @@ public class MainActivity extends OptionsMenuActivity {
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  81:
-                    startActivity(new Intent(MainActivity.this, KennaaGuyyaaJimaata.class));
-                    overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
+                    if (mInterstitialAd != null) {
+                        mInterstitialAd.show(MainActivity.this);
+                        mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback(){
+                            @Override
+                            public void onAdDismissedFullScreenContent() {
+                                super.onAdDismissedFullScreenContent();
+                                startActivity(new Intent(MainActivity.this, KennaaGuyyaaJimaata.class));
+                                mInterstitialAd = null;
+                                setAds();
+                            }
+
+                            @Override
+                            public void onAdFailedToShowFullScreenContent(@NonNull AdError adError) {
+                                // Called when fullscreen content failed to show.
+                                Log.d("TAG", "The ad failed to show.");
+                            }
+
+                            @Override
+                            public void onAdShowedFullScreenContent() {
+                                // Called when fullscreen content is shown.
+                                // Make sure to set your reference to null so you don't
+                                // show it a second time.
+                                mInterstitialAd = null;
+                                Log.d("TAG", "The ad was shown.");
+                            }
+                        });
+                    } else {
+                        startActivity(new Intent(MainActivity.this, KennaaGuyyaaJimaata.class));
+                        overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
+                    }
                     break;
                 case  82:
                     startActivity(new Intent(MainActivity.this, KennaanKeeJabaa.class));
@@ -595,8 +1087,36 @@ public class MainActivity extends OptionsMenuActivity {
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  88:
-                    startActivity(new Intent(MainActivity.this, LatiinJirmaQabaa.class));
-                    overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
+                    if (mInterstitialAd != null) {
+                        mInterstitialAd.show(MainActivity.this);
+                        mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback(){
+                            @Override
+                            public void onAdDismissedFullScreenContent() {
+                                super.onAdDismissedFullScreenContent();
+                                startActivity(new Intent(MainActivity.this, LatiinJirmaQabaa.class));
+                                mInterstitialAd = null;
+                                setAds();
+                            }
+
+                            @Override
+                            public void onAdFailedToShowFullScreenContent(@NonNull AdError adError) {
+                                // Called when fullscreen content failed to show.
+                                Log.d("TAG", "The ad failed to show.");
+                            }
+
+                            @Override
+                            public void onAdShowedFullScreenContent() {
+                                // Called when fullscreen content is shown.
+                                // Make sure to set your reference to null so you don't
+                                // show it a second time.
+                                mInterstitialAd = null;
+                                Log.d("TAG", "The ad was shown.");
+                            }
+                        });
+                    } else {
+                        startActivity(new Intent(MainActivity.this, LatiinJirmaQabaa.class));
+                        overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
+                    }
                     break;
                 case  89:
                     startActivity(new Intent(MainActivity.this, MaaliinFakkeessina.class));
@@ -627,8 +1147,36 @@ public class MainActivity extends OptionsMenuActivity {
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  96:
-                    startActivity(new Intent(MainActivity.this, Madanialem.class));
-                    overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
+                    if (mInterstitialAd != null) {
+                        mInterstitialAd.show(MainActivity.this);
+                        mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback(){
+                            @Override
+                            public void onAdDismissedFullScreenContent() {
+                                super.onAdDismissedFullScreenContent();
+                                startActivity(new Intent(MainActivity.this, Madanialem.class));
+                                mInterstitialAd = null;
+                                setAds();
+                            }
+
+                            @Override
+                            public void onAdFailedToShowFullScreenContent(@NonNull AdError adError) {
+                                // Called when fullscreen content failed to show.
+                                Log.d("TAG", "The ad failed to show.");
+                            }
+
+                            @Override
+                            public void onAdShowedFullScreenContent() {
+                                // Called when fullscreen content is shown.
+                                // Make sure to set your reference to null so you don't
+                                // show it a second time.
+                                mInterstitialAd = null;
+                                Log.d("TAG", "The ad was shown.");
+                            }
+                        });
+                    } else {
+                        startActivity(new Intent(MainActivity.this, Madanialem.class));
+                        overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
+                    }
                     break;
                 case  97:
                     startActivity(new Intent(MainActivity.this, MallattooNagaa.class));
@@ -651,8 +1199,36 @@ public class MainActivity extends OptionsMenuActivity {
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  102:
-                    startActivity(new Intent(MainActivity.this, MucaaKee.class));
-                    overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
+                    if (mInterstitialAd != null) {
+                        mInterstitialAd.show(MainActivity.this);
+                        mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback(){
+                            @Override
+                            public void onAdDismissedFullScreenContent() {
+                                super.onAdDismissedFullScreenContent();
+                                startActivity(new Intent(MainActivity.this, MucaaKee.class));
+                                mInterstitialAd = null;
+                                setAds();
+                            }
+
+                            @Override
+                            public void onAdFailedToShowFullScreenContent(@NonNull AdError adError) {
+                                // Called when fullscreen content failed to show.
+                                Log.d("TAG", "The ad failed to show.");
+                            }
+
+                            @Override
+                            public void onAdShowedFullScreenContent() {
+                                // Called when fullscreen content is shown.
+                                // Make sure to set your reference to null so you don't
+                                // show it a second time.
+                                mInterstitialAd = null;
+                                Log.d("TAG", "The ad was shown.");
+                            }
+                        });
+                    } else {
+                        startActivity(new Intent(MainActivity.this, MucaaKee.class));
+                        overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
+                    }
                     break;
                 case  103:
                     startActivity(new Intent(MainActivity.this, MucaaKoo.class));
@@ -675,8 +1251,36 @@ public class MainActivity extends OptionsMenuActivity {
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  108:
-                    startActivity(new Intent(MainActivity.this, NanYaadadha.class));
-                    overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
+                    if (mInterstitialAd != null) {
+                        mInterstitialAd.show(MainActivity.this);
+                        mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback(){
+                            @Override
+                            public void onAdDismissedFullScreenContent() {
+                                super.onAdDismissedFullScreenContent();
+                                startActivity(new Intent(MainActivity.this, NanYaadadha.class));
+                                mInterstitialAd = null;
+                                setAds();
+                            }
+
+                            @Override
+                            public void onAdFailedToShowFullScreenContent(@NonNull AdError adError) {
+                                // Called when fullscreen content failed to show.
+                                Log.d("TAG", "The ad failed to show.");
+                            }
+
+                            @Override
+                            public void onAdShowedFullScreenContent() {
+                                // Called when fullscreen content is shown.
+                                // Make sure to set your reference to null so you don't
+                                // show it a second time.
+                                mInterstitialAd = null;
+                                Log.d("TAG", "The ad was shown.");
+                            }
+                        });
+                    } else {
+                        startActivity(new Intent(MainActivity.this, NanYaadadha.class));
+                        overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
+                    }
                     break;
                 case  109:
                     startActivity(new Intent(MainActivity.this, NattiYaahafu.class));
@@ -699,8 +1303,36 @@ public class MainActivity extends OptionsMenuActivity {
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  114:
-                    startActivity(new Intent(MainActivity.this, NuufKadhatu.class));
-                    overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
+                    if (mInterstitialAd != null) {
+                        mInterstitialAd.show(MainActivity.this);
+                        mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback(){
+                            @Override
+                            public void onAdDismissedFullScreenContent() {
+                                super.onAdDismissedFullScreenContent();
+                                startActivity(new Intent(MainActivity.this, NuufKadhatu.class));
+                                mInterstitialAd = null;
+                                setAds();
+                            }
+
+                            @Override
+                            public void onAdFailedToShowFullScreenContent(@NonNull AdError adError) {
+                                // Called when fullscreen content failed to show.
+                                Log.d("TAG", "The ad failed to show.");
+                            }
+
+                            @Override
+                            public void onAdShowedFullScreenContent() {
+                                // Called when fullscreen content is shown.
+                                // Make sure to set your reference to null so you don't
+                                // show it a second time.
+                                mInterstitialAd = null;
+                                Log.d("TAG", "The ad was shown.");
+                            }
+                        });
+                    } else {
+                        startActivity(new Intent(MainActivity.this, NuufKadhatu.class));
+                        overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
+                    }
                     break;
                 case  115:
                     startActivity(new Intent(MainActivity.this, ObsiNidarba.class));
@@ -719,8 +1351,36 @@ public class MainActivity extends OptionsMenuActivity {
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  119:
-                    startActivity(new Intent(MainActivity.this, OoMaariyaam.class));
-                    overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
+                    if (mInterstitialAd != null) {
+                        mInterstitialAd.show(MainActivity.this);
+                        mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback(){
+                            @Override
+                            public void onAdDismissedFullScreenContent() {
+                                super.onAdDismissedFullScreenContent();
+                                startActivity(new Intent(MainActivity.this, OoMaariyaam.class));
+                                mInterstitialAd = null;
+                                setAds();
+                            }
+
+                            @Override
+                            public void onAdFailedToShowFullScreenContent(@NonNull AdError adError) {
+                                // Called when fullscreen content failed to show.
+                                Log.d("TAG", "The ad failed to show.");
+                            }
+
+                            @Override
+                            public void onAdShowedFullScreenContent() {
+                                // Called when fullscreen content is shown.
+                                // Make sure to set your reference to null so you don't
+                                // show it a second time.
+                                mInterstitialAd = null;
+                                Log.d("TAG", "The ad was shown.");
+                            }
+                        });
+                    } else {
+                        startActivity(new Intent(MainActivity.this, OoMaariyaam.class));
+                        overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
+                    }
                     break;
                 case  120:
                     startActivity(new Intent(MainActivity.this, QabsurriKee.class));
@@ -747,8 +1407,36 @@ public class MainActivity extends OptionsMenuActivity {
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  126:
-                    startActivity(new Intent(MainActivity.this, SiGalateeffanna.class));
-                    overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
+                    if (mInterstitialAd != null) {
+                        mInterstitialAd.show(MainActivity.this);
+                        mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback(){
+                            @Override
+                            public void onAdDismissedFullScreenContent() {
+                                super.onAdDismissedFullScreenContent();
+                                startActivity(new Intent(MainActivity.this, SiGalateeffanna.class));
+                                mInterstitialAd = null;
+                                setAds();
+                            }
+
+                            @Override
+                            public void onAdFailedToShowFullScreenContent(@NonNull AdError adError) {
+                                // Called when fullscreen content failed to show.
+                                Log.d("TAG", "The ad failed to show.");
+                            }
+
+                            @Override
+                            public void onAdShowedFullScreenContent() {
+                                // Called when fullscreen content is shown.
+                                // Make sure to set your reference to null so you don't
+                                // show it a second time.
+                                mInterstitialAd = null;
+                                Log.d("TAG", "The ad was shown.");
+                            }
+                        });
+                    } else {
+                        startActivity(new Intent(MainActivity.this, SiGalateeffanna.class));
+                        overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
+                    }
                     break;
                 case  127:
                     startActivity(new Intent(MainActivity.this, Sillaasee.class));
@@ -783,8 +1471,36 @@ public class MainActivity extends OptionsMenuActivity {
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  135:
-                    startActivity(new Intent(MainActivity.this, TikseeGaariidha.class));
-                    overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
+                    if (mInterstitialAd != null) {
+                        mInterstitialAd.show(MainActivity.this);
+                        mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback(){
+                            @Override
+                            public void onAdDismissedFullScreenContent() {
+                                super.onAdDismissedFullScreenContent();
+                                startActivity(new Intent(MainActivity.this, TikseeGaariidha.class));
+                                mInterstitialAd = null;
+                                setAds();
+                            }
+
+                            @Override
+                            public void onAdFailedToShowFullScreenContent(@NonNull AdError adError) {
+                                // Called when fullscreen content failed to show.
+                                Log.d("TAG", "The ad failed to show.");
+                            }
+
+                            @Override
+                            public void onAdShowedFullScreenContent() {
+                                // Called when fullscreen content is shown.
+                                // Make sure to set your reference to null so you don't
+                                // show it a second time.
+                                mInterstitialAd = null;
+                                Log.d("TAG", "The ad was shown.");
+                            }
+                        });
+                    } else {
+                        startActivity(new Intent(MainActivity.this, TikseeGaariidha.class));
+                        overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
+                    }
                     break;
                 case  136:
                     startActivity(new Intent(MainActivity.this, TikseeGaariinQabaa.class));
@@ -811,8 +1527,36 @@ public class MainActivity extends OptionsMenuActivity {
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  142:
-                    startActivity(new Intent(MainActivity.this, WaaqattiHaaAmannuu.class));
-                    overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
+                    if (mInterstitialAd != null) {
+                        mInterstitialAd.show(MainActivity.this);
+                        mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback(){
+                            @Override
+                            public void onAdDismissedFullScreenContent() {
+                                super.onAdDismissedFullScreenContent();
+                                startActivity(new Intent(MainActivity.this, WaaqattiHaaAmannuu.class));
+                                mInterstitialAd = null;
+                                setAds();
+                            }
+
+                            @Override
+                            public void onAdFailedToShowFullScreenContent(@NonNull AdError adError) {
+                                // Called when fullscreen content failed to show.
+                                Log.d("TAG", "The ad failed to show.");
+                            }
+
+                            @Override
+                            public void onAdShowedFullScreenContent() {
+                                // Called when fullscreen content is shown.
+                                // Make sure to set your reference to null so you don't
+                                // show it a second time.
+                                mInterstitialAd = null;
+                                Log.d("TAG", "The ad was shown.");
+                            }
+                        });
+                    } else {
+                        startActivity(new Intent(MainActivity.this, WaaqattiHaaAmannuu.class));
+                        overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
+                    }
                     break;
                 case  143:
                     startActivity(new Intent(MainActivity.this, WaaqayyoAddunyaa.class));
@@ -839,8 +1583,36 @@ public class MainActivity extends OptionsMenuActivity {
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  149:
-                    startActivity(new Intent(MainActivity.this, YaaredLubichaa.class));
-                    overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
+                    if (mInterstitialAd != null) {
+                        mInterstitialAd.show(MainActivity.this);
+                        mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback(){
+                            @Override
+                            public void onAdDismissedFullScreenContent() {
+                                super.onAdDismissedFullScreenContent();
+                                startActivity(new Intent(MainActivity.this, YaaredLubichaa.class));
+                                mInterstitialAd = null;
+                                setAds();
+                            }
+
+                            @Override
+                            public void onAdFailedToShowFullScreenContent(@NonNull AdError adError) {
+                                // Called when fullscreen content failed to show.
+                                Log.d("TAG", "The ad failed to show.");
+                            }
+
+                            @Override
+                            public void onAdShowedFullScreenContent() {
+                                // Called when fullscreen content is shown.
+                                // Make sure to set your reference to null so you don't
+                                // show it a second time.
+                                mInterstitialAd = null;
+                                Log.d("TAG", "The ad was shown.");
+                            }
+                        });
+                    } else {
+                        startActivity(new Intent(MainActivity.this, YaaredLubichaa.class));
+                        overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
+                    }
                     break;
                 case  150:
                     startActivity(new Intent(MainActivity.this, YaaWaaqayyoo.class));
@@ -859,12 +1631,57 @@ public class MainActivity extends OptionsMenuActivity {
                     overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
                     break;
                 case  154:
-                    startActivity(new Intent(MainActivity.this, Yoordaanositti.class));
-                    overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
+                    if (mInterstitialAd != null) {
+                        mInterstitialAd.show(MainActivity.this);
+                        mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback(){
+                            @Override
+                            public void onAdDismissedFullScreenContent() {
+                                super.onAdDismissedFullScreenContent();
+                                startActivity(new Intent(MainActivity.this, Yoordaanositti.class));
+                                mInterstitialAd = null;
+                                setAds();
+                            }
+
+                            @Override
+                            public void onAdFailedToShowFullScreenContent(@NonNull AdError adError) {
+                                // Called when fullscreen content failed to show.
+                                Log.d("TAG", "The ad failed to show.");
+                            }
+
+                            @Override
+                            public void onAdShowedFullScreenContent() {
+                                // Called when fullscreen content is shown.
+                                // Make sure to set your reference to null so you don't
+                                // show it a second time.
+                                mInterstitialAd = null;
+                                Log.d("TAG", "The ad was shown.");
+                            }
+                        });
+                    } else {
+                        startActivity(new Intent(MainActivity.this, Yoordaanositti.class));
+                        overridePendingTransition(R.anim.slide_in_bottom, R.anim.no_anim);
+                    }
                     break;
             }
         });
 
+    }
+
+    private void setAds() {
+        AdRequest adRequest = new AdRequest.Builder().build();
+
+        InterstitialAd.load(this,getString(R.string.test_interstitial_ads_unit_id), adRequest,
+                new InterstitialAdLoadCallback() {
+                    @Override
+                    public void onAdLoaded(@NonNull InterstitialAd interstitialAd) {
+                        mInterstitialAd = interstitialAd;
+                    }
+
+                    @Override
+                    public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
+                        mInterstitialAd = null;
+                    }
+                });
     }
 
     static class CustomMainAdapter extends ArrayAdapter<String> {

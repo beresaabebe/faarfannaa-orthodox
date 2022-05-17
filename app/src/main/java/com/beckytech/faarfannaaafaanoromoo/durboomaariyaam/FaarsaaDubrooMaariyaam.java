@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,9 +12,19 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
+
 import com.beckytech.faarfannaaafaanoromoo.OptionsMenuActivity;
 import com.beckytech.faarfannaaafaanoromoo.R;
+import com.beckytech.faarfannaaafaanoromoo.darajee.AfaanKeenyaaHinQabu;
+import com.beckytech.faarfannaaafaanoromoo.darajee.Darajee;
+import com.google.android.gms.ads.AdError;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.FullScreenContentCallback;
+import com.google.android.gms.ads.LoadAdError;
 import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.interstitial.InterstitialAd;
+import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback;
 
 public class FaarsaaDubrooMaariyaam extends OptionsMenuActivity {
 
@@ -30,6 +41,8 @@ public class FaarsaaDubrooMaariyaam extends OptionsMenuActivity {
             "Yaa haadha keenya Maariyaamii"
     };
 
+    private InterstitialAd mInterstitialAd;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +52,8 @@ public class FaarsaaDubrooMaariyaam extends OptionsMenuActivity {
 
         MobileAds.initialize(this, initializationStatus -> {
         });
+
+        setAds();
 
         listView = findViewById(R.id.list_item);
 
@@ -55,7 +70,35 @@ public class FaarsaaDubrooMaariyaam extends OptionsMenuActivity {
                     startActivity(new Intent(this, AkkaMikaaelaaErgamaa.class));
                     break;
                 case 2:
-                    startActivity(new Intent(this, AnisDhallootadha.class));
+                    if (mInterstitialAd != null) {
+                        mInterstitialAd.show(FaarsaaDubrooMaariyaam.this);
+                        mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback(){
+                            @Override
+                            public void onAdDismissedFullScreenContent() {
+                                super.onAdDismissedFullScreenContent();
+                                startActivity(new Intent(FaarsaaDubrooMaariyaam.this, AnisDhallootadha.class));
+                                mInterstitialAd = null;
+                                setAds();
+                            }
+
+                            @Override
+                            public void onAdFailedToShowFullScreenContent(@NonNull AdError adError) {
+                                // Called when fullscreen content failed to show.
+                                Log.d("TAG", "The ad failed to show.");
+                            }
+
+                            @Override
+                            public void onAdShowedFullScreenContent() {
+                                // Called when fullscreen content is shown.
+                                // Make sure to set your reference to null so you don't
+                                // show it a second time.
+                                mInterstitialAd = null;
+                                Log.d("TAG", "The ad was shown.");
+                            }
+                        });
+                    } else {
+                        startActivity(new Intent(FaarsaaDubrooMaariyaam.this, AnisDhallootadha.class));
+                    }
                     break;
                 case 3:
                     startActivity(new Intent(this, AraarsituMaariyaam.class));
@@ -76,7 +119,35 @@ public class FaarsaaDubrooMaariyaam extends OptionsMenuActivity {
                     startActivity(new Intent(this, GiiftiiKooMaariyaam.class));
                     break;
                 case 9:
-                    startActivity(new Intent(this, HaadhaKoo.class));
+                    if (mInterstitialAd != null) {
+                        mInterstitialAd.show(FaarsaaDubrooMaariyaam.this);
+                        mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback(){
+                            @Override
+                            public void onAdDismissedFullScreenContent() {
+                                super.onAdDismissedFullScreenContent();
+                                startActivity(new Intent(FaarsaaDubrooMaariyaam.this, HaadhaKoo.class));
+                                mInterstitialAd = null;
+                                setAds();
+                            }
+
+                            @Override
+                            public void onAdFailedToShowFullScreenContent(@NonNull AdError adError) {
+                                // Called when fullscreen content failed to show.
+                                Log.d("TAG", "The ad failed to show.");
+                            }
+
+                            @Override
+                            public void onAdShowedFullScreenContent() {
+                                // Called when fullscreen content is shown.
+                                // Make sure to set your reference to null so you don't
+                                // show it a second time.
+                                mInterstitialAd = null;
+                                Log.d("TAG", "The ad was shown.");
+                            }
+                        });
+                    } else {
+                        startActivity(new Intent(this, HaadhaKoo.class));
+                    }
                     break;
                 case 10:
                     startActivity(new Intent(this, HaadhaWaaqaKanMadaanalamii.class));
@@ -115,7 +186,35 @@ public class FaarsaaDubrooMaariyaam extends OptionsMenuActivity {
                     startActivity(new Intent(this, MucaaKeeBaachudhaan.class));
                     break;
                 case 22:
-                    startActivity(new Intent(this, MuseenKanArgee.class));
+                    if (mInterstitialAd != null) {
+                        mInterstitialAd.show(FaarsaaDubrooMaariyaam.this);
+                        mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback(){
+                            @Override
+                            public void onAdDismissedFullScreenContent() {
+                                super.onAdDismissedFullScreenContent();
+                                startActivity(new Intent(FaarsaaDubrooMaariyaam.this, MuseenKanArgee.class));
+                                mInterstitialAd = null;
+                                setAds();
+                            }
+
+                            @Override
+                            public void onAdFailedToShowFullScreenContent(@NonNull AdError adError) {
+                                // Called when fullscreen content failed to show.
+                                Log.d("TAG", "The ad failed to show.");
+                            }
+
+                            @Override
+                            public void onAdShowedFullScreenContent() {
+                                // Called when fullscreen content is shown.
+                                // Make sure to set your reference to null so you don't
+                                // show it a second time.
+                                mInterstitialAd = null;
+                                Log.d("TAG", "The ad was shown.");
+                            }
+                        });
+                    } else {
+                        startActivity(new Intent(this, MuseenKanArgee.class));
+                    }
                     break;
                 case 23:
                     startActivity(new Intent(this, NagaadhaanNuKottuu.class));
@@ -138,7 +237,35 @@ public class FaarsaaDubrooMaariyaam extends OptionsMenuActivity {
                     break;
 
                 case 29:
-                    startActivity(new Intent(this, ObboleettiiErgamootaa.class));
+                    if (mInterstitialAd != null) {
+                        mInterstitialAd.show(FaarsaaDubrooMaariyaam.this);
+                        mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback(){
+                            @Override
+                            public void onAdDismissedFullScreenContent() {
+                                super.onAdDismissedFullScreenContent();
+                                startActivity(new Intent(FaarsaaDubrooMaariyaam.this, ObboleettiiErgamootaa.class));
+                                mInterstitialAd = null;
+                                setAds();
+                            }
+
+                            @Override
+                            public void onAdFailedToShowFullScreenContent(@NonNull AdError adError) {
+                                // Called when fullscreen content failed to show.
+                                Log.d("TAG", "The ad failed to show.");
+                            }
+
+                            @Override
+                            public void onAdShowedFullScreenContent() {
+                                // Called when fullscreen content is shown.
+                                // Make sure to set your reference to null so you don't
+                                // show it a second time.
+                                mInterstitialAd = null;
+                                Log.d("TAG", "The ad was shown.");
+                            }
+                        });
+                    } else {
+                        startActivity(new Intent(this, ObboleettiiErgamootaa.class));
+                    }
                     break;
 
                 case 30:
@@ -164,7 +291,35 @@ public class FaarsaaDubrooMaariyaam extends OptionsMenuActivity {
                     break;
 
                 case 36:
-                    startActivity(new Intent(this, YaaGaraaLafeetti.class));
+                    if (mInterstitialAd != null) {
+                        mInterstitialAd.show(FaarsaaDubrooMaariyaam.this);
+                        mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback(){
+                            @Override
+                            public void onAdDismissedFullScreenContent() {
+                                super.onAdDismissedFullScreenContent();
+                                startActivity(new Intent(FaarsaaDubrooMaariyaam.this, YaaGaraaLafeetti.class));
+                                mInterstitialAd = null;
+                                setAds();
+                            }
+
+                            @Override
+                            public void onAdFailedToShowFullScreenContent(@NonNull AdError adError) {
+                                // Called when fullscreen content failed to show.
+                                Log.d("TAG", "The ad failed to show.");
+                            }
+
+                            @Override
+                            public void onAdShowedFullScreenContent() {
+                                // Called when fullscreen content is shown.
+                                // Make sure to set your reference to null so you don't
+                                // show it a second time.
+                                mInterstitialAd = null;
+                                Log.d("TAG", "The ad was shown.");
+                            }
+                        });
+                    } else {
+                        startActivity(new Intent(this, YaaGaraaLafeetti.class));
+                    }
                     break;
 
                 case 37:
@@ -202,5 +357,22 @@ public class FaarsaaDubrooMaariyaam extends OptionsMenuActivity {
             return row;
         }
 
+    }
+
+    private void setAds() {
+        AdRequest adRequest = new AdRequest.Builder().build();
+
+        InterstitialAd.load(this,getString(R.string.test_interstitial_ads_unit_id), adRequest,
+                new InterstitialAdLoadCallback() {
+                    @Override
+                    public void onAdLoaded(@NonNull InterstitialAd interstitialAd) {
+                        mInterstitialAd = interstitialAd;
+                    }
+
+                    @Override
+                    public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
+                        mInterstitialAd = null;
+                    }
+                });
     }
 }

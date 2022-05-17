@@ -2,9 +2,13 @@ package com.beckytech.faarfannaaafaanoromoo;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.ListView;
 
+import androidx.annotation.NonNull;
+
 import com.beckytech.faarfannaaafaanoromoo.adaanee.AdaaneeAsraat;
+import com.beckytech.faarfannaaafaanoromoo.atozsorted.acontents.AlfaafiOmeegaaActivity;
 import com.beckytech.faarfannaaafaanoromoo.darajee.Darajee;
 import com.beckytech.faarfannaaafaanoromoo.durboomaariyaam.FaarsaaDubrooMaariyaam;
 import com.beckytech.faarfannaaafaanoromoo.faarsaa2014.FaarsaaAddaa2014;
@@ -28,6 +32,13 @@ import com.beckytech.faarfannaaafaanoromoo.lameen2011.Lameen2011;
 import com.beckytech.faarfannaaafaanoromoo.sadaniin2010.Sadaniin2010;
 import com.beckytech.faarfannaaafaanoromoo.sadeeniin2010.Sadeeniin2010;
 import com.beckytech.faarfannaaafaanoromoo.sadeeniin2012.Sadeeniin2012;
+import com.google.android.gms.ads.AdError;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.FullScreenContentCallback;
+import com.google.android.gms.ads.LoadAdError;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.interstitial.InterstitialAd;
+import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback;
 
 public class MainHomeActivity extends OptionsMenuActivity {
 
@@ -59,11 +70,17 @@ public class MainHomeActivity extends OptionsMenuActivity {
             "Faarfata Koo’eel Shawaa"
     };
 
+    private InterstitialAd mInterstitialAd;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initUI("Faaruu Ortodooksii Tawahidoo");
+
+        MobileAds.initialize(this, initializationStatus -> {});
+
+        setAds();
 
         listView = findViewById(R.id.list_item);
 
@@ -82,7 +99,35 @@ public class MainHomeActivity extends OptionsMenuActivity {
             }
 
             if (i == 2) {
-                startActivity(new Intent(MainHomeActivity.this, Lameen2011.class));
+                if (mInterstitialAd != null) {
+                    mInterstitialAd.show(MainHomeActivity.this);
+                    mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback(){
+                        @Override
+                        public void onAdDismissedFullScreenContent() {
+                            super.onAdDismissedFullScreenContent();
+                            startActivity(new Intent(MainHomeActivity.this, Lameen2011.class));
+                            mInterstitialAd = null;
+                            setAds();
+                        }
+
+                        @Override
+                        public void onAdFailedToShowFullScreenContent(@NonNull AdError adError) {
+                            // Called when fullscreen content failed to show.
+                            Log.d("TAG", "The ad failed to show.");
+                        }
+
+                        @Override
+                        public void onAdShowedFullScreenContent() {
+                            // Called when fullscreen content is shown.
+                            // Make sure to set your reference to null so you don't
+                            // show it a second time.
+                            mInterstitialAd = null;
+                            Log.d("TAG", "The ad was shown.");
+                        }
+                    });
+                } else {
+                    startActivity(new Intent(MainHomeActivity.this, Lameen2011.class));
+                }
             }
 
             if (i == 3) {
@@ -98,7 +143,35 @@ public class MainHomeActivity extends OptionsMenuActivity {
             }
 
             if (i == 6) {
-                startActivity(new Intent(MainHomeActivity.this, FaarsaaAddaa2014.class));
+                if (mInterstitialAd != null) {
+                    mInterstitialAd.show(MainHomeActivity.this);
+                    mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback(){
+                        @Override
+                        public void onAdDismissedFullScreenContent() {
+                            super.onAdDismissedFullScreenContent();
+                            startActivity(new Intent(MainHomeActivity.this, FaarsaaAddaa2014.class));
+                            mInterstitialAd = null;
+                            setAds();
+                        }
+
+                        @Override
+                        public void onAdFailedToShowFullScreenContent(@NonNull AdError adError) {
+                            // Called when fullscreen content failed to show.
+                            Log.d("TAG", "The ad failed to show.");
+                        }
+
+                        @Override
+                        public void onAdShowedFullScreenContent() {
+                            // Called when fullscreen content is shown.
+                            // Make sure to set your reference to null so you don't
+                            // show it a second time.
+                            mInterstitialAd = null;
+                            Log.d("TAG", "The ad was shown.");
+                        }
+                    });
+                } else {
+                    startActivity(new Intent(MainHomeActivity.this, FaarsaaAddaa2014.class));
+                }
             }
 
             if (i == 7) {
@@ -118,7 +191,35 @@ public class MainHomeActivity extends OptionsMenuActivity {
             }
 
             if (i == 11) {
-                startActivity(new Intent(MainHomeActivity.this, FaarsaaHangaffoota.class));
+                if (mInterstitialAd != null) {
+                    mInterstitialAd.show(MainHomeActivity.this);
+                    mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback(){
+                        @Override
+                        public void onAdDismissedFullScreenContent() {
+                            super.onAdDismissedFullScreenContent();
+                            startActivity(new Intent(MainHomeActivity.this, FaarsaaHangaffoota.class));
+                            mInterstitialAd = null;
+                            setAds();
+                        }
+
+                        @Override
+                        public void onAdFailedToShowFullScreenContent(@NonNull AdError adError) {
+                            // Called when fullscreen content failed to show.
+                            Log.d("TAG", "The ad failed to show.");
+                        }
+
+                        @Override
+                        public void onAdShowedFullScreenContent() {
+                            // Called when fullscreen content is shown.
+                            // Make sure to set your reference to null so you don't
+                            // show it a second time.
+                            mInterstitialAd = null;
+                            Log.d("TAG", "The ad was shown.");
+                        }
+                    });
+                } else {
+                    startActivity(new Intent(MainHomeActivity.this, FaarsaaHangaffoota.class));
+                }
             }
 
             if (i == 12) {
@@ -138,7 +239,35 @@ public class MainHomeActivity extends OptionsMenuActivity {
             }
 
             if (i == 16) {
-                startActivity(new Intent(MainHomeActivity.this, FaarsaaCidhaa.class));
+                if (mInterstitialAd != null) {
+                    mInterstitialAd.show(MainHomeActivity.this);
+                    mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback(){
+                        @Override
+                        public void onAdDismissedFullScreenContent() {
+                            super.onAdDismissedFullScreenContent();
+                            startActivity(new Intent(MainHomeActivity.this, FaarsaaCidhaa.class));
+                            mInterstitialAd = null;
+                            setAds();
+                        }
+
+                        @Override
+                        public void onAdFailedToShowFullScreenContent(@NonNull AdError adError) {
+                            // Called when fullscreen content failed to show.
+                            Log.d("TAG", "The ad failed to show.");
+                        }
+
+                        @Override
+                        public void onAdShowedFullScreenContent() {
+                            // Called when fullscreen content is shown.
+                            // Make sure to set your reference to null so you don't
+                            // show it a second time.
+                            mInterstitialAd = null;
+                            Log.d("TAG", "The ad was shown.");
+                        }
+                    });
+                } else {
+                    startActivity(new Intent(MainHomeActivity.this, FaarsaaCidhaa.class));
+                }
             }
             if (i == 17) {
                 startActivity(new Intent(MainHomeActivity.this, FaarsaaCuuphaa.class));
@@ -150,7 +279,35 @@ public class MainHomeActivity extends OptionsMenuActivity {
                 startActivity(new Intent(MainHomeActivity.this, FaarsaaDuaKaumsaa.class));
             }
             if (i == 20) {
-                startActivity(new Intent(MainHomeActivity.this, FaarsaaFannoo.class));
+                if (mInterstitialAd != null) {
+                    mInterstitialAd.show(MainHomeActivity.this);
+                    mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback(){
+                        @Override
+                        public void onAdDismissedFullScreenContent() {
+                            super.onAdDismissedFullScreenContent();
+                            startActivity(new Intent(MainHomeActivity.this, FaarsaaFannoo.class));
+                            mInterstitialAd = null;
+                            setAds();
+                        }
+
+                        @Override
+                        public void onAdFailedToShowFullScreenContent(@NonNull AdError adError) {
+                            // Called when fullscreen content failed to show.
+                            Log.d("TAG", "The ad failed to show.");
+                        }
+
+                        @Override
+                        public void onAdShowedFullScreenContent() {
+                            // Called when fullscreen content is shown.
+                            // Make sure to set your reference to null so you don't
+                            // show it a second time.
+                            mInterstitialAd = null;
+                            Log.d("TAG", "The ad was shown.");
+                        }
+                    });
+                } else {
+                    startActivity(new Intent(MainHomeActivity.this, FaarsaaFannoo.class));
+                }
             }
             if (i == 21) {
                 startActivity(new Intent(MainHomeActivity.this, FaarsaaYerooHundaa.class));
@@ -164,10 +321,54 @@ public class MainHomeActivity extends OptionsMenuActivity {
             }
 
             if (i == 24) {
-                startActivity(new Intent(MainHomeActivity.this, FaarsaaKooeel.class));
+                if (mInterstitialAd != null) {
+                    mInterstitialAd.show(MainHomeActivity.this);
+                    mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback(){
+                        @Override
+                        public void onAdDismissedFullScreenContent() {
+                            super.onAdDismissedFullScreenContent();
+                            startActivity(new Intent(MainHomeActivity.this, FaarsaaKooeel.class));
+                            mInterstitialAd = null;
+                            setAds();
+                        }
+
+                        @Override
+                        public void onAdFailedToShowFullScreenContent(@NonNull AdError adError) {
+                            // Called when fullscreen content failed to show.
+                            Log.d("TAG", "The ad failed to show.");
+                        }
+
+                        @Override
+                        public void onAdShowedFullScreenContent() {
+                            // Called when fullscreen content is shown.
+                            // Make sure to set your reference to null so you don't
+                            // show it a second time.
+                            mInterstitialAd = null;
+                            Log.d("TAG", "The ad was shown.");
+                        }
+                    });
+                } else {
+                    startActivity(new Intent(MainHomeActivity.this, FaarsaaKooeel.class));
+                }
             }
 
-
         });
+    }
+
+    private void setAds() {
+        AdRequest adRequest = new AdRequest.Builder().build();
+
+        InterstitialAd.load(this,getString(R.string.test_interstitial_ads_unit_id), adRequest,
+                new InterstitialAdLoadCallback() {
+                    @Override
+                    public void onAdLoaded(@NonNull InterstitialAd interstitialAd) {
+                        mInterstitialAd = interstitialAd;
+                    }
+
+                    @Override
+                    public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
+                        mInterstitialAd = null;
+                    }
+                });
     }
 }

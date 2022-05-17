@@ -1,66 +1,80 @@
 package com.beckytech.faarfannaaafaanoromoo;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
-import android.widget.ImageView;
+        import android.app.Application;
+        import android.content.Intent;
+        import android.os.Bundle;
+        import android.os.CountDownTimer;
+        import androidx.appcompat.app.AppCompatActivity;
+        import android.util.Log;
+        import android.view.View;
+        import android.view.animation.Animation;
+        import android.view.animation.AnimationUtils;
+        import android.widget.ImageView;
+        import android.widget.TextView;
 
-import androidx.appcompat.app.AppCompatActivity;
 
 public class OpenerActivity extends AppCompatActivity {
 
-    View decorView;
+    private static final String LOG_TAG = "SplashActivity";
+
+    private static final long COUNTER_TIME = 5;
+
+    private long secondsRemaining;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_opener);
 
-        decorView = getWindow().getDecorView();
-        decorView.setOnSystemUiVisibilityChangeListener(visibility -> {
-            if (visibility == 0) {
-                decorView.setSystemUiVisibility(hideSystemBars());
-            }
-        });
+        getSupportActionBar().hide();
 
-        Animation animation = AnimationUtils.loadAnimation(this,R.anim.slide_splash);
-        ImageView imageView = findViewById(R.id.splashScreenImage);
-        imageView.setAnimation(animation);
+        createTimer(COUNTER_TIME);
 
-        animation.setAnimationListener(new Animation.AnimationListener() {
-            @Override
-            public void onAnimationStart(Animation animation) {
-
-            }
-
-            @Override
-            public void onAnimationEnd(Animation animation) {
-                OpenerActivity.this.finish();
-                OpenerActivity.this.startActivity(new Intent(OpenerActivity.this, MainHomeActivity.class));
-            }
-
-            @Override
-            public void onAnimationRepeat(Animation animation) {
-
-            }
-        });
     }
 
-    public void onWindowFocusChanged(boolean hasFocus) {
-        if (hasFocus) {
-            decorView.setSystemUiVisibility(hideSystemBars());
-        }
+
+    private void createTimer(long seconds) {
+        final TextView counterTextView = findViewById(R.id.timer);
+
+        CountDownTimer countDownTimer =
+                new CountDownTimer(seconds * 1000, 1000) {
+                    @Override
+                    public void onTick(long millisUntilFinished) {
+                        secondsRemaining = ((millisUntilFinished / 1000) + 1);
+                        counterTextView.setText("App is done loading in: " + secondsRemaining);
+                    }
+
+                    @Override
+                    public void onFinish() {
+                        secondsRemaining = 0;
+                        counterTextView.setText("Done.");
+
+                        Application application = getApplication();
+
+                        if (!(application instanceof MyApplication)) {
+                            Log.e(LOG_TAG, "Failed to cast application to MyApplication.");
+                            startMainActivity();
+                            return;
+                        }
+
+                        // Show the app open ad.
+                        ((MyApplication) application)
+                                .showAdIfAvailable(
+                                        OpenerActivity.this,
+                                        new MyApplication.OnShowAdCompleteListener() {
+                                            @Override
+                                            public void onShowAdComplete() {
+                                                startMainActivity();
+                                            }
+                                        });
+                    }
+                };
+        countDownTimer.start();
     }
 
-    private int hideSystemBars() {
-        return View.SYSTEM_UI_FLAG_LAYOUT_STABLE
-                | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
-                | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
-                | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
-                | View.SYSTEM_UI_FLAG_FULLSCREEN
-                | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION;
+    public void startMainActivity() {
+        Intent intent = new Intent(this, MainHomeActivity.class);
+        this.startActivity(intent);
     }
+
 }
